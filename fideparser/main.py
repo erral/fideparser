@@ -4,11 +4,6 @@ from ratingperiod import RatingPeriod
 def main():
     parser = argparse.ArgumentParser(description='Parse FIDE site to get tournament info')
 
-    # parser.add_argument('integers', metavar='N', type=int, nargs='+',
-    #                    help='an integer for the accumulator')
-    # parser.add_argument('--sum', dest='accumulate', action='store_const',
-    #                    const=sum, default=max,
-    #                    help='sum the integers (default: find the max)')
     parser.add_argument('country',
                         type=str,
                         help='Enter the three letter country-code',
@@ -21,8 +16,37 @@ def main():
                         ''',
                         )
 
+    parser.add_argument('output_file',
+                        type=str,
+                        help='''Filename where the data will be stored. If the
+                        file exists, its contents will be overwritten, otherwise
+                        a new file will be created'''
+                        )
+
+    parser.add_argument('export_format',
+                        type=str,
+                        help='Select the exported data format',
+                        choices=['binary', 'json', 'csv'],
+                        default='binary'
+                        )
+
+    parser.add_argument('--datafile',
+                        type=str,
+                        help='''Optional data file. If you have a previously created
+                        file in 'binary' format, you can write the path to it.
+                        All the data will be imported from there'''
+
+        )
+
     arguments = parser.parse_args()
+
     rating_period = RatingPeriod(arguments.country,
                                  arguments.period)
-    rating_period.save()
-    rating_period.export()
+
+    if arguments.datafile:
+        rating_period.load_from_file(arguments.datafile)
+    else:
+        rating_period.save()
+
+    rating_period.export(arguments.output_file,
+                         arguments.export_format)
