@@ -70,12 +70,15 @@ class RatingPeriod(object):
         fp.close()
 
     def export_csv(self, filename):
+        # If we export data to JSON and reimport without the
+        # special data format for Arbiters, we can easily
+        # create a big dict to export it to a CSV file
         json_data = json.dumps(self.tournaments, cls=FIDEJSONEncoder)
         data = json.loads(json_data)
+        keys = data[0].keys()
+        keys.remove('arbiter_objects')
         fp = open(filename, 'w')
-        writer = DictUnicodeWriter(fp,
-                                   data[0].keys(),
-                )
+        writer = DictUnicodeWriter(fp, keys)
         writer.writeheader()
         writer.writerows(data)
         fp.close()
