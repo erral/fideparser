@@ -77,7 +77,7 @@ class RatingPeriod(object):
         data = json.loads(json_data)
         keys = data[0].keys()
         # Manually add arbiter code and name
-        for i in range(10):
+        for i in range(1, 10):
             keys.append('arbiter%d_code' % i)
             keys.append('arbiter%d_name' % i)
         keys.remove('arbiter_objects')
