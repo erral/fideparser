@@ -13,6 +13,7 @@ def main():
                         help='''Enter the rating list period you want to process.
                         Take into account that this export method only works for
                         already computed rating periods and not for the future ones.
+                        Period strings are like these: 2011-01-01, 2011-03-01, etc.
                         ''',
                         )
 
