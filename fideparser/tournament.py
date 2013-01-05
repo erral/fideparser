@@ -32,4 +32,15 @@ class Tournament(object):
             arbiter = Arbiter(arbiter_link.get('href'))
             data['arbiter_objects'].append(arbiter)
 
+        num = 1
+        for arbiter in data['arbiter_objects']:
+            for key in arbiter.data.keys():
+                if key.isdigit():
+                    arb_code = key
+                    arb_name = arbiter.data[key]
+                    data['arbiter%d_code' % num] = arb_code
+                    data['arbiter%d_name' % num] = arb_name
+
+            num = num +1
+
         self.data = data
