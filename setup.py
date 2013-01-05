@@ -19,7 +19,7 @@ setup(name='fideparser',
       zip_safe=False,
       install_requires=[
           # -*- Extra requirements: -*-
-          'BeautifulSoup',
+          'beautifulsoup4',
       ],
       entry_points={
         'console_scripts': [
