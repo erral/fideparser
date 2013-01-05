@@ -25,3 +25,4 @@ FIDE International Arbiter and python developer
 .. _`FIDE Ratings website`: http://ratings.fide.com
 .. _`screen-scrapping`: https://en.wikipedia.org/wiki/Web_scraping
 .. _`the issue tracker in GitHub`: https://github.com/erral/fideparser/issues
+

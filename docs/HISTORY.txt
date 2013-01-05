@@ -1,0 +1,7 @@
+Changelog
+===========
+
+0.1 - UNRELEASED
+----------------
+
+- Initial release [erral]
