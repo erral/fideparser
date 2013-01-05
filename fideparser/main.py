@@ -1,4 +1,5 @@
 import argparse
+from ratingperiod import RatingPeriod
 
 def main():
     parser = argparse.ArgumentParser(description='Parse FIDE site to get tournament info')
@@ -21,6 +22,7 @@ def main():
                         )
 
     arguments = parser.parse_args()
-    rating_period = RatingPeriod(country, period)
+    rating_period = RatingPeriod(arguments.country,
+                                 arguments.period)
     rating_period.save()
     rating_period.export()
