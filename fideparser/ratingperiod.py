@@ -1,7 +1,9 @@
 from bs4 import BeautifulSoup
 import re
 import urllib2
+import pickle
 from tournament import Tournament
+from exceptions import InvalideFileFormat
 
 BASE_URL = 'http://ratings.fide.com/tournament_list.phtml?moder=ev_code&country=%(country)s&rating_period=%(period)s'
 
@@ -26,7 +28,31 @@ class RatingPeriod(object):
             tournament = Tournament(link.get('href'))
             self.tournaments.append(tournament)
 
+    def load_from_file(self, filepath):
+        fp = open(filepath, 'r')
+        data = pickle.load(fp)
+        if not isinstance(data, RatingPeriod):
+            raise InvalideFileFormat
 
-    def export(self, format='binary'):
+        self.country = data.country
+        self.period = data.period
+        self.tournaments = data.tournaments
+
+
+    def export(self, filename, format='binary'):
         """ return the saved data in a structured way """
+        if format == 'binary':
+            self.export_binary()
+        elif format == 'json':
+            self.export_json()
+        elif format == 'csv':
+            self.export_csv()
+
+    def export_binary(self):
+        pass
+
+    def export_json(self):
+        pass
+
+    def export_csv(self):
         pass
