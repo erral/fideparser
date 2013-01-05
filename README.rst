@@ -14,6 +14,18 @@ previous year, so I will keep an eye on the FIDE site and try to fix the bugs.
 Feel free to fork and ask for pull-requests. If you find any issue, use
 `the issue tracker in GitHub`_.
 
+Install and use
+===================
+
+Install using 'easy_install fideparser' or 'pip install fideparser'.
+A script named 'export_fide_tournaments' will be created in your
+bin directory in your path.
+
+Run 'export_fide_tournaments -h' to know about the needed parameters.
+
+This script has been tested with Python 2.7 in a Linux environment.
+Windows platform is untested and I have no plan to test it. Patches welcomed.
+
 
 Author
 ========
