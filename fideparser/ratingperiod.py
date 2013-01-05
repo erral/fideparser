@@ -2,8 +2,10 @@ from bs4 import BeautifulSoup
 import re
 import urllib2
 import pickle
+import json
 from tournament import Tournament
 from exceptions import InvalideFileFormat
+from jsonencdec import FIDEJSONEncoder
 
 BASE_URL = 'http://ratings.fide.com/tournament_list.phtml?moder=ev_code&country=%(country)s&rating_period=%(period)s'
 
@@ -42,17 +44,21 @@ class RatingPeriod(object):
     def export(self, filename, format='binary'):
         """ return the saved data in a structured way """
         if format == 'binary':
-            self.export_binary()
+            self.export_binary(filename)
         elif format == 'json':
-            self.export_json()
+            self.export_json(filename)
         elif format == 'csv':
-            self.export_csv()
+            self.export_csv(filename)
 
-    def export_binary(self):
+    def export_binary(self, filename):
         pass
 
-    def export_json(self):
-        pass
+    def export_json(self, filename):
+        fp = open(filename, 'w')
+        json.dump(self.tournaments,
+                  fp,
+                  cls=FIDEJSONEncoder)
+        fp.close()
 
-    def export_csv(self):
+    def export_csv(self, filename):
         pass

@@ -34,7 +34,8 @@ def main():
                         type=str,
                         help='''Optional data file. If you have a previously created
                         file in 'binary' format, you can write the path to it.
-                        All the data will be imported from there'''
+                        All the data will be imported from there, and thus
+                        period and country parameters will be ignored'''
 
         )
 
