@@ -19,8 +19,11 @@ setup(name='fideparser',
       zip_safe=False,
       install_requires=[
           # -*- Extra requirements: -*-
+          'BeautifulSoup',
       ],
-      entry_points="""
-      # -*- Entry points: -*-
-      """,
+      entry_points={
+        'console_scripts': [
+              'export = fideparser.main:main',
+        ]
+      },
       )
