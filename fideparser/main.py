@@ -26,7 +26,7 @@ def main():
 
     parser.add_argument('export_format',
                         type=str,
-                        help='Select the exported data format',
+                        help='Select the format of the exported data',
                         choices=['binary', 'json', 'csv'],
                         default='binary'
                         )
