@@ -3,6 +3,8 @@ import re
 import urllib2
 import pickle
 import json
+import csv
+from dictunicodewriter import DictUnicodeWriter
 from tournament import Tournament
 from exceptions import InvalideFileFormat
 from jsonencdec import FIDEJSONEncoder
@@ -20,15 +22,20 @@ class RatingPeriod(object):
         url = BASE_URL % {'country': self.country,
                           'period': self.period,
         }
+        print 'Getting period data...'
         sock = urllib2.urlopen(url)
         soup = BeautifulSoup(sock.read())
         tournament_link_re = re.compile('^/tournament_details?')
         tournament_links = soup.find_all('a',
                                          href=tournament_link_re,
                                         )
+        i = 1
         for link in tournament_links:
+            print 'Importing tournament %s of %s' % (i, len(tournament_links))
             tournament = Tournament(link.get('href'))
             self.tournaments.append(tournament)
+            print 'Tournament done'
+            i = i + 1
 
     def load_from_file(self, filepath):
         fp = open(filepath, 'r')
@@ -63,4 +70,12 @@ class RatingPeriod(object):
         fp.close()
 
     def export_csv(self, filename):
-        pass
+        json_data = json.dumps(self.tournaments, cls=FIDEJSONEncoder)
+        data = json.loads(json_data)
+        fp = open(filename, 'w')
+        writer = DictUnicodeWriter(fp,
+                                   data[0].keys(),
+                )
+        writer.writeheader()
+        writer.writerows(data)
+        fp.close()

@@ -28,6 +28,7 @@ class Tournament(object):
         arbiter_links = soup.find_all('a', href=arbiter_url_re)
         data['arbiter_objects'] = []
         for arbiter_link in arbiter_links:
+            print 'Importing arbiter data...'
             arbiter = Arbiter(arbiter_link.get('href'))
             data['arbiter_objects'].append(arbiter)
 
