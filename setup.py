@@ -23,7 +23,7 @@ setup(name='fideparser',
       ],
       entry_points={
         'console_scripts': [
-              'export = fideparser.main:main',
+              'export_fide_tournaments = fideparser.main:main',
         ]
       },
       )
