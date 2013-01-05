@@ -1,0 +1,4 @@
+INSTALL
+==========
+
+Use easy_install fideparser or pip install fideparser
