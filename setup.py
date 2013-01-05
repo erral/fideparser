@@ -1,13 +1,13 @@
 from setuptools import setup, find_packages
-import sys, os
+import os
 
 version = '0.1'
 
 setup(name='fideparser',
       version=version,
       description="A package to export tournament info from FIDE site",
-      long_description="""\
-""",
+      long_description=open("README.rst").read() + "\n" +
+                       open(os.path.join("docs", "HISTORY.txt")).read(),
       classifiers=[], # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
       keywords='fide rating export',
       author='Mikel Larreategi',
