@@ -22,6 +22,11 @@ class Tournament(object):
 
         i = iter(temp)
         data = dict(zip(i, i))
+        if u'Chief Organizer' in data.keys():
+            del data[u'Chief Organizer']
+        if u'Organizer' in data.keys():
+            del data[u'Organizer']
+
 
         # Extract arbiter data
         arbiter_url_re = re.compile('^http://ratings.fide.com/card.phtml?')
