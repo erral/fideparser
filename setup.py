@@ -24,6 +24,7 @@ setup(name='fideparser',
       entry_points={
         'console_scripts': [
               'export_fide_tournaments = fideparser.main:main',
+              'merge_csv_files = fideparser.mergecsv:main',
         ]
       },
       )
