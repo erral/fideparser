@@ -17,7 +17,7 @@ def merge(outfile,  infiles):
 
     try:
         f = open(outfile, 'w')
-        writer = csv.DictWriter(f, reader.fieldnames)
+        writer = csv.DictWriter(f, set(reader.fieldnames))
         writer.writeheader()
         writer.writerows(data)
     except IOError:
