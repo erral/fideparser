@@ -14,6 +14,14 @@ previous year, so I will keep an eye on the FIDE site and try to fix the bugs.
 Feel free to fork and ask for pull-requests. If you find any issue, use
 `the issue tracker in GitHub`_.
 
+Dependencies
+==============
+
+This script depends on BeautifulSoup4_ an excelent HTML parser used, among other
+things, for doing screen-scrapping tasks. The scripts pulls the correct version
+of BeautifulSoup4_ so there's no need to do anything on your side to install it.
+
+
 Installation
 ===================
 
@@ -34,19 +42,8 @@ upgrade mode::
 
   $ ./bin/easy_install -U fideparser
 
-Now you can run the created script::
-
-  $ ./bin/export_fide_tournaments -h
-
 This script has been tested with Python 2.7 in a Linux environment.
 Windows platform is untested and I have no plans to test it. Patches welcomed.
-
-Dependencies
-==============
-
-This script depends on BeautifulSoup4_ an excelent HTML parser used, among other
-things, for doing screen-scrapping tasks. The scripts pulls the correct version
-of BeautifulSoup4_ so there's no need to do anything on your side to install it.
 
 Use
 ======
@@ -69,6 +66,16 @@ Export all data from french tournaments rated on July 2013 in binary format::
 Use the previously exported binary file from France, to create a JSON file::
 
   $ ./bin/export_fide_tournaments FRA 2012-07-01 2012-july.json json --datafile 2012-july.binary
+
+Use the previously exported binary file from France, to create a csv file::
+
+  $ ./bin/export_fide_tournaments FRA 2012-07-01 2012-july.csv csv --datafile 2012-july.binary
+
+
+A script for merging CSV files is also provided, usefull to merge files generated
+by export_fide_tournaments script. It can be used as follows::
+
+  $ ./bin/merge_csv_files outfile.csv 2013-january-spain.csv 2012-july.csv
 
 Author
 ========

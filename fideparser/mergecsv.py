@@ -26,7 +26,7 @@ def merge(outfile,  infiles):
 
 def main():
 
-    parser = argparse.ArgumentParser(description="""Merge CSV files. Merge CSV files created with fideparser.
+    parser = argparse.ArgumentParser(description="""Merge CSV files created with fideparser.
     Sometimes the order of the columns in the generated files is not correct, and you
     need to merge the files. This scripts does it for you in an easy way.
 
