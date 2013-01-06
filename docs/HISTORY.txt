@@ -4,6 +4,8 @@ Changelog
 0.2 - (UNRELEASED)
 -------------------
 
+- Improve documentation [erral]
+
 0.1 - (2013-01-06)
 -------------------
 
