@@ -14,18 +14,61 @@ previous year, so I will keep an eye on the FIDE site and try to fix the bugs.
 Feel free to fork and ask for pull-requests. If you find any issue, use
 `the issue tracker in GitHub`_.
 
-Install and use
+Installation
 ===================
 
-Install using 'easy_install fideparser' or 'pip install fideparser'.
-A script named 'export_fide_tournaments' will be created in your
-bin directory in your path.
+The easiest way run this script is to install it in a ``virtualenv``. So first
+install virtualenv_ (for instance, running ``sudo apt-get install python-virtualenv``
+in Debian and Ubuntu systems). Then create a virtualenv somewhere in your system::
 
-Run 'export_fide_tournaments -h' to know about the needed parameters.
+  $ cd somewhere
+  $ virtualenv fideparser
+
+Then, install fideparser in this virtualenv::
+
+  $ cd fideparser
+  $ ./bin/easy_install fideparser
+
+If you are upgrading from a previous version of fideparser, run easy_install in
+upgrade mode::
+
+  $ ./bin/easy_install -U fideparser
+
+Now you can run the created script::
+
+  $ ./bin/export_fide_tournaments -h
 
 This script has been tested with Python 2.7 in a Linux environment.
-Windows platform is untested and I have no plan to test it. Patches welcomed.
+Windows platform is untested and I have no plans to test it. Patches welcomed.
 
+Dependencies
+==============
+
+This script depends on BeautifulSoup4_ an excelent HTML parser used, among other
+things, for doing screen-scrapping tasks. The scripts pulls the correct version
+of BeautifulSoup4_ so there's no need to do anything on your side to install it.
+
+Use
+======
+
+All options are explained in the help, that you can get running this::
+
+  $ ./bin/export_fide_tournaments -h
+
+Examples
+==========
+
+Export all data from spanish tournaments rated on January 2013 in csv format::
+
+  $ ./bin/export_fide_tournaments ESP 2013-01-01 2013-january-spain.csv csv
+
+Export all data from french tournaments rated on July 2013 in binary format::
+
+  $ ./bin/export_fide_tournaments FRA 2012-07-01 2012-july.binary binary
+
+Use the previously exported binary file from France, to create a JSON file::
+
+  $ ./bin/export_fide_tournaments FRA 2012-07-01 2012-july.json json --datafile 2012-july.binary
 
 Author
 ========
@@ -37,4 +80,6 @@ FIDE International Arbiter and python developer
 .. _`FIDE Ratings website`: http://ratings.fide.com
 .. _`screen-scrapping`: https://en.wikipedia.org/wiki/Web_scraping
 .. _`the issue tracker in GitHub`: https://github.com/erral/fideparser/issues
+.. _virtualenv: http://pypi.python.org/pypi/virtualenv
+.. _BeautifulSoup4: http://www.crummy.com/software/BeautifulSoup/
 
