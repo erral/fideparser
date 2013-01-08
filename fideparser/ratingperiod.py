@@ -76,10 +76,13 @@ class RatingPeriod(object):
         json_data = json.dumps(self.tournaments, cls=FIDEJSONEncoder)
         data = json.loads(json_data)
         keys = data[0].keys()
-        # Manually add arbiter code and name
+        # Manually add arbiter code and name headers
+        # Because some lines don't have them
+        # because they have just 1 or 2 arbiters and others 4
         for i in range(1, 10):
             keys.append('arbiter%d_code' % i)
             keys.append('arbiter%d_name' % i)
+        keys = set(keys)
         keys.remove('arbiter_objects')
         fp = open(filename, 'w')
         writer = DictUnicodeWriter(fp, keys)

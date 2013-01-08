@@ -47,7 +47,6 @@ class Tournament(object):
                     arb_name = arbiter.data[key]
                     data['arbiter%d_code' % num] = arb_code
                     data['arbiter%d_name' % num] = arb_name
-
-            num = num +1
+                    num = num + 1
 
         self.data = data

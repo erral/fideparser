@@ -4,6 +4,8 @@ Changelog
 0.3 - (2013-01-08)
 ---------------------
 
+- Avoid duplicated headers in exported csv file [erral]
+
 - Fix arbiter parsing: previously some organizers were
   parsed like arbiters. Fixes #1 [erral]
 
