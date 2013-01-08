@@ -1,8 +1,11 @@
 Changelog
 ===========
 
-0.3 - (UNRELEASED)
+0.3 - (2013-01-08)
 ---------------------
+
+- Fix arbiter parsing: previously some organizers were
+  parsed like arbiters. Fixes #1 [erral]
 
 0.2 - (2013-01-06)
 -------------------

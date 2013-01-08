@@ -16,26 +16,28 @@ class Tournament(object):
         temp = []
         # Extract general data
         tdata = soup.find_all('tr', bgcolor='#efefef')
+        arb = False
+        arbiter_objects = []
         for tr in tdata:
             for item in tr.find_all('td'):
-                temp.append(item.text.strip())
+                text = item.text.strip()
+                if arb:
+                    arbiter_url_re = re.compile('^http://ratings.fide.com/card.phtml?')
+                    arbiter_links = item.find_all('a', href=arbiter_url_re)
+                    for arbiter_link in arbiter_links:
+                        print 'Importing arbiter data...'
+                        arbiter = Arbiter(arbiter_link.get('href'))
+                        arbiter_objects.append(arbiter)
+                    arb = False
+
+
+                if 'arbiter'in text.lower():
+                    arb = True
+                temp.append(text)
 
         i = iter(temp)
         data = dict(zip(i, i))
-        if u'Chief Organizer' in data.keys():
-            del data[u'Chief Organizer']
-        if u'Organizer' in data.keys():
-            del data[u'Organizer']
-
-
-        # Extract arbiter data
-        arbiter_url_re = re.compile('^http://ratings.fide.com/card.phtml?')
-        arbiter_links = soup.find_all('a', href=arbiter_url_re)
-        data['arbiter_objects'] = []
-        for arbiter_link in arbiter_links:
-            print 'Importing arbiter data...'
-            arbiter = Arbiter(arbiter_link.get('href'))
-            data['arbiter_objects'].append(arbiter)
+        data['arbiter_objects'] = arbiter_objects
 
         num = 1
         for arbiter in data['arbiter_objects']:
