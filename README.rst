@@ -2,8 +2,22 @@ fideparser
 ===========
 
 fideparser is a script to parse `FIDE Ratings website`_ and export the data
-of the rated tournaments and their arbiters into another formats (currently
-csv, json and an internally pickle-based format)
+of the rated tournaments.
+
+FIDE (*Federation International des Echecs* or *World Chess Federation*) is the
+internationally recognised governing body of chess. Every month a lot of
+tournaments are played all over the world and many of them are rated for
+the FIDE Rating List which is published on 1st day of each month.
+
+FIDE publishes all the rating reports of those rated chess tournaments online at
+http://ratings.fide.com but they don't provide any API or automatized way
+of exporting or getting that information.
+
+So this script allows you to export all the data of those tournaments (based
+on country and rating period) to CSV, JSON and an internal pickle-based format.
+This script doesn't export the player data from each tournament, but the
+metadata about the tournament: name, start- and end-dates, format, player number,
+arbiter and organizer name, ...
 
 This scripts relies on `screen-scrapping`_ so if FIDE changes the HTML
 the script will break :S
