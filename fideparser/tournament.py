@@ -2,8 +2,11 @@ import urllib2
 import re
 from bs4 import BeautifulSoup
 from arbiter import Arbiter
+from arbiter import InvalidArbiterException
+
 
 BASE_URL = u'http://ratings.fide.com'
+
 
 class Tournament(object):
     def __init__(self, link):
@@ -26,10 +29,15 @@ class Tournament(object):
                     arbiter_links = item.find_all('a', href=arbiter_url_re)
                     for arbiter_link in arbiter_links:
                         print 'Importing arbiter data...'
-                        arbiter = Arbiter(arbiter_link.get('href'))
-                        arbiter_objects.append(arbiter)
-                    arb = False
+                        try:
+                            arbiter = Arbiter(arbiter_link.get('href'))
+                        except InvalidArbiterException:
+                            print 'Information not available for ', arbiter_link.text, arbiter_link.get('href')
+                            continue
 
+                        arbiter_objects.append(arbiter)
+
+                    arb = False
 
                 if 'arbiter'in text.lower():
                     arb = True

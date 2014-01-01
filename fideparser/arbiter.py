@@ -1,6 +1,13 @@
 import urllib2
 from bs4 import BeautifulSoup
 
+
+class InvalidArbiterException(Exception):
+    """ When the given arbiter data is not valid
+        this exception is raised
+    """
+
+
 class Arbiter(object):
     def __init__(self, link):
         self.link = link
@@ -11,6 +18,9 @@ class Arbiter(object):
         soup = BeautifulSoup(sock.read())
         table = soup.find('table', class_='contentpaneopen')
         inner_table = table.find('table')
+        if not inner_table:
+            raise InvalidArbiterException
+
         data_table = inner_table.find('table')
         arbiter_data = {}
         for tr in data_table.find_all('tr'):

@@ -1,8 +1,11 @@
 Changelog
 ===========
 
-0.4 - (UNRELEASED)
+0.4 - (2013-01-01)
 --------------------
+
+- Handle situations when the given arbiter
+  has not valid information in FIDE site [erral]
 
 0.3 - (2013-01-08)
 ---------------------
