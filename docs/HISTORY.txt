@@ -1,7 +1,12 @@
 Changelog
 ===========
 
-0.4 - (2013-01-01)
+0.4.1 (2014-01-01)
+--------------------
+
+- Fix history [erral]
+
+0.4 - (2014-01-01)
 --------------------
 
 - Handle situations when the given arbiter
