@@ -39,22 +39,15 @@ of BeautifulSoup4_ so there's no need to do anything on your side to install it.
 Installation
 ===================
 
-The easiest way run this script is to install it in a ``virtualenv``. So first
-install virtualenv_ (for instance, running ``sudo apt-get install python-virtualenv``
-in Debian and Ubuntu systems). Then create a virtualenv somewhere in your system::
+Install using pip::
 
-  $ cd somewhere
-  $ virtualenv fideparser
+  $ pip install fideparser
 
-Then, install fideparser in this virtualenv::
 
-  $ cd fideparser
-  $ ./bin/easy_install fideparser
+And to upgrade to a newer version, just use pip again::
 
-If you are upgrading from a previous version of fideparser, run easy_install in
-upgrade mode::
+  $ pip install --upgrade fideparser
 
-  $ ./bin/easy_install -U fideparser
 
 This script has been tested with Python 2.7 in a Linux environment.
 Windows platform is untested and I have no plans to test it. Patches welcomed.
@@ -64,32 +57,32 @@ Use
 
 All options are explained in the help, that you can get running this::
 
-  $ ./bin/export_fide_tournaments -h
+  $ export_fide_tournaments -h
 
 Examples
 ==========
 
 Export all data from spanish tournaments rated on January 2013 in csv format::
 
-  $ ./bin/export_fide_tournaments ESP 2013-01-01 2013-january-spain.csv csv
+  $ export_fide_tournaments ESP 2013-01-01 2013-january-spain.csv csv
 
 Export all data from french tournaments rated on July 2013 in binary format::
 
-  $ ./bin/export_fide_tournaments FRA 2012-07-01 2012-july.binary binary
+  $ export_fide_tournaments FRA 2012-07-01 2012-july.binary binary
 
 Use the previously exported binary file from France, to create a JSON file::
 
-  $ ./bin/export_fide_tournaments FRA 2012-07-01 2012-july.json json --datafile 2012-july.binary
+  $ export_fide_tournaments FRA 2012-07-01 2012-july.json json --datafile 2012-july.binary
 
 Use the previously exported binary file from France, to create a csv file::
 
-  $ ./bin/export_fide_tournaments FRA 2012-07-01 2012-july.csv csv --datafile 2012-july.binary
+  $ export_fide_tournaments FRA 2012-07-01 2012-july.csv csv --datafile 2012-july.binary
 
 
 A script for merging CSV files is also provided, usefull to merge files generated
 by export_fide_tournaments script. It can be used as follows::
 
-  $ ./bin/merge_csv_files outfile.csv 2013-january-spain.csv 2012-july.csv
+  $ merge_csv_files outfile.csv 2013-january-spain.csv 2012-july.csv
 
 Author
 ========
