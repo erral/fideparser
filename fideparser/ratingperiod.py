@@ -17,6 +17,7 @@ class RatingPeriod(object):
         self.country = country
         self.period = period
         self.tournaments = []
+        self.fieldnames = set([])
 
     def save(self):
         """ import the data from FIDE site """
@@ -31,6 +32,7 @@ class RatingPeriod(object):
             print 'Importing tournament %s of %s' % (i, len(tournament_links))
             tournament = Tournament(link.get('href'))
             self.tournaments.append(tournament)
+            self.fieldnames = self.fieldnames.union(set(tournament.data.keys()))
             print 'Tournament done'
             i = i + 1
 
@@ -71,7 +73,7 @@ class RatingPeriod(object):
         # create a big dict to export it to a CSV file
         json_data = json.dumps(self.tournaments, cls=FIDEJSONEncoder)
         data = json.loads(json_data)
-        keys = data[0].keys()
+        keys = list(self.fieldnames)
         # Manually add arbiter code and name headers
         # Because some lines don't have them
         # because they have just 1 or 2 arbiters and others 4
