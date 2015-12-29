@@ -5,6 +5,7 @@ import sys
 
 def merge(outfile,  infiles):
     data = []
+    fieldnames = set([])
     for filename in infiles:
         try:
             fp = open(filename, 'r')
@@ -13,12 +14,13 @@ def merge(outfile,  infiles):
             sys.exit(1)
 
         reader = csv.DictReader(fp)
+        fieldnames = fieldnames.union(set(reader.fieldnames))
         data.extend([i for i in reader])
         fp.close()
 
     try:
         f = open(outfile, 'w')
-        writer = csv.DictWriter(f, set(reader.fieldnames))
+        writer = csv.DictWriter(f, fieldnames)
         writer.writeheader()
         writer.writerows(data)
     except IOError:
