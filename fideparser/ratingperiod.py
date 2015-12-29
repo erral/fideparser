@@ -1,15 +1,16 @@
 from bs4 import BeautifulSoup
-import re
-import urllib2
-import pickle
-import json
-import csv
 from dictunicodewriter import DictUnicodeWriter
-from tournament import Tournament
 from exceptions import InvalideFileFormat
 from jsonencdec import FIDEJSONEncoder
+from tournament import Tournament
+import json
+import pickle
+import re
+import urllib2
 
-BASE_URL = 'http://ratings.fide.com/tournament_list.phtml?moder=ev_code&country=%(country)s&rating_period=%(period)s'
+
+BASE_URL = 'https://ratings.fide.com/tournament_list.phtml?moder=ev_code&country=%(country)s&rating_period=%(period)s'
+
 
 class RatingPeriod(object):
     def __init__(self, country, period):
@@ -19,16 +20,12 @@ class RatingPeriod(object):
 
     def save(self):
         """ import the data from FIDE site """
-        url = BASE_URL % {'country': self.country,
-                          'period': self.period,
-        }
+        url = BASE_URL % {'country': self.country, 'period': self.period}
         print 'Getting period data...'
         sock = urllib2.urlopen(url)
-        soup = BeautifulSoup(sock.read())
+        soup = BeautifulSoup(sock.read(), "html.parser")
         tournament_link_re = re.compile('^/tournament_details?')
-        tournament_links = soup.find_all('a',
-                                         href=tournament_link_re,
-                                        )
+        tournament_links = soup.find_all('a', href=tournament_link_re,)
         i = 1
         for link in tournament_links:
             print 'Importing tournament %s of %s' % (i, len(tournament_links))
@@ -46,7 +43,6 @@ class RatingPeriod(object):
         self.country = data.country
         self.period = data.period
         self.tournaments = data.tournaments
-
 
     def export(self, filename, format='binary'):
         """ return the saved data in a structured way """
