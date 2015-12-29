@@ -1,6 +1,7 @@
 import argparse
 from ratingperiod import RatingPeriod
 
+
 def main():
     parser = argparse.ArgumentParser(description='Parse FIDE site to get tournament info')
 
@@ -38,7 +39,7 @@ def main():
                         All the data will be imported from there, and thus
                         period and country parameters will be ignored'''
 
-        )
+    )
 
     arguments = parser.parse_args()
 
