@@ -5,7 +5,7 @@ from arbiter import Arbiter
 from arbiter import InvalidArbiterException
 
 
-BASE_URL = u'http://ratings.fide.com'
+BASE_URL = u'https://ratings.fide.com'
 
 
 class Tournament(object):
@@ -15,7 +15,7 @@ class Tournament(object):
 
     def _extract_data(self):
         sock = urllib2.urlopen(BASE_URL + self.link)
-        soup = BeautifulSoup(sock.read())
+        soup = BeautifulSoup(sock.read(), "html.parser")
         temp = []
         # Extract general data
         tdata = soup.find_all('tr', bgcolor='#efefef')
@@ -25,7 +25,7 @@ class Tournament(object):
             for item in tr.find_all('td'):
                 text = item.text.strip()
                 if arb:
-                    arbiter_url_re = re.compile('^http://ratings.fide.com/card.phtml?')
+                    arbiter_url_re = re.compile('^https://ratings.fide.com/card.phtml?')
                     arbiter_links = item.find_all('a', href=arbiter_url_re)
                     for arbiter_link in arbiter_links:
                         print 'Importing arbiter data...'
