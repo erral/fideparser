@@ -1,5 +1,5 @@
-import urllib2
 from bs4 import BeautifulSoup
+import urllib2
 
 
 class InvalidArbiterException(Exception):
@@ -15,7 +15,7 @@ class Arbiter(object):
 
     def _extract_data(self):
         sock = urllib2.urlopen(self.link)
-        soup = BeautifulSoup(sock.read())
+        soup = BeautifulSoup(sock.read(), "html.parser")
         table = soup.find('table', class_='contentpaneopen')
         inner_table = table.find('table')
         if not inner_table:
