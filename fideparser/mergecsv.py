@@ -2,6 +2,7 @@ import argparse
 import csv
 import sys
 
+
 def merge(outfile,  infiles):
     data = []
     for filename in infiles:
@@ -24,6 +25,7 @@ def merge(outfile,  infiles):
         print('An error occured writing %s. Nothing done.' % outfile)
         sys.exit(1)
 
+
 def main():
 
     parser = argparse.ArgumentParser(description="""Merge CSV files created with fideparser.
@@ -34,10 +36,11 @@ def main():
 
     """)
 
-    parser.add_argument('outfile',
-                        type=str,
-                        help='The name of the file that will save the merged data',
-                        )
+    parser.add_argument(
+        'outfile',
+        type=str,
+        help='The name of the file that will save the merged data',
+    )
 
     parser.add_argument('infiles',
                         type=str,
@@ -46,8 +49,6 @@ def main():
 
     arguments = parser.parse_args()
     merge(arguments.outfile, arguments.infiles)
-    print('%s file was generated, after merging %s' % (arguments.outfile,
-                                                    ' '.join(arguments.infiles)
-        ))
-
-
+    print('%s file was generated, after merging %s' % (
+        arguments.outfile, ' '.join(arguments.infiles)
+    ))
