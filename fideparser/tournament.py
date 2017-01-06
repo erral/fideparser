@@ -28,11 +28,11 @@ class Tournament(object):
                     arbiter_url_re = re.compile('^https://ratings.fide.com/card.phtml?')
                     arbiter_links = item.find_all('a', href=arbiter_url_re)
                     for arbiter_link in arbiter_links:
-                        print 'Importing arbiter data...'
+                        print('Importing arbiter data...')
                         try:
                             arbiter = Arbiter(arbiter_link.get('href'))
                         except InvalidArbiterException:
-                            print 'Information not available for ', arbiter_link.text, arbiter_link.get('href')
+                            print('Information not available for %s' % arbiter_link.text, arbiter_link.get('href'))
                             continue
 
                         arbiter_objects.append(arbiter)

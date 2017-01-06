@@ -22,17 +22,17 @@ class RatingPeriod(object):
     def save(self):
         """ import the data from FIDE site """
         url = BASE_URL % {'country': self.country, 'period': self.period}
-        print 'Getting period data...'
+        print('Getting period data...')
         sock = urllib2.urlopen(url)
         soup = BeautifulSoup(sock.read(), "html.parser")
         tournament_link_re = re.compile('^/tournament_details?')
         tournament_links = soup.find_all('a', href=tournament_link_re,)
         for i, link in enumerate(tournament_links, 1):
-            print 'Importing tournament %s of %s' % (i, len(tournament_links))
+            print('Importing tournament %s of %s' % (i, len(tournament_links)))
             tournament = Tournament(link.get('href'))
             self.tournaments.append(tournament)
             self.fieldnames = self.fieldnames.union(set(tournament.data.keys()))
-            print 'Tournament done'
+            print('Tournament done')
 
     def load_from_file(self, filepath):
         fp = open(filepath, 'r')
