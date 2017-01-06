@@ -45,6 +45,8 @@ class RatingPeriod(object):
         self.country = data.country
         self.period = data.period
         self.tournaments = data.tournaments
+        for tournament in self.tournaments:
+            self.fieldnames = self.fieldnames.union(tournament.data.keys())
 
     def export(self, filename, format='binary'):
         """ return the saved data in a structured way """
