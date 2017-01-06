@@ -47,14 +47,12 @@ class Tournament(object):
         data = dict(zip(i, i))
         data['arbiter_objects'] = arbiter_objects
 
-        num = 1
-        for arbiter in data['arbiter_objects']:
+        for num, arbiter in enumerate(data['arbiter_objects'], 1):
             for key in arbiter.data.keys():
                 if key.isdigit():
                     arb_code = key
                     arb_name = arbiter.data[key]
                     data['arbiter%d_code' % num] = arb_code
                     data['arbiter%d_name' % num] = arb_name
-                    num = num + 1
 
         self.data = data

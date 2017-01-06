@@ -27,14 +27,12 @@ class RatingPeriod(object):
         soup = BeautifulSoup(sock.read(), "html.parser")
         tournament_link_re = re.compile('^/tournament_details?')
         tournament_links = soup.find_all('a', href=tournament_link_re,)
-        i = 1
-        for link in tournament_links:
+        for i, link in enumerate(tournament_links, 1):
             print 'Importing tournament %s of %s' % (i, len(tournament_links))
             tournament = Tournament(link.get('href'))
             self.tournaments.append(tournament)
             self.fieldnames = self.fieldnames.union(set(tournament.data.keys()))
             print 'Tournament done'
-            i = i + 1
 
     def load_from_file(self, filepath):
         fp = open(filepath, 'r')
