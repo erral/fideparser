@@ -1,8 +1,8 @@
 import urllib2
 import re
 from bs4 import BeautifulSoup
-from arbiter import Arbiter
-from arbiter import InvalidArbiterException
+from .arbiter import Arbiter
+from .arbiter import InvalidArbiterException
 
 
 BASE_URL = u'https://ratings.fide.com'

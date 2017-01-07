@@ -1,8 +1,8 @@
 from bs4 import BeautifulSoup
-from dictunicodewriter import DictUnicodeWriter
-from exceptions import InvalideFileFormat
-from jsonencdec import FIDEJSONEncoder
-from tournament import Tournament
+from .dictunicodewriter import DictUnicodeWriter
+from .exceptions import InvalideFileFormat
+from .jsonencdec import FIDEJSONEncoder
+from .tournament import Tournament
 import json
 import pickle
 import re

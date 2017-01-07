@@ -1,5 +1,5 @@
 import argparse
-from ratingperiod import RatingPeriod
+from .ratingperiod import RatingPeriod
 
 
 def main():

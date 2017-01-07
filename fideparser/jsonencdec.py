@@ -1,5 +1,5 @@
-from tournament import Tournament
-from arbiter import Arbiter
+from .tournament import Tournament
+from .arbiter import Arbiter
 from json import JSONEncoder
 
 class FIDEJSONEncoder(JSONEncoder):
