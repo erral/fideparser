@@ -5,7 +5,7 @@ from .arbiter import Arbiter
 from .arbiter import InvalidArbiterException
 
 
-BASE_URL = u'https://ratings.fide.com'
+BASE_URL = u'http://ratings.fide.com'
 
 
 class Tournament(object):
@@ -25,7 +25,7 @@ class Tournament(object):
             for item in tr.find_all('td'):
                 text = item.text.strip()
                 if arb:
-                    arbiter_url_re = re.compile('^https://ratings.fide.com/card.phtml?')
+                    arbiter_url_re = re.compile('^http://ratings.fide.com/card.phtml?')
                     arbiter_links = item.find_all('a', href=arbiter_url_re)
                     for arbiter_link in arbiter_links:
                         print('Importing arbiter data...')
