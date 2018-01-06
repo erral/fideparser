@@ -4,6 +4,10 @@ Changelog
 0.6 (unreleased)
 ----------------
 
+- Use http
+  [erral]
+
+
 - Remove setup.cfg
   [erral]
 
