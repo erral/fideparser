@@ -82,6 +82,8 @@ class RatingPeriod(object):
             keys.append('arbiter%d_name' % i)
         keys = set(keys)
         keys.remove('arbiter_objects')
+        keys = list(keys)
+        keys.sort()
         fp = open(filename, 'w')
         writer = DictUnicodeWriter(fp, keys)
         writer.writeheader()
