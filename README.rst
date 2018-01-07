@@ -78,6 +78,14 @@ Use the previously exported binary file from France, to create a csv file::
 
   $ export_fide_tournaments FRA 2012-07-01 2012-july.csv csv --datafile 2012-july.binary
 
+If you want to export more arbiter data, append the optional flag --arbiter-data:
+
+  $ export_fide_tournaments ESP 2013-01-01 2013-january-spain.csv csv --arbiter-data
+
+If you want to export the report data (currently only the number of players present
+in the tournament report), append the optional flag --report-data:
+
+  $ export_fide_tournaments ESP 2013-01-01 2013-january-spain.csv csv --report-data
 
 A script for merging CSV files is also provided, usefull to merge files generated
 by export_fide_tournaments script. It can be used as follows::
