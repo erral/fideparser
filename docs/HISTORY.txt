@@ -4,7 +4,11 @@ Changelog
 0.8 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Document optional flags
+  [erral]
+
+- Fix error when no arbiter data is present
+  [erral] 
 
 
 0.7 (2018-01-07)
