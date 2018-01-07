@@ -4,7 +4,11 @@ Changelog
 0.7 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Condition export of report data (player count present in report)
+  [erral]
+
+- Condition export of arbiter data
+  [erral]
 
 
 0.6 (2018-01-06)

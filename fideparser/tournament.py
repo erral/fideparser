@@ -3,14 +3,18 @@ import re
 from bs4 import BeautifulSoup
 from .arbiter import Arbiter
 from .arbiter import InvalidArbiterException
+from .report import Report
+from .report import InvalidReportException
 
 
 BASE_URL = u'http://ratings.fide.com'
 
 
 class Tournament(object):
-    def __init__(self, link):
+    def __init__(self, link, extract_arbiter_data=True, extract_report_data=False):
         self.link = link
+        self.extract_arbiter_data = extract_arbiter_data
+        self.extract_report_data = extract_report_data
         self._extract_data()
 
     def _extract_data(self):
@@ -20,11 +24,13 @@ class Tournament(object):
         # Extract general data
         tdata = soup.find_all('tr', bgcolor='#efefef')
         arb = False
+        reports = False
         arbiter_objects = []
+        report_objects = []
         for tr in tdata:
             for item in tr.find_all('td'):
                 text = item.text.strip()
-                if arb:
+                if self.extract_arbiter_data and arb:
                     arbiter_url_re = re.compile('^http://ratings.fide.com/card.phtml?')
                     arbiter_links = item.find_all('a', href=arbiter_url_re)
                     for arbiter_link in arbiter_links:
@@ -39,13 +45,35 @@ class Tournament(object):
 
                     arb = False
 
+                if self.extract_report_data and reports:
+                    report_url_re = re.compile('^tournament_report.phtml?')
+                    report_links = item.find_all('a', href=report_url_re)
+                    for report_link in report_links[:1]:
+                        print('Importing report data...')
+                        try:
+                            full_link = 'http://ratings.fide.com/' + report_link.get('href')
+                            report = Report(full_link)
+                        except InvalidReportException:
+                            print('Information not available for %s' % report_link.get('href'))
+                            continue
+
+                        report_objects.append(report)
+
+                    reports = False
+
                 if 'arbiter'in text.lower():
                     arb = True
+
+                if 'view report' in text.lower():
+                    reports = True
                 temp.append(text)
 
         i = iter(temp)
         data = dict(zip(i, i))
         data['arbiter_objects'] = arbiter_objects
+        for report in report_objects:
+            for k, v in report.data.items():
+                data[k] = v
 
         for num, arbiter in enumerate(data['arbiter_objects'], 1):
             for key in arbiter.data.keys():

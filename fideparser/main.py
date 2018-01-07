@@ -17,7 +17,6 @@ def main():
                         Period strings are like these: 2011-01-01, 2011-03-01, etc.
                         ''',
                         )
-
     parser.add_argument('output_file',
                         type=str,
                         help='''Filename where the data will be stored. If the
@@ -38,13 +37,24 @@ def main():
                         file in 'binary' format, you can write the path to it.
                         All the data will be imported from there, and thus
                         period and country parameters will be ignored'''
+    )
 
+    parser.add_argument('--arbiter-data',
+                        action='store_true',
+                        help='Extract arbiter information or not',
+    )
+
+    parser.add_argument('--report-data',
+                        action='store_true',
+                        help='Extract report information or not',
     )
 
     arguments = parser.parse_args()
 
     rating_period = RatingPeriod(arguments.country,
-                                 arguments.period)
+                                 arguments.period, 
+                                 arguments.arbiter_data,
+                                 arguments.report_data)
 
     if arguments.datafile:
         rating_period.load_from_file(arguments.datafile)

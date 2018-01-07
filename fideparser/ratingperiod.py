@@ -13,9 +13,11 @@ BASE_URL = 'http://ratings.fide.com/tournament_list.phtml?moder=ev_code&country=
 
 
 class RatingPeriod(object):
-    def __init__(self, country, period):
+    def __init__(self, country, period, arbiters_data=True, report_data=True):
         self.country = country
         self.period = period
+        self.arbiters_data = arbiters_data
+        self.report_data = report_data
         self.tournaments = []
         self.fieldnames = set([])
 
@@ -29,7 +31,7 @@ class RatingPeriod(object):
         tournament_links = soup.find_all('a', href=tournament_link_re,)
         for i, link in enumerate(tournament_links, 1):
             print('Importing tournament %s of %s' % (i, len(tournament_links)))
-            tournament = Tournament(link.get('href'))
+            tournament = Tournament(link.get('href'), self.arbiters_data, self.report_data)
             self.tournaments.append(tournament)
             self.fieldnames = self.fieldnames.union(set(tournament.data.keys()))
             print('Tournament done')
