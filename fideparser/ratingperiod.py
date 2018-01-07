@@ -83,7 +83,8 @@ class RatingPeriod(object):
             keys.append('arbiter%d_code' % i)
             keys.append('arbiter%d_name' % i)
         keys = set(keys)
-        keys.remove('arbiter_objects')
+        if 'arbiter_objects' in keys:
+            keys.remove('arbiter_objects')
         keys = list(keys)
         keys.sort()
         fp = open(filename, 'w')
