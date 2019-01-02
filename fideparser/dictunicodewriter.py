@@ -4,8 +4,8 @@ import cStringIO
 import codecs
 from types import UnicodeType
 
-class DictUnicodeWriter(object):
 
+class DictUnicodeWriter(object):
     def __init__(self, f, fieldnames, dialect=csv.excel, encoding="utf-8", **kwds):
         # Redirect output to a queue
         self.queue = cStringIO.StringIO()
@@ -14,7 +14,9 @@ class DictUnicodeWriter(object):
         self.encoder = codecs.getincrementalencoder(encoding)()
 
     def writerow(self, D):
-        self.writer.writerow({k:v.encode("utf-8") for k,v in D.items() if type(v) is UnicodeType})
+        self.writer.writerow(
+            {k: v.encode("utf-8") for k, v in D.items() if type(v) is UnicodeType}
+        )
         # Fetch UTF-8 output from the queue ...
         data = self.queue.getvalue()
         data = data.decode("utf-8")

@@ -16,16 +16,16 @@ class Arbiter(object):
     def _extract_data(self):
         sock = urllib2.urlopen(self.link)
         soup = BeautifulSoup(sock.read(), "html.parser")
-        table = soup.find('table', class_='contentpaneopen')
-        inner_table = table.find('table')
+        table = soup.find("table", class_="contentpaneopen")
+        inner_table = table.find("table")
         if not inner_table:
             raise InvalidArbiterException
 
-        data_table = inner_table.find('table')
+        data_table = inner_table.find("table")
         arbiter_data = {}
-        for tr in data_table.find_all('tr'):
+        for tr in data_table.find_all("tr"):
             items = []
-            for td in tr.find_all('td'):
+            for td in tr.find_all("td"):
                 items.append(td.text)
             if len(items) > 2:
                 # The first row contains a td for the photo
@@ -40,6 +40,6 @@ class Arbiter(object):
         self.data = arbiter_data
 
     def _clean(self, text):
-        text = text.replace(u'\xa0', ' ')
+        text = text.replace(u"\xa0", " ")
         text = text.strip()
         return text

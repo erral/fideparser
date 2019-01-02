@@ -9,7 +9,7 @@ import re
 import urllib2
 
 
-BASE_URL = 'http://ratings.fide.com/tournament_list.phtml?moder=ev_code&country=%(country)s&rating_period=%(period)s'
+BASE_URL = "http://ratings.fide.com/tournament_list.phtml?moder=ev_code&country=%(country)s&rating_period=%(period)s"
 
 
 class RatingPeriod(object):
@@ -23,21 +23,23 @@ class RatingPeriod(object):
 
     def save(self):
         """ import the data from FIDE site """
-        url = BASE_URL % {'country': self.country, 'period': self.period}
-        print('Getting period data...')
+        url = BASE_URL % {"country": self.country, "period": self.period}
+        print("Getting period data...")
         sock = urllib2.urlopen(url)
         soup = BeautifulSoup(sock.read(), "html.parser")
-        tournament_link_re = re.compile('^/tournament_details?')
-        tournament_links = soup.find_all('a', href=tournament_link_re,)
+        tournament_link_re = re.compile("^/tournament_details?")
+        tournament_links = soup.find_all("a", href=tournament_link_re)
         for i, link in enumerate(tournament_links, 1):
-            print('Importing tournament %s of %s' % (i, len(tournament_links)))
-            tournament = Tournament(link.get('href'), self.arbiters_data, self.report_data)
+            print("Importing tournament %s of %s" % (i, len(tournament_links)))
+            tournament = Tournament(
+                link.get("href"), self.arbiters_data, self.report_data
+            )
             self.tournaments.append(tournament)
             self.fieldnames = self.fieldnames.union(set(tournament.data.keys()))
-            print('Tournament done')
+            print("Tournament done")
 
     def load_from_file(self, filepath):
-        fp = open(filepath, 'r')
+        fp = open(filepath, "r")
         data = pickle.load(fp)
         if not isinstance(data, RatingPeriod):
             raise InvalideFileFormat
@@ -48,25 +50,23 @@ class RatingPeriod(object):
         for tournament in self.tournaments:
             self.fieldnames = self.fieldnames.union(tournament.data.keys())
 
-    def export(self, filename, format='binary'):
+    def export(self, filename, format="binary"):
         """ return the saved data in a structured way """
-        if format == 'binary':
+        if format == "binary":
             self.export_binary(filename)
-        elif format == 'json':
+        elif format == "json":
             self.export_json(filename)
-        elif format == 'csv':
+        elif format == "csv":
             self.export_csv(filename)
 
     def export_binary(self, filename):
-        fp = open(filename, 'w')
+        fp = open(filename, "w")
         pickle.dump(self, fp)
         fp.close()
 
     def export_json(self, filename):
-        fp = open(filename, 'w')
-        json.dump(self.tournaments,
-                  fp,
-                  cls=FIDEJSONEncoder)
+        fp = open(filename, "w")
+        json.dump(self.tournaments, fp, cls=FIDEJSONEncoder)
         fp.close()
 
     def export_csv(self, filename):
@@ -80,14 +80,14 @@ class RatingPeriod(object):
         # Because some lines don't have them
         # because they have just 1 or 2 arbiters and others 4
         for i in range(1, 10):
-            keys.append('arbiter%d_code' % i)
-            keys.append('arbiter%d_name' % i)
+            keys.append("arbiter%d_code" % i)
+            keys.append("arbiter%d_name" % i)
         keys = set(keys)
-        if 'arbiter_objects' in keys:
-            keys.remove('arbiter_objects')
+        if "arbiter_objects" in keys:
+            keys.remove("arbiter_objects")
         keys = list(keys)
         keys.sort()
-        fp = open(filename, 'w')
+        fp = open(filename, "w")
         writer = DictUnicodeWriter(fp, keys)
         writer.writeheader()
         writer.writerows(data)

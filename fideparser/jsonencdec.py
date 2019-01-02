@@ -3,8 +3,8 @@ from .report import Report
 from .tournament import Tournament
 from json import JSONEncoder
 
-class FIDEJSONEncoder(JSONEncoder):
 
+class FIDEJSONEncoder(JSONEncoder):
     def default(self, o):
         if isinstance(o, Tournament):
             return o.data
