@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
+from bs4 import BeautifulSoup
 from fideparser.dictunicodewriter import DictUnicodeWriter
 from fideparser.exceptions import InvalideFileFormat
 from fideparser.jsonencdec import FIDEJSONEncoder
 from fideparser.tournament import Tournament
-from bs4 import BeautifulSoup
 
 import json
 import pickle
@@ -11,7 +11,7 @@ import re
 import urllib2
 
 
-BASE_URL = "http://ratings.fide.com/tournament_list.phtml?moder=ev_code&country=%(country)s&rating_period=%(period)s"
+BASE_URL = "https://ratings.fide.com/tournament_list.phtml?moder=ev_code&country=%(country)s&rating_period=%(period)s"
 
 
 class RatingPeriod(object):
