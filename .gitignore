@@ -17,6 +17,9 @@ develop-eggs
 .installed.cfg
 lib
 lib64
+include
+local
+share
 
 # Installer logs
 pip-log.txt
@@ -33,3 +36,4 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+.vscode
