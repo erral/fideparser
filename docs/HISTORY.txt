@@ -4,8 +4,11 @@ Changelog
 0.7.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Use HTTPS for FIDE urls.
+  [erral]
 
+- Format code using black.
+  [erral]
 
 0.7.1 (2018-01-07)
 ------------------
