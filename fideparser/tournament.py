@@ -1,10 +1,12 @@
-import urllib2
-import re
+# -*- coding: utf-8 -*-
 from bs4 import BeautifulSoup
-from .arbiter import Arbiter
-from .arbiter import InvalidArbiterException
-from .report import Report
-from .report import InvalidReportException
+from fideparser.arbiter import Arbiter
+from fideparser.arbiter import InvalidArbiterException
+from fideparser.report import InvalidReportException
+from fideparser.report import Report
+
+import re
+import urllib2
 
 
 BASE_URL = u"http://ratings.fide.com"

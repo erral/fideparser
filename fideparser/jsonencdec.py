@@ -1,6 +1,7 @@
-from .arbiter import Arbiter
-from .report import Report
-from .tournament import Tournament
+# -*- coding: utf-8 -*-
+from fideparser.arbiter import Arbiter
+from fideparser.report import Report
+from fideparser.tournament import Tournament
 from json import JSONEncoder
 
 

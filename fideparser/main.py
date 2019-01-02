@@ -1,5 +1,7 @@
+# -*- coding: utf-8 -*-
+from fideparser.ratingperiod import RatingPeriod
+
 import argparse
-from .ratingperiod import RatingPeriod
 
 
 def main():

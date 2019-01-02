@@ -1,8 +1,10 @@
+# -*- coding: utf-8 -*-
+from fideparser.dictunicodewriter import DictUnicodeWriter
+from fideparser.exceptions import InvalideFileFormat
+from fideparser.jsonencdec import FIDEJSONEncoder
+from fideparser.tournament import Tournament
 from bs4 import BeautifulSoup
-from .dictunicodewriter import DictUnicodeWriter
-from .exceptions import InvalideFileFormat
-from .jsonencdec import FIDEJSONEncoder
-from .tournament import Tournament
+
 import json
 import pickle
 import re

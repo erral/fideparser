@@ -1,8 +1,9 @@
 # coding: utf-8
-import csv
-import cStringIO
-import codecs
 from types import UnicodeType
+
+import codecs
+import cStringIO
+import csv
 
 
 class DictUnicodeWriter(object):
