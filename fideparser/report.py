@@ -20,7 +20,7 @@ class Report(object):
         soup = BeautifulSoup(sock.read(), "html.parser")
         table = soup.find("table", class_=None)
 
-        odds = table.find("tr", bgcolor="#e2e2e2")
-        even = table.find("tr", bgcolor="#ffffff")
+        odds = table.findAll("tr", bgcolor="#e2e2e2")
+        even = table.findAll("tr", bgcolor="#ffffff")
 
         self.data = {"player_count_in_report": str(len(odds) + len(even))}
