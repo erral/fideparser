@@ -6,8 +6,7 @@ from fideparser.report import InvalidReportException
 from fideparser.report import Report
 
 import re
-
-from six.moves import urllib
+import requests
 
 
 BASE_URL = u"https://ratings.fide.com"
@@ -21,8 +20,8 @@ class Tournament(object):
         self._extract_data()
 
     def _extract_data(self):
-        sock = urllib.request.urlopen(BASE_URL + self.link)
-        soup = BeautifulSoup(sock.read(), "html.parser")
+        sock = requests.get(BASE_URL + self.link)
+        soup = BeautifulSoup(sock.content, "html.parser")
         temp = []
         # Extract general data
         tdata = soup.find_all("tr", bgcolor="#efefef")

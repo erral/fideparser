@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from bs4 import BeautifulSoup
-from six.moves import urllib
+
+import requests
 
 
 class InvalidArbiterException(Exception):
@@ -15,8 +16,8 @@ class Arbiter(object):
         self._extract_data()
 
     def _extract_data(self):
-        sock = urllib.request.urlopen(self.link)
-        soup = BeautifulSoup(sock.read(), "html.parser")
+        sock = requests.get(self.link)
+        soup = BeautifulSoup(sock.content, "html.parser")
         table = soup.find("table", class_="contentpaneopen")
         inner_table = table.find("table")
         if not inner_table:

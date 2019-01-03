@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.8.2.dev0'
+version = "0.8.2.dev0"
 
 setup(
     name="fideparser",
@@ -21,7 +21,8 @@ setup(
     zip_safe=False,
     install_requires=[
         # -*- Extra requirements: -*-
-        "beautifulsoup4"
+        "beautifulsoup4",
+        "requests",
     ],
     entry_points={
         "console_scripts": [
