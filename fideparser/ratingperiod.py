@@ -8,7 +8,8 @@ from fideparser.tournament import Tournament
 import json
 import pickle
 import re
-import urllib2
+
+from six.moves import urllib
 
 
 BASE_URL = "https://ratings.fide.com/tournament_list.phtml?moder=ev_code&country=%(country)s&rating_period=%(period)s"
@@ -27,7 +28,7 @@ class RatingPeriod(object):
         """ import the data from FIDE site """
         url = BASE_URL % {"country": self.country, "period": self.period}
         print("Getting period data...")
-        sock = urllib2.urlopen(url)
+        sock = urllib.request.urlopen(url)
         soup = BeautifulSoup(sock.read(), "html.parser")
         tournament_link_re = re.compile("^/tournament_details?")
         tournament_links = soup.find_all("a", href=tournament_link_re)

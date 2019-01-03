@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from bs4 import BeautifulSoup
-
-import urllib2
+from six.moves import urllib
 
 
 class InvalidReportException(Exception):
@@ -16,7 +15,7 @@ class Report(object):
         self._extract_data()
 
     def _extract_data(self):
-        sock = urllib2.urlopen(self.link)
+        sock = urllib.request.urlopen(self.link)
         soup = BeautifulSoup(sock.read(), "html.parser")
         table = soup.find("table", class_=None)
 

@@ -2,14 +2,16 @@
 from types import UnicodeType
 
 import codecs
-import cStringIO
 import csv
+
+
+from six import moves
 
 
 class DictUnicodeWriter(object):
     def __init__(self, f, fieldnames, dialect=csv.excel, encoding="utf-8", **kwds):
         # Redirect output to a queue
-        self.queue = cStringIO.StringIO()
+        self.queue = moves.cStringIO()
         self.writer = csv.DictWriter(self.queue, fieldnames, dialect=dialect, **kwds)
         self.stream = f
         self.encoder = codecs.getincrementalencoder(encoding)()

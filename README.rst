@@ -22,7 +22,7 @@ arbiter and organizer name, ...
 This scripts relies on `screen-scrapping`_ so if FIDE changes the HTML
 the script will break :S
 
-I intend to mantain this script, at least once a year to export data of the
+I intend to mantain this script at least once a year to export data of the
 previous year, so I will keep an eye on the FIDE site and try to fix the bugs.
 
 Feel free to fork and ask for pull-requests. If you find any issue, use
