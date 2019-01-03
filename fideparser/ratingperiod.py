@@ -3,8 +3,9 @@ from bs4 import BeautifulSoup
 from fideparser.exceptions import InvalideFileFormat
 from fideparser.jsonencdec import FIDEJSONEncoder
 from fideparser.tournament import Tournament
+from io import BytesIO
 
-import csv
+import unicodecsv as csv
 import json
 import pickle
 import re
@@ -89,8 +90,8 @@ class RatingPeriod(object):
             keys.remove("arbiter_objects")
         keys = list(keys)
         keys.sort()
-        fp = open(filename, "w")
-        writer = csv.DictWriter(fp, keys)
+        fp = open(filename, "wb")
+        writer = csv.DictWriter(fp, keys, encoding="utf-8")
         writer.writeheader()
         writer.writerows(data)
         fp.close()

@@ -93,6 +93,8 @@ class Tournament(object):
                     data["arbiter%d_code" % num] = arb_code
                     data["arbiter%d_name" % num] = arb_name
 
+        del data["arbiter_objects"]
+
         data["rating_type"] = "Unknown"
         if "Time Control" in data:
             if data["Time Control"].startswith("Blitz"):
