@@ -4,7 +4,8 @@ Changelog
 0.9 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Fix player count when parsing report data.
+  [erral]
 
 
 0.8 (2019-01-02)
