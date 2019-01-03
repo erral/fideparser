@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 from bs4 import BeautifulSoup
-from fideparser.dictunicodewriter import DictUnicodeWriter
 from fideparser.exceptions import InvalideFileFormat
 from fideparser.jsonencdec import FIDEJSONEncoder
 from fideparser.tournament import Tournament
 
+import csv
 import json
 import pickle
 import re
@@ -91,7 +91,7 @@ class RatingPeriod(object):
         keys = list(keys)
         keys.sort()
         fp = open(filename, "w")
-        writer = DictUnicodeWriter(fp, keys)
+        writer = csv.DictWriter(fp, keys)
         writer.writeheader()
         writer.writerows(data)
         fp.close()
