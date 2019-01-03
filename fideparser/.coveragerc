@@ -1,0 +1,5 @@
+[report]
+include = 
+  fideparser/*
+omit = 
+  tests/*
