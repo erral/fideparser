@@ -1,6 +1,20 @@
 fideparser
 ===========
 
+.. image:: https://img.shields.io/pypi/v/fideparser.svg
+        :target: https://pypi.python.org/pypi/fideparser
+
+.. image:: https://travis-ci.org/erral/fideparser.svg?branch=master
+        :target: https://travis-ci.org/erral/fideparser
+
+.. image:: https://coveralls.io/repos/github/erral/fideparser/badge.svg?branch=master
+        :target: https://coveralls.io/github/erral/fideparser?branch=master
+
+.. image:: https://img.shields.io/pypi/pyversions/fideparser.svg
+        :alt: PyPI - Python Version
+
+
+
 fideparser is a script to parse `FIDE Ratings website`_ and export the data
 of the rated tournaments.
 
@@ -104,4 +118,3 @@ FIDE International Arbiter and python developer
 .. _`the issue tracker in GitHub`: https://github.com/erral/fideparser/issues
 .. _virtualenv: http://pypi.python.org/pypi/virtualenv
 .. _BeautifulSoup4: http://www.crummy.com/software/BeautifulSoup/
-
