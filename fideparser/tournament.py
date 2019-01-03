@@ -94,4 +94,13 @@ class Tournament(object):
                     data["arbiter%d_code" % num] = arb_code
                     data["arbiter%d_name" % num] = arb_name
 
+        data["rating_type"] = "Unknown"
+        if "Time Control" in data:
+            if data["Time Control"].startswith("Blitz"):
+                data["rating_type"] = "Blitz"
+            elif data["Time Control"].startswith("Rapid"):
+                data["rating_type"] = "Rapid"
+            elif data["Time Control"].startswith("Standard"):
+                data["rating_type"] = "Standard"
+
         self.data = data
