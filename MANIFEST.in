@@ -1,4 +1,3 @@
 include *.py
-include buildout.cfg
 recursive-include docs *.GPL
 recursive-include docs *.txt
