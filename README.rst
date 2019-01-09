@@ -63,9 +63,6 @@ And to upgrade to a newer version, just use pip again::
   $ pip install --upgrade fideparser
 
 
-This script has been tested with Python 2.7 in a Linux environment.
-Windows platform is untested and I have no plans to test it. Patches welcomed.
-
 Use
 ======
 
