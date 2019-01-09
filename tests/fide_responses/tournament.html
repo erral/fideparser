@@ -1,0 +1,656 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="FIDE , Chess, Tournaments, Calendar" />
+  <meta name="title" content="Chess Ratings" />
+  <meta name="author" content="Administrator" />
+  <meta name="description" content="FIDE - World Chess Federation, Online ratings, individual calculations" />
+  <link rel="shortcut icon" href="favicon.ico" />
+
+
+
+  <script type="text/javascript" src="/js/jquery.min.331.js"></script>
+  <script type="text/javascript" src="/js/superfish.min.js"></script>
+  <link href="/css/superfish.css" rel="stylesheet" type="text/css">
+
+
+
+
+  <link href="/modulus/template.css" rel="stylesheet" type="text/css">
+  <link href="/modulus/style.css" rel="stylesheet" type="text/css">
+
+  <style type="text/css">
+    div#horiz-menu {
+      border-collapse: collapse;
+      box-sizing: border-box;
+      color: rgb(73, 73, 73);
+      font-family: verdana, tahoma, verdana, Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0px;
+      line-height: 10px;
+      margin-left: 445px;
+      margin-top: 93px;
+      position: relative;
+      text-align: left;
+      z-index: 50;
+      font-family: verdana, tahoma, verdana, Arial, Helvetica, sans-serif;
+      background: rgb(0, 0, 0);
+
+      font-size: 11px;
+
+      letter-spacing: 0px;
+
+    }
+
+    .sf-menu {
+
+      float: left;
+      margin-bottom: 0;
+
+
+    }
+
+    .sf-menu,
+    .sf-menu * {
+
+      margin: 0;
+      margin-bottom: 0px;
+      padding: 0;
+      list-style: none;
+
+
+    }
+
+    .sf-menu li {
+
+      background: #334166;
+      white-space: nowrap;
+      *white-space: normal;
+      -webkit-transition: background .2s;
+      transition: background .2s;
+      border: none;
+      line-height: 10px;
+
+
+    }
+
+    .sf-menu li {
+
+      background: #334166;
+      white-space: nowrap;
+      *white-space: normal;
+      -webkit-transition: background .2s;
+      transition: background .2s;
+
+
+
+    }
+
+    .sf-menu li {
+
+      background: #334166;
+      white-space: nowrap;
+      *white-space: normal;
+      -webkit-transition: background .2s;
+      transition: background .2s;
+      border: none;
+
+
+    }
+
+    .sf-menu li:hover,
+    .sf-menu li.sfHover {
+      background: #334166;
+      /* only transition out, not in */
+      -webkit-transition: none;
+      transition: none;
+
+    }
+
+    .sf-menu a {
+      border-left: 0px solid #fff;
+      background: #334166;
+      border-top: 0px solid #dFeEFF;
+      /* fallback colour must use full shorthand */
+      border-top: 0px solid rgba(255, 255, 255, .5);
+      padding: .75em 1em;
+      text-decoration: none;
+      zoom: 1;
+      /* IE7 */
+    }
+
+    .sf-menu a {
+      color: white;
+    }
+
+
+
+    .sf-arrows .sf-with-ul:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+
+      right: 3px;
+
+      margin-top: -3px;
+      margin-left: 6px;
+      height: 0;
+      width: 0;
+      /* order of following 3 rules important for fallbacks to work */
+      border: 5px solid transparent;
+      border-top-color: #dFeEFF;
+      /* edit this to suit design (no rgba in IE8) */
+      border-top-color: rgba(255, 255, 255, .5);
+
+    }
+
+    .sf-arrows>li>.sf-with-ul:focus:after,
+    .sf-arrows>li:hover>.sf-with-ul:after,
+    .sf-arrows>.sfHover>.sf-with-ul:after {
+      border-top-color: white;
+      /* IE8 fallback colour */
+    }
+
+    /* styling for right-facing arrows */
+    .sf-arrows ul .sf-with-ul:after {
+      margin-top: -5px;
+      margin-right: -3px;
+      border-color: transparent;
+      border-left-color: #dFeEFF;
+      /* edit this to suit design (no rgba in IE8) */
+      border-left-color: rgba(255, 255, 255, .5);
+    }
+
+    .sf-arrows ul li>.sf-with-ul:focus:after,
+    .sf-arrows ul li:hover>.sf-with-ul:after,
+    .sf-arrows ul .sfHover>.sf-with-ul:after {
+      border-left-color: white;
+    }
+  </style>
+  <script>
+
+    (function ($) { //create closure so we can safely use $ as alias for jQuery
+
+      $(document).ready(function () {
+
+        // initialise plugin
+        var example = $('#fide_menu').superfish({
+          //add options here if required
+        });
+
+        // buttons to demonstrate Superfish's public methods
+        $('.destroy').on('click', function () {
+          example.superfish('destroy');
+        });
+
+        $('.init').on('click', function () {
+          example.superfish();
+        });
+
+        $('.open').on('click', function () {
+          example.children('li:first').superfish('show');
+        });
+
+        $('.close').on('click', function () {
+          example.children('li:first').superfish('hide');
+        });
+      });
+
+    })(jQuery);
+
+
+  </script>
+  <title>Campionat de Mallorca Individual Primera 2018 January 2019 Spain FIDE Chess Tournament report</title>
+
+
+</head>
+
+<!-- HEAD BITIS -->
+
+<body>
+  <center>
+    <div id="frame">
+
+      <div id="frame-left">
+        <!-- frame baslangic -->
+
+        <div id="frame-right">
+          <!-- frame baslangic -->
+
+          <div id="wrapper">
+            <!-- dis cerceve baslangic -->
+
+            <div id="mainpage">
+
+              <table class="mainbody" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td>
+
+
+                    <!-- TOP BAS -->
+                    <div id="top">
+
+                      <div id="header">
+
+                        <div id="pathway">
+                          <span class="breadcrumbs pathway">
+                            <a href="http://www.fide.com" class="pathway">Home</a> <img /> Chess Ratings</span>
+                        </div> <!-- pathway -->
+
+                        <div id="ustmenu">
+                          <div id="horiz-menu">
+                            <ul class="sf-menu" id="fide_menu">
+                              <li class="current">
+                                <a href=https://www.fide.com/index.php> <span>Home</span></a>
+                              </li>
+                              <li>
+                                <a href=https://www.fide.com/fide.html> <span>FIDE</span></a>
+
+                                <ul>
+                                  <li><a href=https://www.fide.com/fide/fide-world-chess-federation.html> <span>FIDE</span></a>
+                                    <ul>
+                                      <li><a href=https://ratings.fide.com/fide_directory.phtml> <span>FIDE Honorary
+                                          Members</span></a></li>
+                                      <li><a href=https://www.fide.com/fide/fide-world-chess-federation/fide-presidents.html>
+                                          <span>FIDE Presidents</span></a></li>
+                                    </ul>
+                                  </li>
+
+                                  <li><a href=https://ratings.fide.com/fide_directory.phtml> <span>Directory</span></a></li>
+                                  <li><a href=https://www.fide.com/fide/handbook.html> <span>Handbook</span></a></li>
+                                  <li><a href=https://www.fide.com/fide/minutes.html> <span>Minutes</span></a></li>
+                                  <li><a href=https://www.fide.com/fide/fide-anti-doping-regulations.html> <span>FIDE
+                                      Anti-Doping Regulations</span></a></li>
+                                  <li><a href=https://www.fide.com/fide/contacts.html> <span>Contacts</span></a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href=https://www.fide.com/info.html> <span>International Titles</span></a>
+                                <ul>
+                                  <li><a href=https://ratings.fide.com/fide_organizers.phtml target=_blank><span>Organizers</span></a></li>
+                                  <li><a href=https://ratings.fide.com/title_applications.phtml target=_blank><span>Titles</span></a>
+                                    <ul>
+                                      <li><a href=https://ratings.fide.com/title_norms.phtml target=_blank><span>Title
+                                            Norms</span></a></li>
+                                      <li><a href=https://ratings.fide.com/title_applications.phtml target=_blank><span>Title
+                                            Applications</span></a></li>
+                                    </ul>
+                                  </li>
+                                  <li><a href=https://ratings.fide.com/fide_arbiters_trainers.phtml target=_blank><span>Arbiters
+                                        / Trainers</span></a></li>
+                                </ul>
+
+                              </li>
+                              <li>
+                                <a href=https://www.fide.com/calendar.html> <span>Calendar</span></a>
+                                <ul>
+                                  <li><a href=https://www.fide.com/calendar/fide-calendar.html> <span>FIDE Events</span></a></li>
+                                  <li><a href=https://www.fide.com/calendar/fide-archive.html> <span>Events Archive</span></a></li>
+                                  <li><a href=https://www.fide.com/calendar/tournaments.html> <span>Other Tournaments</span></a></li>
+                                  <li><a href=https://www.fide.com/component/handbook/?id=44&amp;view=category> <span>Calendar
+                                      Regulations</span></a></li>
+                                </ul>
+                              </li>
+                              <li>
+
+                                <a href=https://ratings.fide.com> <span>Ratings</span></a>
+                                <ul>
+                                  <li><a href=https://ratings.fide.com/toplist.phtml target=_blank><span>Top Players</span></a></li>
+                                  <li><a href=https://ratings.fide.com target=_blank><span>All Players</span></a></li>
+                                  <li><a href=https://ratings.fide.com/fedchange.phtml target=_blank><span>Transfers</span></a></li>
+                                  <li><a href=https://ratings.fide.com/tournament_list.phtml target=_blank><span>Tournaments</span></a></li>
+                                  <li><a href=https://ratings.fide.com/archive.phtml target=_blank><span>Archive</span></a></li>
+                                  <li><a href=https://ratings.fide.com/download.phtml target=_blank><span>Download</span></a></li>
+                                  <li><a href=https://ratings.fide.com/calculators.phtml target=_blank><span>Calculators</span></a></li>
+                                </ul>
+
+                              </li>
+
+                            </ul>
+                          </div>
+                        </div>
+
+
+
+                        <div id="langmenu">
+                          &nbsp;
+                        </div>
+                      </div> <!-- header -->
+
+                    </div> <!-- top -->
+
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <!-- MIDDLE BAS -->
+
+
+                    <div id="middle">
+
+                      <table class="mainbody" !width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td valign="top">
+
+                            <div id="main-col">
+
+
+                              <table class="contentpaneopen">
+                                <tr>
+                                  <td class="contentheading" width="100%">
+                                    Tournament report January 2019 </td>
+
+                                  <td align="right" width="100%" class="buttonheading">
+                                  </td>
+
+                                </tr>
+                              </table>
+
+                              <table class="contentpaneopen">
+
+                                <tr>
+                                  <td valign="top" colspan="2" class="createdate">
+                                  </td>
+                                </tr>
+
+
+                                <tr>
+                                  <td valign="top" colspan="2" height=800>
+                                    <b>
+                                      <font size=3><i>Campionat de Mallorca Individual Primera 2018</i></font>
+                                    </b> - <b>Spain</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;start:&nbsp;2018-11-10
+                                    &nbsp;<a href=tournament_details.phtml?event=179955 tur><b><i>more info</i></b></a>
+                                    <blockquote><b>More information: </b><a href=tournament_list.phtml?country=ESP&moder=ev_code&rating_period=2019-01-01
+                                        class=tur>The full list of Spain tournaments received for January 2019</a>&nbsp;</blockquote>
+                                    <table bgcolor=#efefef cellpadding=1 cellspacing=2 border=0 width=100% align=left>
+                                      <tr>
+                                        <td><b>ID</b></td>
+                                        <td><b>Name</b></td>
+                                        <td><b>Fed</b></td>
+                                        <td><b>Title</b></td>
+                                        <td><b>Rc</b></td>
+                                        <td><b>Rp</b></td>
+                                        <td><b>W</b></td>
+                                        <td><b>N</b></td>
+                                        <td><b>K*change</b></td>
+                                      </tr>
+                                      <tr bgcolor=#e2e2e2>
+                                        <td width=75 align=right>&nbsp;2260581</td>
+                                        <td width=70%>&nbsp;&nbsp;<a href=individual_calculations.phtml?idnumber=2260581&rating_period=2019-01-01&t=0
+                                            class=tur>Moreno Garcia, Alfonso</a></td>
+                                        <td width=40>&nbsp;ESP</td>
+                                        <td></td>
+                                        <td width=20>&nbsp;1803</td>
+                                        <td width=20>&nbsp;&nbsp;</td>
+                                        <td width=20>&nbsp;4.00</td>
+                                        <td width=20>&nbsp;6</td>
+                                        <td>&nbsp;-1</td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td width=75 align=right>&nbsp;2289210</td>
+                                        <td width=70%>&nbsp;&nbsp;<a href=individual_calculations.phtml?idnumber=2289210&rating_period=2019-01-01&t=0
+                                            class=tur>Martin Mascaro, Juan</a></td>
+                                        <td width=40>&nbsp;ESP</td>
+                                        <td></td>
+                                        <td width=20>&nbsp;1845</td>
+                                        <td width=20>&nbsp;&nbsp;</td>
+                                        <td width=20>&nbsp;4.00</td>
+                                        <td width=20>&nbsp;5</td>
+                                        <td>&nbsp;19.6</td>
+                                      </tr>
+                                      <tr bgcolor=#e2e2e2>
+                                        <td width=75 align=right>&nbsp;22219609</td>
+                                        <td width=70%>&nbsp;&nbsp;<a href=individual_calculations.phtml?idnumber=22219609&rating_period=2019-01-01&t=0
+                                            class=tur>Borrego Sanchez, Felix Manuel</a></td>
+                                        <td width=40>&nbsp;ESP</td>
+                                        <td></td>
+                                        <td width=20>&nbsp;1835</td>
+                                        <td width=20>&nbsp;&nbsp;</td>
+                                        <td width=20>&nbsp;3.50</td>
+                                        <td width=20>&nbsp;6</td>
+                                        <td>&nbsp;-3</td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td width=75 align=right>&nbsp;22202501</td>
+                                        <td width=70%>&nbsp;&nbsp;<a href=individual_calculations.phtml?idnumber=22202501&rating_period=2019-01-01&t=0
+                                            class=tur>Pons Blanco, Cristobal</a></td>
+                                        <td width=40>&nbsp;ESP</td>
+                                        <td></td>
+                                        <td width=20>&nbsp;1820</td>
+                                        <td width=20>&nbsp;&nbsp;</td>
+                                        <td width=20>&nbsp;3.00</td>
+                                        <td width=20>&nbsp;6</td>
+                                        <td>&nbsp;-8.6</td>
+                                      </tr>
+                                      <tr bgcolor=#e2e2e2>
+                                        <td width=75 align=right>&nbsp;2295970</td>
+                                        <td width=70%>&nbsp;&nbsp;<a href=individual_calculations.phtml?idnumber=2295970&rating_period=2019-01-01&t=0
+                                            class=tur>Trillo-Figueroa Vidal, Antonio</a></td>
+                                        <td width=40>&nbsp;ESP</td>
+                                        <td></td>
+                                        <td width=20>&nbsp;1843</td>
+                                        <td width=20>&nbsp;&nbsp;</td>
+                                        <td width=20>&nbsp;3.00</td>
+                                        <td width=20>&nbsp;5</td>
+                                        <td>&nbsp;29</td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td width=75 align=right>&nbsp;2273756</td>
+                                        <td width=70%>&nbsp;&nbsp;<a href=individual_calculations.phtml?idnumber=2273756&rating_period=2019-01-01&t=0
+                                            class=tur>Cerdo Fernandez, Miguel</a></td>
+                                        <td width=40>&nbsp;ESP</td>
+                                        <td></td>
+                                        <td width=20>&nbsp;1840</td>
+                                        <td width=20>&nbsp;&nbsp;</td>
+                                        <td width=20>&nbsp;3.00</td>
+                                        <td width=20>&nbsp;5</td>
+                                        <td>&nbsp;17.6</td>
+                                      </tr>
+                                      <tr bgcolor=#e2e2e2>
+                                        <td width=75 align=right>&nbsp;32052162</td>
+                                        <td width=70%>&nbsp;&nbsp;<a href=individual_calculations.phtml?idnumber=32052162&rating_period=2019-01-01&t=0
+                                            class=tur>Viada Pons De Vall, Carles</a></td>
+                                        <td width=40>&nbsp;ESP</td>
+                                        <td></td>
+                                        <td width=20>&nbsp;1839</td>
+                                        <td width=20>&nbsp;&nbsp;</td>
+                                        <td width=20>&nbsp;2.50</td>
+                                        <td width=20>&nbsp;6</td>
+                                        <td>&nbsp;9.4</td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td width=75 align=right>&nbsp;22264930</td>
+                                        <td width=70%>&nbsp;&nbsp;<a href=individual_calculations.phtml?idnumber=22264930&rating_period=2019-01-01&t=0
+                                            class=tur>Oliver Jaume, Fernando</a></td>
+                                        <td width=40>&nbsp;ESP</td>
+                                        <td></td>
+                                        <td width=20>&nbsp;1786</td>
+                                        <td width=20>&nbsp;&nbsp;</td>
+                                        <td width=20>&nbsp;2.00</td>
+                                        <td width=20>&nbsp;4</td>
+                                        <td>&nbsp;-0.6</td>
+                                      </tr>
+                                      <tr bgcolor=#e2e2e2>
+                                        <td width=75 align=right>&nbsp;24560952</td>
+                                        <td width=70%>&nbsp;&nbsp;<a href=individual_calculations.phtml?idnumber=24560952&rating_period=2019-01-01&t=0
+                                            class=tur>Ermachenko, Manuel</a></td>
+                                        <td width=40>&nbsp;ESP</td>
+                                        <td></td>
+                                        <td width=20>&nbsp;1796</td>
+                                        <td width=20>&nbsp;&nbsp;</td>
+                                        <td width=20>&nbsp;2.00</td>
+                                        <td width=20>&nbsp;2</td>
+                                        <td>&nbsp;33.2</td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td width=75 align=right>&nbsp;2239701</td>
+                                        <td width=70%>&nbsp;&nbsp;<a href=individual_calculations.phtml?idnumber=2239701&rating_period=2019-01-01&t=0
+                                            class=tur>Mascaro Pastor, Miguel</a></td>
+                                        <td width=40>&nbsp;ESP</td>
+                                        <td></td>
+                                        <td width=20>&nbsp;1808</td>
+                                        <td width=20>&nbsp;&nbsp;</td>
+                                        <td width=20>&nbsp;1.50</td>
+                                        <td width=20>&nbsp;4</td>
+                                        <td>&nbsp;-7.6</td>
+                                      </tr>
+                                      <tr bgcolor=#e2e2e2>
+                                        <td width=75 align=right>&nbsp;22201254</td>
+                                        <td width=70%>&nbsp;&nbsp;<a href=individual_calculations.phtml?idnumber=22201254&rating_period=2019-01-01&t=0
+                                            class=tur>Baldo Company, Jordi</a></td>
+                                        <td width=40>&nbsp;ESP</td>
+                                        <td></td>
+                                        <td width=20>&nbsp;1787</td>
+                                        <td width=20>&nbsp;&nbsp;</td>
+                                        <td width=20>&nbsp;1.00</td>
+                                        <td width=20>&nbsp;5</td>
+                                        <td>&nbsp;-20.8</td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td width=75 align=right>&nbsp;22250816</td>
+                                        <td width=70%>&nbsp;&nbsp;<a href=individual_calculations.phtml?idnumber=22250816&rating_period=2019-01-01&t=0
+                                            class=tur>Caliz Morales, Felipe</a></td>
+                                        <td width=40>&nbsp;ESP</td>
+                                        <td></td>
+                                        <td width=20>&nbsp;1718</td>
+                                        <td width=20>&nbsp;&nbsp;</td>
+                                        <td width=20>&nbsp;1.00</td>
+                                        <td width=20>&nbsp;3</td>
+                                        <td>&nbsp;-14.4</td>
+                                      </tr>
+                                      <tr bgcolor=#e2e2e2>
+                                        <td width=75 align=right>&nbsp;2284863</td>
+                                        <td width=70%>&nbsp;&nbsp;<a href=individual_calculations.phtml?idnumber=2284863&rating_period=2019-01-01&t=0
+                                            class=tur>Ballester Cladera, Antonio</a></td>
+                                        <td width=40>&nbsp;ESP</td>
+                                        <td></td>
+                                        <td width=20>&nbsp;1806</td>
+                                        <td width=20>&nbsp;&nbsp;</td>
+                                        <td width=20>&nbsp;1.00</td>
+                                        <td width=20>&nbsp;4</td>
+                                        <td>&nbsp;-10.6</td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td width=75 align=right>&nbsp;32041349</td>
+                                        <td width=70%>&nbsp;&nbsp;<a href=individual_calculations.phtml?idnumber=32041349&rating_period=2019-01-01&t=0
+                                            class=tur>Garcia Comendador, Simon</a></td>
+                                        <td width=40>&nbsp;ESP</td>
+                                        <td></td>
+                                        <td width=20>&nbsp;1742</td>
+                                        <td width=20>&nbsp;&nbsp;</td>
+                                        <td width=20>&nbsp;0.50</td>
+                                        <td width=20>&nbsp;3</td>
+                                        <td>&nbsp;-25.6</td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan=9><small>Rc - average rating of rated opponents, Rp - rating
+                                            performance, W - points won in games against rated opponents, N - total
+                                            number of games against rated opponents, K*change - rating change for a
+                                            player in given tournament</small></td>
+                                      </tr>
+                                    </table>
+                                    <blockquote><br><b>More information: </b><a href=tournament_list.phtml?country=ESP&moder=ev_code&rating_period=2019-01-01
+                                        class=tur>The full list of Spain tournaments received for January 2019</a>&nbsp;</blockquote>
+                                  </td>
+                                </tr>
+
+                              </table>
+                              <span class="article_separator">&nbsp;</span>
+
+                              <p align=center>
+                                <b><a href="javascript:history.go(-1)">&#171&nbsp;go back</a> </b>
+                              </p>
+
+
+                            </div>
+
+
+
+                          </td>
+                          <td valign="top" align=right>
+                            <img src=/imga/head3.jpg align=absbottom vspace=0 hspace=0 border=0>
+                            <ul class="links">
+                              <li><a href="https://ratings.fide.com/toplist.phtml">Top Players</a></li>
+                              <li><a href="https://ratings.fide.com/topfed.phtml">Top Countries</a></li>
+                              <li><a href="https://ratings.fide.com/topstat.phtml">Top Chart</a></li>
+                              <li><a href="https://ratings.fide.com/index.phtml">Players & Arbiters</a></li>
+                              <li><a href="https://ratings.fide.com/fedchange.phtml">Transfers</a></li>
+                              <li><a href="https://ratings.fide.com/tournament_list.phtml">Tournaments</a></li>
+                              <li><a href="https://ratings.fide.com/archive.phtml">Tournaments Archive</a></li>
+                              <li><a href="https://ratings.fide.com/download.phtml">Download Rating List</a></li>
+                              <li><a href="https://ratings.fide.com/calculators.phtml">Rating Calculators</a></li>
+                            </ul>
+                            </li>
+                            <br>
+                            <a href=https://arena.myfide.net target=_blank><img src=/img/foa_140.gif align=absbottom
+                                vspace=0 hspace=0 border=0><a />
+
+                              <p align=right>
+                                <b>Share this page</b></p>
+                              <div class="addthis_toolbox addthis_default_style ">
+                                <a class="addthis_button_preferred_1"></a>
+                                <a class="addthis_button_preferred_2"></a>
+                                <a class="addthis_button_preferred_3"></a>
+                                <a class="addthis_button_preferred_4"></a>
+                                <a class="addthis_button_compact\"></a>
+                                <a class="addthis_counter addthis_bubble_style"></a>
+                              </div>
+
+                              <script type="text/javascript">var addthis_config = { "data_track_clickback": true };</script>
+                              <script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4ddbad467652661c"></script>
+
+                              </p>
+                              <br />
+
+                              &nbsp;&nbsp;&nbsp;<a target="_blank" href="https://www.facebook.com/pages/FIDE-World-Chess-Federation/198487910190049"><img
+                                  alt="facebook" src="/img/facebook.png" height="32" width="32"></a>
+                              &nbsp;&nbsp;&nbsp;<a target="_blank" href="https://twitter.com/fide_chess"><img alt="twitter"
+                                  src="/img/twitter.png" height="32" width="32"></a>
+                              &nbsp;&nbsp;&nbsp;<a target="_blank" href="https://plus.google.com/101000466239905858098/posts"><img
+                                  alt="gplus" src="/img/gplus.png" height="32" width="32"></a>
+
+
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">
+                            <div style="height:30px;"></div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align:center;border-top:1px solid #f2f2f2;color:#757771;font-size:10px;font-family:arial;letter-spacing:0px;background:#ffffff;line-height:20px;"
+                            colspan="2">
+                            &copy;&nbsp;&nbsp;World Chess Federation
+                            &nbsp;&nbsp;
+                            |&nbsp;&nbsp;Contact us: <a href="mailto:admin@fide.com">admin@fide.com</a>&nbsp;&nbsp;
+                            |&nbsp;&nbsp;Developed and supported by Elista FIDE Office&nbsp;&nbsp;
+                            |&nbsp;&nbsp; Ratings questions: <a href=mailto:ratings@fide.com>Elista FIDE Office</a>&nbsp;&nbsp;
+                          </td>
+                        </tr>
+
+                      </table>
+
+
+                      <!-------------------------------------------------------->
+                    </div> <!-- main page-->
+            </div> <!-- dis cerceve bitis -->
+          </div> <!-- frame -right bitis -->
+        </div> <!-- frame -bottom bitis -->
+
+      </div> <!-- frame bitis -->
+
+  </center>
+  <script src="https://www.google-analytics.com/urchin.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+    _uacct = "UA-4113616-2";
+    urchinTracker();
+  </script>
+
+</body>
+
+</html>

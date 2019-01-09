@@ -1,0 +1,2242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="FIDE , Chess, Tournaments, Calendar" />
+  <meta name="title" content="Chess Ratings" />
+  <meta name="author" content="Administrator" />
+  <meta name="description" content="FIDE - World Chess Federation, Online ratings, individual calculations" />
+  <link rel="shortcut icon" href="favicon.ico" />
+
+
+
+  <script type="text/javascript" src="/js/jquery.min.331.js"></script>
+  <script type="text/javascript" src="/js/superfish.min.js"></script>
+  <link href="/css/superfish.css" rel="stylesheet" type="text/css">
+
+
+
+
+  <link href="/modulus/template.css" rel="stylesheet" type="text/css">
+  <link href="/modulus/style.css" rel="stylesheet" type="text/css">
+
+  <style type="text/css">
+    div#horiz-menu {
+      border-collapse: collapse;
+      box-sizing: border-box;
+      color: rgb(73, 73, 73);
+      font-family: verdana, tahoma, verdana, Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0px;
+      line-height: 10px;
+      margin-left: 445px;
+      margin-top: 93px;
+      position: relative;
+      text-align: left;
+      z-index: 50;
+      font-family: verdana, tahoma, verdana, Arial, Helvetica, sans-serif;
+      background: rgb(0, 0, 0);
+
+      font-size: 11px;
+
+      letter-spacing: 0px;
+
+    }
+
+    .sf-menu {
+
+      float: left;
+      margin-bottom: 0;
+
+
+    }
+
+    .sf-menu,
+    .sf-menu * {
+
+      margin: 0;
+      margin-bottom: 0px;
+      padding: 0;
+      list-style: none;
+
+
+    }
+
+    .sf-menu li {
+
+      background: #334166;
+      white-space: nowrap;
+      *white-space: normal;
+      -webkit-transition: background .2s;
+      transition: background .2s;
+      border: none;
+      line-height: 10px;
+
+
+    }
+
+    .sf-menu li {
+
+      background: #334166;
+      white-space: nowrap;
+      *white-space: normal;
+      -webkit-transition: background .2s;
+      transition: background .2s;
+
+
+
+    }
+
+    .sf-menu li {
+
+      background: #334166;
+      white-space: nowrap;
+      *white-space: normal;
+      -webkit-transition: background .2s;
+      transition: background .2s;
+      border: none;
+
+
+    }
+
+    .sf-menu li:hover,
+    .sf-menu li.sfHover {
+      background: #334166;
+      /* only transition out, not in */
+      -webkit-transition: none;
+      transition: none;
+
+    }
+
+    .sf-menu a {
+      border-left: 0px solid #fff;
+      background: #334166;
+      border-top: 0px solid #dFeEFF;
+      /* fallback colour must use full shorthand */
+      border-top: 0px solid rgba(255, 255, 255, .5);
+      padding: .75em 1em;
+      text-decoration: none;
+      zoom: 1;
+      /* IE7 */
+    }
+
+    .sf-menu a {
+      color: white;
+    }
+
+
+
+    .sf-arrows .sf-with-ul:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+
+      right: 3px;
+
+      margin-top: -3px;
+      margin-left: 6px;
+      height: 0;
+      width: 0;
+      /* order of following 3 rules important for fallbacks to work */
+      border: 5px solid transparent;
+      border-top-color: #dFeEFF;
+      /* edit this to suit design (no rgba in IE8) */
+      border-top-color: rgba(255, 255, 255, .5);
+
+    }
+
+    .sf-arrows>li>.sf-with-ul:focus:after,
+    .sf-arrows>li:hover>.sf-with-ul:after,
+    .sf-arrows>.sfHover>.sf-with-ul:after {
+      border-top-color: white;
+      /* IE8 fallback colour */
+    }
+
+    /* styling for right-facing arrows */
+    .sf-arrows ul .sf-with-ul:after {
+      margin-top: -5px;
+      margin-right: -3px;
+      border-color: transparent;
+      border-left-color: #dFeEFF;
+      /* edit this to suit design (no rgba in IE8) */
+      border-left-color: rgba(255, 255, 255, .5);
+    }
+
+    .sf-arrows ul li>.sf-with-ul:focus:after,
+    .sf-arrows ul li:hover>.sf-with-ul:after,
+    .sf-arrows ul .sfHover>.sf-with-ul:after {
+      border-left-color: white;
+    }
+  </style>
+  <script>
+
+    (function ($) { //create closure so we can safely use $ as alias for jQuery
+
+      $(document).ready(function () {
+
+        // initialise plugin
+        var example = $('#fide_menu').superfish({
+          //add options here if required
+        });
+
+        // buttons to demonstrate Superfish's public methods
+        $('.destroy').on('click', function () {
+          example.superfish('destroy');
+        });
+
+        $('.init').on('click', function () {
+          example.superfish();
+        });
+
+        $('.open').on('click', function () {
+          example.children('li:first').superfish('show');
+        });
+
+        $('.close').on('click', function () {
+          example.children('li:first').superfish('hide');
+        });
+      });
+
+    })(jQuery);
+
+
+  </script>
+  <title>FIDE Tournaments Archive for July 2018 Spain</title>
+
+
+</head>
+
+<!-- HEAD BITIS -->
+
+<body>
+  <center>
+    <div id="frame">
+
+      <div id="frame-left">
+        <!-- frame baslangic -->
+
+        <div id="frame-right">
+          <!-- frame baslangic -->
+
+          <div id="wrapper">
+            <!-- dis cerceve baslangic -->
+
+            <div id="mainpage">
+
+              <table class="mainbody" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td>
+
+
+                    <!-- TOP BAS -->
+                    <div id="top">
+
+                      <div id="header">
+
+                        <div id="pathway">
+                          <span class="breadcrumbs pathway">
+                            <a href="http://www.fide.com" class="pathway">Home</a> <img /> Chess Tournaments</span>
+                        </div> <!-- pathway -->
+
+                        <div id="ustmenu">
+                          <div id="horiz-menu">
+                            <ul class="sf-menu" id="fide_menu">
+                              <li class="current">
+                                <a href=https://www.fide.com/index.php> <span>Home</span></a>
+                              </li>
+                              <li>
+                                <a href=https://www.fide.com/fide.html> <span>FIDE</span></a>
+
+                                <ul>
+                                  <li><a href=https://www.fide.com/fide/fide-world-chess-federation.html> <span>FIDE</span></a>
+                                    <ul>
+                                      <li><a href=https://ratings.fide.com/fide_directory.phtml> <span>FIDE Honorary
+                                          Members</span></a></li>
+                                      <li><a href=https://www.fide.com/fide/fide-world-chess-federation/fide-presidents.html>
+                                          <span>FIDE Presidents</span></a></li>
+                                    </ul>
+                                  </li>
+
+                                  <li><a href=https://ratings.fide.com/fide_directory.phtml> <span>Directory</span></a></li>
+                                  <li><a href=https://www.fide.com/fide/handbook.html> <span>Handbook</span></a></li>
+                                  <li><a href=https://www.fide.com/fide/minutes.html> <span>Minutes</span></a></li>
+                                  <li><a href=https://www.fide.com/fide/fide-anti-doping-regulations.html> <span>FIDE
+                                      Anti-Doping Regulations</span></a></li>
+                                  <li><a href=https://www.fide.com/fide/contacts.html> <span>Contacts</span></a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href=https://www.fide.com/info.html> <span>International Titles</span></a>
+                                <ul>
+                                  <li><a href=https://ratings.fide.com/fide_organizers.phtml target=_blank><span>Organizers</span></a></li>
+                                  <li><a href=https://ratings.fide.com/title_applications.phtml target=_blank><span>Titles</span></a>
+                                    <ul>
+                                      <li><a href=https://ratings.fide.com/title_norms.phtml target=_blank><span>Title
+                                            Norms</span></a></li>
+                                      <li><a href=https://ratings.fide.com/title_applications.phtml target=_blank><span>Title
+                                            Applications</span></a></li>
+                                    </ul>
+                                  </li>
+                                  <li><a href=https://ratings.fide.com/fide_arbiters_trainers.phtml target=_blank><span>Arbiters
+                                        / Trainers</span></a></li>
+                                </ul>
+
+                              </li>
+                              <li>
+                                <a href=https://www.fide.com/calendar.html> <span>Calendar</span></a>
+                                <ul>
+                                  <li><a href=https://www.fide.com/calendar/fide-calendar.html> <span>FIDE Events</span></a></li>
+                                  <li><a href=https://www.fide.com/calendar/fide-archive.html> <span>Events Archive</span></a></li>
+                                  <li><a href=https://www.fide.com/calendar/tournaments.html> <span>Other Tournaments</span></a></li>
+                                  <li><a href=https://www.fide.com/component/handbook/?id=44&amp;view=category> <span>Calendar
+                                      Regulations</span></a></li>
+                                </ul>
+                              </li>
+                              <li>
+
+                                <a href=https://ratings.fide.com> <span>Ratings</span></a>
+                                <ul>
+                                  <li><a href=https://ratings.fide.com/toplist.phtml target=_blank><span>Top Players</span></a></li>
+                                  <li><a href=https://ratings.fide.com target=_blank><span>All Players</span></a></li>
+                                  <li><a href=https://ratings.fide.com/fedchange.phtml target=_blank><span>Transfers</span></a></li>
+                                  <li><a href=https://ratings.fide.com/tournament_list.phtml target=_blank><span>Tournaments</span></a></li>
+                                  <li><a href=https://ratings.fide.com/archive.phtml target=_blank><span>Archive</span></a></li>
+                                  <li><a href=https://ratings.fide.com/download.phtml target=_blank><span>Download</span></a></li>
+                                  <li><a href=https://ratings.fide.com/calculators.phtml target=_blank><span>Calculators</span></a></li>
+                                </ul>
+
+                              </li>
+
+                            </ul>
+                          </div>
+                        </div>
+
+
+                        <div id="langmenu">
+                          &nbsp;
+                        </div>
+                      </div> <!-- header -->
+
+                    </div> <!-- top -->
+
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <!-- MIDDLE BAS -->
+
+
+                    <div id="middle">
+
+                      <table class="mainbody" !width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td valign="top">
+
+                            <div id="main-col">
+
+
+                              <table class="contentpaneopen">
+                                <tr>
+                                  <td class="contentheading" width="100%">
+                                    <font color=#2C2C2C>Tournaments Received for July 2018 Spain</font>
+                                  </td>
+
+                                  <td align="right" width="100%" class="buttonheading">
+                                  </td>
+
+                                </tr>
+                              </table>
+
+                              <table class="contentpaneopen">
+
+                                <tr>
+                                  <td valign="top" colspan="2" class="createdate">
+                                  </td>
+                                </tr>
+
+
+                                <tr>
+                                  <td valign="top" colspan="2">
+                                    <div align=right>
+                                      <form action=tournament_list.phtml method=GET class="inputbox">
+                                        <input type=hidden name=moder value=ev_code>
+                                        <SELECT id=country name=country size=1 class="inputbox">
+                                          <OPTION value=>Select country</OPTION>
+                                          <OPTION value=AFG>Afghanistan</OPTION>
+
+                                          <OPTION value=ALB>Albania</OPTION>
+
+                                          <OPTION value=ALG>Algeria</OPTION>
+
+                                          <OPTION value=AND>Andorra</OPTION>
+
+                                          <OPTION value=ANG>Angola</OPTION>
+
+                                          <OPTION value=ANT>Antigua and Barbuda</OPTION>
+
+                                          <OPTION value=ARG>Argentina</OPTION>
+
+                                          <OPTION value=ARM>Armenia</OPTION>
+
+                                          <OPTION value=ARU>Aruba</OPTION>
+
+                                          <OPTION value=AUS>Australia</OPTION>
+
+                                          <OPTION value=AUT>Austria</OPTION>
+
+                                          <OPTION value=AZE>Azerbaijan</OPTION>
+
+                                          <OPTION value=BAH>Bahamas</OPTION>
+
+                                          <OPTION value=BRN>Bahrain</OPTION>
+
+                                          <OPTION value=BAN>Bangladesh</OPTION>
+
+                                          <OPTION value=BAR>Barbados</OPTION>
+
+                                          <OPTION value=BLR>Belarus</OPTION>
+
+                                          <OPTION value=BEL>Belgium</OPTION>
+
+                                          <OPTION value=BIZ>Belize</OPTION>
+
+                                          <OPTION value=BER>Bermuda</OPTION>
+
+                                          <OPTION value=BHU>Bhutan</OPTION>
+
+                                          <OPTION value=BOL>Bolivia</OPTION>
+
+                                          <OPTION value=BIH>Bosnia & Herzegovina</OPTION>
+
+                                          <OPTION value=BOT>Botswana</OPTION>
+
+                                          <OPTION value=BRA>Brazil</OPTION>
+
+                                          <OPTION value=IVB>British Virgin Islands</OPTION>
+
+                                          <OPTION value=BRU>Brunei Darussalam</OPTION>
+
+                                          <OPTION value=BUL>Bulgaria</OPTION>
+
+                                          <OPTION value=BUR>Burkina Faso</OPTION>
+
+                                          <OPTION value=BDI>Burundi</OPTION>
+
+                                          <OPTION value=CAM>Cambodia</OPTION>
+
+                                          <OPTION value=CMR>Cameroon</OPTION>
+
+                                          <OPTION value=CAN>Canada</OPTION>
+
+                                          <OPTION value=CPV>Cape Verde</OPTION>
+
+                                          <OPTION value=CAF>Central African Republic</OPTION>
+
+                                          <OPTION value=CHI>Chile</OPTION>
+
+                                          <OPTION value=CHN>China</OPTION>
+
+                                          <OPTION value=TPE>Chinese Taipei</OPTION>
+
+                                          <OPTION value=COL>Colombia</OPTION>
+
+                                          <OPTION value=COM>Comoros Islands</OPTION>
+
+                                          <OPTION value=CGO>Congo</OPTION>
+
+                                          <OPTION value=CRC>Costa Rica</OPTION>
+
+                                          <OPTION value=CRO>Croatia</OPTION>
+
+                                          <OPTION value=CUB>Cuba</OPTION>
+
+                                          <OPTION value=CYP>Cyprus</OPTION>
+
+                                          <OPTION value=CZE>Czech Republic</OPTION>
+
+                                          <OPTION value=DEN>Denmark</OPTION>
+
+                                          <OPTION value=DJI>Djibouti</OPTION>
+
+                                          <OPTION value=DOM>Dominican Republic</OPTION>
+
+                                          <OPTION value=ECU>Ecuador</OPTION>
+
+                                          <OPTION value=EGY>Egypt</OPTION>
+
+                                          <OPTION value=ESA>El Salvador</OPTION>
+
+                                          <OPTION value=ENG>England</OPTION>
+
+                                          <OPTION value=ERI>Eritrea</OPTION>
+
+                                          <OPTION value=EST>Estonia</OPTION>
+
+                                          <OPTION value=ETH>Ethiopia</OPTION>
+
+                                          <OPTION value=FAI>Faroe Islands</OPTION>
+
+                                          <OPTION value=FIJ>Fiji</OPTION>
+
+                                          <OPTION value=FIN>Finland</OPTION>
+
+                                          <OPTION value=MKD>Former YUG Rep of Macedonia</OPTION>
+
+                                          <OPTION value=FRA>France</OPTION>
+
+                                          <OPTION value=GAB>Gabon</OPTION>
+
+                                          <OPTION value=GAM>Gambia</OPTION>
+
+                                          <OPTION value=GEO>Georgia</OPTION>
+
+                                          <OPTION value=GER>Germany</OPTION>
+
+                                          <OPTION value=GHA>Ghana</OPTION>
+
+                                          <OPTION value=GRE>Greece</OPTION>
+
+                                          <OPTION value=GUM>Guam</OPTION>
+
+                                          <OPTION value=GUA>Guatemala</OPTION>
+
+                                          <OPTION value=GCI>Guernsey</OPTION>
+
+                                          <OPTION value=GUY>Guyana</OPTION>
+
+                                          <OPTION value=HAI>Haiti</OPTION>
+
+                                          <OPTION value=HON>Honduras</OPTION>
+
+                                          <OPTION value=HKG>Hong Kong</OPTION>
+
+                                          <OPTION value=HUN>Hungary</OPTION>
+
+                                          <OPTION value=ISL>Iceland</OPTION>
+
+                                          <OPTION value=IND>India</OPTION>
+
+                                          <OPTION value=INA>Indonesia</OPTION>
+
+                                          <OPTION value=IRI>Iran</OPTION>
+
+                                          <OPTION value=IRQ>Iraq</OPTION>
+
+                                          <OPTION value=IRL>Ireland</OPTION>
+
+                                          <OPTION value=ISR>Israel</OPTION>
+
+                                          <OPTION value=ITA>Italy</OPTION>
+
+                                          <OPTION value=CIV>Ivory Coast</OPTION>
+
+                                          <OPTION value=JAM>Jamaica</OPTION>
+
+                                          <OPTION value=JPN>Japan</OPTION>
+
+                                          <OPTION value=JCI>Jersey</OPTION>
+
+                                          <OPTION value=JOR>Jordan</OPTION>
+
+                                          <OPTION value=KAZ>Kazakhstan</OPTION>
+
+                                          <OPTION value=KEN>Kenya</OPTION>
+
+                                          <OPTION value=KOS>Kosovo</OPTION>
+
+                                          <OPTION value=KUW>Kuwait</OPTION>
+
+                                          <OPTION value=KGZ>Kyrgyzstan</OPTION>
+
+                                          <OPTION value=LAO>Laos</OPTION>
+
+                                          <OPTION value=LAT>Latvia</OPTION>
+
+                                          <OPTION value=LBN>Lebanon</OPTION>
+
+                                          <OPTION value=LES>Lesotho</OPTION>
+
+                                          <OPTION value=LBR>Liberia</OPTION>
+
+                                          <OPTION value=LBA>Libya</OPTION>
+
+                                          <OPTION value=LIE>Liechtenstein</OPTION>
+
+                                          <OPTION value=LTU>Lithuania</OPTION>
+
+                                          <OPTION value=LUX>Luxembourg</OPTION>
+
+                                          <OPTION value=MAC>Macau</OPTION>
+
+                                          <OPTION value=MAD>Madagascar</OPTION>
+
+                                          <OPTION value=MAW>Malawi</OPTION>
+
+                                          <OPTION value=MAS>Malaysia</OPTION>
+
+                                          <OPTION value=MDV>Maldives</OPTION>
+
+                                          <OPTION value=MLI>Mali</OPTION>
+
+                                          <OPTION value=MLT>Malta</OPTION>
+
+                                          <OPTION value=MTN>Mauritania</OPTION>
+
+                                          <OPTION value=MRI>Mauritius</OPTION>
+
+                                          <OPTION value=MEX>Mexico</OPTION>
+
+                                          <OPTION value=MDA>Moldova</OPTION>
+
+                                          <OPTION value=MNC>Monaco</OPTION>
+
+                                          <OPTION value=MGL>Mongolia</OPTION>
+
+                                          <OPTION value=MNE>Montenegro</OPTION>
+
+                                          <OPTION value=MAR>Morocco</OPTION>
+
+                                          <OPTION value=MOZ>Mozambique</OPTION>
+
+                                          <OPTION value=MYA>Myanmar</OPTION>
+
+                                          <OPTION value=NAM>Namibia</OPTION>
+
+                                          <OPTION value=NRU>Nauru</OPTION>
+
+                                          <OPTION value=NEP>Nepal</OPTION>
+
+                                          <OPTION value=NED>Netherlands</OPTION>
+
+                                          <OPTION value=AHO>Netherlands Antilles</OPTION>
+
+                                          <OPTION value=NZL>New Zealand</OPTION>
+
+                                          <OPTION value=NCA>Nicaragua</OPTION>
+
+                                          <OPTION value=NGR>Nigeria</OPTION>
+
+                                          <OPTION value=NOR>Norway</OPTION>
+
+                                          <OPTION value=OMA>Oman</OPTION>
+
+                                          <OPTION value=PAK>Pakistan</OPTION>
+
+                                          <OPTION value=PLW>Palau</OPTION>
+
+                                          <OPTION value=PLE>Palestine</OPTION>
+
+                                          <OPTION value=PAN>Panama</OPTION>
+
+                                          <OPTION value=PNG>Papua New Guinea</OPTION>
+
+                                          <OPTION value=PAR>Paraguay</OPTION>
+
+                                          <OPTION value=PER>Peru</OPTION>
+
+                                          <OPTION value=PHI>Philippines</OPTION>
+
+                                          <OPTION value=POL>Poland</OPTION>
+
+                                          <OPTION value=POR>Portugal</OPTION>
+
+                                          <OPTION value=PUR>Puerto Rico</OPTION>
+
+                                          <OPTION value=QAT>Qatar</OPTION>
+
+                                          <OPTION value=ROU>Romania</OPTION>
+
+                                          <OPTION value=RUS>Russia</OPTION>
+
+                                          <OPTION value=RWA>Rwanda</OPTION>
+
+                                          <OPTION value=SMR>San Marino</OPTION>
+
+                                          <OPTION value=STP>Sao Tome and Principe</OPTION>
+
+                                          <OPTION value=KSA>Saudi Arabia</OPTION>
+
+                                          <OPTION value=SCO>Scotland</OPTION>
+
+                                          <OPTION value=SEN>Senegal</OPTION>
+
+                                          <OPTION value=SRB>Serbia</OPTION>
+
+                                          <OPTION value=SEY>Seychelles</OPTION>
+
+                                          <OPTION value=SLE>Sierra Leone</OPTION>
+
+                                          <OPTION value=SGP>Singapore</OPTION>
+
+                                          <OPTION value=SVK>Slovakia</OPTION>
+
+                                          <OPTION value=SLO>Slovenia</OPTION>
+
+                                          <OPTION value=SOL>Solomon Islands</OPTION>
+
+                                          <OPTION value=SOM>Somalia</OPTION>
+
+                                          <OPTION value=RSA>South Africa</OPTION>
+
+                                          <OPTION value=KOR>South Korea</OPTION>
+
+                                          <OPTION value=SSD>South Sudan</OPTION>
+
+                                          <OPTION value=ESP>Spain</OPTION>
+
+                                          <OPTION value=SRI>Sri Lanka</OPTION>
+
+                                          <OPTION value=SUD>Sudan</OPTION>
+
+                                          <OPTION value=SUR>Suriname</OPTION>
+
+                                          <OPTION value=SWZ>Swaziland</OPTION>
+
+                                          <OPTION value=SWE>Sweden</OPTION>
+
+                                          <OPTION value=SUI>Switzerland</OPTION>
+
+                                          <OPTION value=SYR>Syria</OPTION>
+
+                                          <OPTION value=TJK>Tajikistan</OPTION>
+
+                                          <OPTION value=TAN>Tanzania</OPTION>
+
+                                          <OPTION value=THA>Thailand</OPTION>
+
+                                          <OPTION value=TLS>Timor-Leste</OPTION>
+
+                                          <OPTION value=TOG>Togo</OPTION>
+
+                                          <OPTION value=TTO>Trinidad & Tobago</OPTION>
+
+                                          <OPTION value=TUN>Tunisia</OPTION>
+
+                                          <OPTION value=TUR>Turkey</OPTION>
+
+                                          <OPTION value=TKM>Turkmenistan</OPTION>
+
+                                          <OPTION value=UGA>Uganda</OPTION>
+
+                                          <OPTION value=UKR>Ukraine</OPTION>
+
+                                          <OPTION value=UAE>United Arab Emirates</OPTION>
+
+                                          <OPTION value=USA>United States of America</OPTION>
+
+                                          <OPTION value=URU>Uruguay</OPTION>
+
+                                          <OPTION value=ISV>US Virgin Islands</OPTION>
+
+                                          <OPTION value=UZB>Uzbekistan</OPTION>
+
+                                          <OPTION value=VEN>Venezuela</OPTION>
+
+                                          <OPTION value=VIE>Vietnam</OPTION>
+
+                                          <OPTION value=WLS>Wales</OPTION>
+
+                                          <OPTION value=YEM>Yemen</OPTION>
+
+                                          <OPTION value=ZAM>Zambia</OPTION>
+
+                                          <OPTION value=ZIM>Zimbabwe</OPTION>
+                                        </SELECT>&nbsp;<input type=Submit title=Submit value=go class="inputbox"></form>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td bgcolor=EFEFEF colspan=2 height=800 valign=top><b>Tournaments registered for
+                                      future periods:</b> <a href="tournament_list.phtml?moder=ev_code&country=ESP&rating_period=2019-01-01#2019-02-01">February
+                                      2019</a>&nbsp;| &nbsp;<a href="tournament_list.phtml?moder=ev_code&country=ESP&rating_period=2019-01-01#2019-03-01">March
+                                      2019</a>&nbsp;| &nbsp;<a href="tournament_list.phtml?moder=ev_code&country=ESP&rating_period=2019-01-01#2019-04-01">April
+                                      2019</a>&nbsp;| &nbsp;<a href="tournament_list.phtml?moder=ev_code&country=ESP&rating_period=2019-01-01#2019-05-01">May
+                                      2019</a>&nbsp;| &nbsp;<a href="tournament_list.phtml?moder=ev_code&country=ESP&rating_period=2019-01-01#2019-06-01">June
+                                      2019</a>&nbsp;| &nbsp;<a href="tournament_list.phtml?moder=ev_code&country=ESP&rating_period=2019-01-01#2019-07-01">July
+                                      2019</a>&nbsp;| &nbsp;<a href="tournament_list.phtml?moder=ev_code&country=ESP&rating_period=2019-01-01#2019-09-01">September
+                                      2019</a>&nbsp;| &nbsp;<a href="tournament_list.phtml?moder=ev_code&country=ESP&rating_period=2019-01-01#2019-11-01">November
+                                      2019</a>&nbsp;| &nbsp;<a href="tournament_list.phtml?moder=ev_code&country=ESP&rating_period=2019-01-01#2019-12-01">December
+                                      2019</a>&nbsp;| &nbsp;<a href="tournament_list.phtml?moder=ev_code&country=ESP&rating_period=2019-01-01#2020-01-01">January
+                                      2020</a>&nbsp;| &nbsp;<table width=100% border=1 bordercolordark=#DEDDE3 bgcolor=#DEDDE3
+                                      bordercolorlight=#473F6D bordercolor=#DEDDE3 cellpadding=0 cellspacing=0></table><br>&nbsp;The
+                                    total number of registered tournaments: 86<br>Country: <b>Spain</b><br><br>
+                                    <table cellpadding=1 cellspacing=1 border=0 width=100% align=center>
+                                      <tr>
+                                        <td><b>PGN</b></td>
+                                        <td>&nbsp;</td>
+                                        <td><a href=tournament_list.phtml?country=ESP&moder=ev_name&rating_period=2018-07-01&sort_mod=asc
+                                            class=tur><b>Event Name</b></a></td>
+                                        <td><a href=tournament_list.phtml?country=ESP&moder=city&rating_period=2018-07-01&sort_mod=asc
+                                            class=tur><b>City</b></a></td>
+                                        <td><b>Sys</b></td>
+                                        <td><a href=tournament_list.phtml?country=ESP&moder=s_date&rating_period=2018-07-01&sort_mod=asc
+                                            class=tur><b>Start</b></a></td>
+                                        <td><b>End</b></a></td>
+                                        <td><b>Received</b></td>
+                                        <td><b>I</b></td>
+                                      </tr>
+                                      <tr>
+                                        <td class="contentheading" width="100%" colspan=10 height=40>
+                                          Tournaments registered for July 2018 (<a name=2018-07-01>2018-07-01</a>)
+
+                                        </td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=170327><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=170327 class=tur><a href=tournament_report.phtml?event16=170327
+                                              class=tur>Campeonato Absoluto de Cantabria 2018</a></a></td>
+                                        <td>&nbsp;Santander (Cantabria)</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-29</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=170327 class=tur><a
+                                              href=tournament_report.phtml?event16=170327 class=tur>2018-05-27</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=170327 class=tur>2018-06-11</a></td>
+                                        <td><a href=/tournament_details.phtml?event=170327> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=177067><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=177067 class=tur><a href=tournament_report.phtml?event16=177067
+                                              class=tur>Cto de Aragon de Veteranos 2018 Grupo A</a></a></td>
+                                        <td>&nbsp;Zaragoza</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-21</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=177067 class=tur><a
+                                              href=tournament_report.phtml?event16=177067 class=tur>2018-06-09</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=177067 class=tur>2018-06-23</a></td>
+                                        <td><a href=/tournament_details.phtml?event=177067> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=177068><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=177068 class=tur><a href=tournament_report.phtml?event16=177068
+                                              class=tur>Cto de Aragon de Veteranos 2018 Grupo B</a></a></td>
+                                        <td>&nbsp;Zaragoza</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-21</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=177068 class=tur><a
+                                              href=tournament_report.phtml?event16=177068 class=tur>2018-06-09</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=177068 class=tur>2018-06-16</a></td>
+                                        <td><a href=/tournament_details.phtml?event=177068> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=177958><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=177958 class=tur><a href=tournament_report.phtml?event16=177958
+                                              class=tur>FMA Fase Final Absoluta</a></a></td>
+                                        <td>&nbsp;Madrid</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-05-26</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=177958 class=tur><a
+                                              href=tournament_report.phtml?event16=177958 class=tur>2018-06-01</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=177958 class=tur>2018-06-07</a></td>
+                                        <td><a href=/tournament_details.phtml?event=177958> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=180235><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=180235 class=tur><a href=tournament_report.phtml?event16=180235
+                                              class=tur>XIV Torneo Alicante 2018</a></a></td>
+                                        <td>&nbsp;Alicante</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-08</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=180235 class=tur><a
+                                              href=tournament_report.phtml?event16=180235 class=tur>2018-06-10</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=180235 class=tur>2018-06-20</a></td>
+                                        <td><a href=/tournament_details.phtml?event=180235> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=180369><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=180369 class=tur><a href=tournament_report.phtml?event16=180369
+                                              class=tur>XXX Vila de Sant Boi - Memorial Mateu Chalmeta - A</a></a></td>
+                                        <td>&nbsp;Sant Boi de Llobregat</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-06</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=180369 class=tur><a
+                                              href=tournament_report.phtml?event16=180369 class=tur>2018-06-15</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=180369 class=tur>2018-06-20</a></td>
+                                        <td><a href=/tournament_details.phtml?event=180369> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=180370><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=180370 class=tur><a href=tournament_report.phtml?event16=180370
+                                              class=tur>XXX Vila de Sant Boi - Memorial Mateu Chalmeta - B</a></a></td>
+                                        <td>&nbsp;Sant Boi de Llobregat</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-06</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=180370 class=tur><a
+                                              href=tournament_report.phtml?event16=180370 class=tur>2018-06-15</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=180370 class=tur>2018-06-20</a></td>
+                                        <td><a href=/tournament_details.phtml?event=180370> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=180387><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=180387 class=tur><a href=tournament_report.phtml?event16=180387
+                                              class=tur>IX Memorial Josep Lorente</a></a></td>
+                                        <td>&nbsp;Sant Boi de Llobregat</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-17</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=180387 class=tur><a
+                                              href=tournament_report.phtml?event16=180387 class=tur>2018-06-17</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=180387 class=tur>2018-06-23</a></td>
+                                        <td><a href=/tournament_details.phtml?event=180387> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=180394><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=180394 class=tur><a href=tournament_report.phtml?event16=180394
+                                              class=tur>IV Torneo Activo Ciudad Arrecife de Lanzarote 2018</a></a></td>
+                                        <td>&nbsp;Lanzarote (Las Palmas)</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-23</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=180394 class=tur><a
+                                              href=tournament_report.phtml?event16=180394 class=tur>2018-06-24</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=180394 class=tur>2018-06-26</a></td>
+                                        <td><a href=/tournament_details.phtml?event=180394> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=180395><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=180395 class=tur><a href=tournament_report.phtml?event16=180395
+                                              class=tur>Torneo Blitz Lanzarote 2018</a></a></td>
+                                        <td>&nbsp;Lanzarote (Las Palmas)</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-24</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=180395 class=tur><a
+                                              href=tournament_report.phtml?event16=180395 class=tur>2018-06-24</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=180395 class=tur>2018-06-26</a></td>
+                                        <td><a href=/tournament_details.phtml?event=180395> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=181187><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=181187 class=tur><a href=tournament_report.phtml?event16=181187
+                                              class=tur>XII Obert Vilafranca C.U.C.</a></a></td>
+                                        <td>&nbsp;Vilafranca del Penedes</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-06</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=181187 class=tur><a
+                                              href=tournament_report.phtml?event16=181187 class=tur>2018-05-25</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=181187 class=tur>2018-06-07</a></td>
+                                        <td><a href=/tournament_details.phtml?event=181187> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=182190><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=182190 class=tur><a href=tournament_report.phtml?event16=182190
+                                              class=tur>XIII Obert Internacional Tupinamba grup A</a></a></td>
+                                        <td>&nbsp;Barcelona</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-04</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=182190 class=tur><a
+                                              href=tournament_report.phtml?event16=182190 class=tur>2018-05-30</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=182190 class=tur>2018-06-16</a></td>
+                                        <td><a href=/tournament_details.phtml?event=182190> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=182191><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=182191 class=tur><a href=tournament_report.phtml?event16=182191
+                                              class=tur>XIII Obert Internacional Tupinamba grup B</a></a></td>
+                                        <td>&nbsp;Barcelona</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-04</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=182191 class=tur><a
+                                              href=tournament_report.phtml?event16=182191 class=tur>2018-05-30</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=182191 class=tur>2018-06-16</a></td>
+                                        <td><a href=/tournament_details.phtml?event=182191> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=182507><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=182507 class=tur><a href=tournament_report.phtml?event16=182507
+                                              class=tur>XIX Torneig Escacs La Passio Esparreguera</a></a></td>
+                                        <td>&nbsp;Esparreguera</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-14</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=182507 class=tur><a
+                                              href=tournament_report.phtml?event16=182507 class=tur>2018-06-02</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=182507 class=tur>2018-06-16</a></td>
+                                        <td><a href=/tournament_details.phtml?event=182507> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=182710><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=182710 class=tur><a href=tournament_report.phtml?event16=182710
+                                              class=tur>VII Obert Escacs Vall del Tenes 2018</a></a></td>
+                                        <td>&nbsp;Santa Eulalia de Roncana</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-06</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=182710 class=tur><a
+                                              href=tournament_report.phtml?event16=182710 class=tur>2018-06-08</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=182710 class=tur>2018-06-16</a></td>
+                                        <td><a href=/tournament_details.phtml?event=182710> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=182749><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=182749 class=tur><a href=tournament_report.phtml?event16=182749
+                                              class=tur>II Torneo Magistral de Ajedrez Hotel El Aguila</a></a></td>
+                                        <td>&nbsp;Utebo (Spain)</td>
+                                        <td>r</td>
+                                        <td width=70>&nbsp;2018-06-18</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=182749 class=tur><a
+                                              href=tournament_report.phtml?event16=182749 class=tur>2018-06-22</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=182749 class=tur>2018-06-26</a></td>
+                                        <td><a href=/tournament_details.phtml?event=182749> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=182759><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=182759 class=tur><a href=tournament_report.phtml?event16=182759
+                                              class=tur>1r Torneig Promocio Espiga de les Corts</a></a></td>
+                                        <td>&nbsp;Barcelona</td>
+                                        <td>r</td>
+                                        <td width=70>&nbsp;2018-04-14</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=182759 class=tur><a
+                                              href=tournament_report.phtml?event16=182759 class=tur>2018-06-09</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=182759 class=tur>2018-06-20</a></td>
+                                        <td><a href=/tournament_details.phtml?event=182759> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=182760><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=182760 class=tur><a href=tournament_report.phtml?event16=182760
+                                              class=tur>1r Torneig Promocio MC Espiga de les Corts</a></a></td>
+                                        <td>&nbsp;Barcelona</td>
+                                        <td>r</td>
+                                        <td width=70>&nbsp;2018-04-14</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=182760 class=tur><a
+                                              href=tournament_report.phtml?event16=182760 class=tur>2018-06-09</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=182760 class=tur>2018-06-20</a></td>
+                                        <td><a href=/tournament_details.phtml?event=182760> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=183167><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=183167 class=tur><a href=tournament_report.phtml?event16=183167
+                                              class=tur>XX Obert Internacional Foment Martinenc Grup A</a></a></td>
+                                        <td>&nbsp;Barcelona</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-21</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=183167 class=tur><a
+                                              href=tournament_report.phtml?event16=183167 class=tur>2018-06-16</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=183167 class=tur>2018-06-20</a></td>
+                                        <td><a href=/tournament_details.phtml?event=183167> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=183169><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=183169 class=tur><a href=tournament_report.phtml?event16=183169
+                                              class=tur>Xx Obert Internacional Foment Martinenc Grup B</a></a></td>
+                                        <td>&nbsp;Barcelona</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-21</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=183169 class=tur><a
+                                              href=tournament_report.phtml?event16=183169 class=tur>2018-06-16</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=183169 class=tur>2018-06-20</a></td>
+                                        <td><a href=/tournament_details.phtml?event=183169> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=184621><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=184621 class=tur><a href=tournament_report.phtml?event16=184621
+                                              class=tur>IX Obert Jake Club III Memorial Juan Ponce</a></a></td>
+                                        <td>&nbsp;Hospitalet de Llobregat</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-07</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=184621 class=tur><a
+                                              href=tournament_report.phtml?event16=184621 class=tur>2018-06-02</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=184621 class=tur>2018-06-11</a></td>
+                                        <td><a href=/tournament_details.phtml?event=184621> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=184622><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=184622 class=tur><a href=tournament_report.phtml?event16=184622
+                                              class=tur>IV Torneig Escacs Actius EEM</a></a></td>
+                                        <td>&nbsp;Martorell</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-05-27</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=184622 class=tur><a
+                                              href=tournament_report.phtml?event16=184622 class=tur>2018-05-27</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=184622 class=tur>2018-06-07</a></td>
+                                        <td><a href=/tournament_details.phtml?event=184622> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=184627><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=184627 class=tur><a href=tournament_report.phtml?event16=184627
+                                              class=tur>XI Obert de Primavera La Lira 2018</a></a></td>
+                                        <td>&nbsp;Barcelona</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-12</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=184627 class=tur><a
+                                              href=tournament_report.phtml?event16=184627 class=tur>2018-06-07</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=184627 class=tur>2018-06-26</a></td>
+                                        <td><a href=/tournament_details.phtml?event=184627> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=184635><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=184635 class=tur><a href=tournament_report.phtml?event16=184635
+                                              class=tur>III Obert Gerunda Sarria de Dalt</a></a></td>
+                                        <td>&nbsp;Girona</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-06</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=184635 class=tur><a
+                                              href=tournament_report.phtml?event16=184635 class=tur>2018-06-01</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=184635 class=tur>2018-06-26</a></td>
+                                        <td><a href=/tournament_details.phtml?event=184635> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=184663><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=184663 class=tur><a href=tournament_report.phtml?event16=184663
+                                              class=tur>II Copa Interclubs Sub 2200</a></a></td>
+                                        <td>&nbsp;Madrid</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-05-06</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=184663 class=tur><a
+                                              href=tournament_report.phtml?event16=184663 class=tur>2018-06-24</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=184663 class=tur>2018-06-26</a></td>
+                                        <td><a href=/tournament_details.phtml?event=184663> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=184667><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=184667 class=tur><a href=tournament_report.phtml?event16=184667
+                                              class=tur>XII Obert Llinars del Valles 2018 Grup A</a></a></td>
+                                        <td>&nbsp;Llinars del Valles</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-14</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=184667 class=tur><a
+                                              href=tournament_report.phtml?event16=184667 class=tur>2018-06-09</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=184667 class=tur>2018-06-16</a></td>
+                                        <td><a href=/tournament_details.phtml?event=184667> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=184668><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=184668 class=tur><a href=tournament_report.phtml?event16=184668
+                                              class=tur>XII Obert Llinars del Valles 2018 Grup B</a></a></td>
+                                        <td>&nbsp;Llinars del Valles</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-14</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=184668 class=tur><a
+                                              href=tournament_report.phtml?event16=184668 class=tur>2018-06-09</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=184668 class=tur>2018-06-16</a></td>
+                                        <td><a href=/tournament_details.phtml?event=184668> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=184890><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=184890 class=tur><a href=tournament_report.phtml?event16=184890
+                                              class=tur>XIV Open de Primavera 2018</a></a></td>
+                                        <td>&nbsp;Donostia</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-01</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=184890 class=tur><a
+                                              href=tournament_report.phtml?event16=184890 class=tur>2018-06-09</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=184890 class=tur>2018-06-27</a></td>
+                                        <td><a href=/tournament_details.phtml?event=184890> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=184968><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=184968 class=tur><a href=tournament_report.phtml?event16=184968
+                                              class=tur>XXX Torneo San Viator - Memorial Pepe Domaica (Grupo A)</a></a></td>
+                                        <td>&nbsp;Madrid</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-08</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=184968 class=tur><a
+                                              href=tournament_report.phtml?event16=184968 class=tur>2018-06-10</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=184968 class=tur>2018-06-16</a></td>
+                                        <td><a href=/tournament_details.phtml?event=184968> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=184969><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=184969 class=tur><a href=tournament_report.phtml?event16=184969
+                                              class=tur>XXX Torneo San Viator - Memorial Pepe Domaica (Grupo B)</a></a></td>
+                                        <td>&nbsp;Madrid</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-08</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=184969 class=tur><a
+                                              href=tournament_report.phtml?event16=184969 class=tur>2018-06-10</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=184969 class=tur>2018-06-16</a></td>
+                                        <td><a href=/tournament_details.phtml?event=184969> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=184970><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=184970 class=tur><a href=tournament_report.phtml?event16=184970
+                                              class=tur>XIV Obert Ciutat de Mataro Memorial Vinyas Grup A</a></a></td>
+                                        <td>&nbsp;Mataro</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-07</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=184970 class=tur><a
+                                              href=tournament_report.phtml?event16=184970 class=tur>2018-06-09</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=184970 class=tur>2018-06-20</a></td>
+                                        <td><a href=/tournament_details.phtml?event=184970> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=185113><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=185113 class=tur><a href=tournament_report.phtml?event16=185113
+                                              class=tur>61 Campionat Obert de Terrassa 2018</a></a></td>
+                                        <td>&nbsp;Terrassa</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-20</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=185113 class=tur><a
+                                              href=tournament_report.phtml?event16=185113 class=tur>2018-06-08</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=185113 class=tur>2018-06-16</a></td>
+                                        <td><a href=/tournament_details.phtml?event=185113> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=185119><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=185119 class=tur><a href=tournament_report.phtml?event16=185119
+                                              class=tur>Social Tres Cantos 2018</a></a></td>
+                                        <td>&nbsp;Tres Cantos</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-08</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=185119 class=tur><a
+                                              href=tournament_report.phtml?event16=185119 class=tur>2018-06-03</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=185119 class=tur>2018-06-11</a></td>
+                                        <td><a href=/tournament_details.phtml?event=185119> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=185124><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=185124 class=tur><a href=tournament_report.phtml?event16=185124
+                                              class=tur>Campeonato Regional de Rapidas por Equipos 2018</a></a></td>
+                                        <td>&nbsp;Cantabria</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-17</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=185124 class=tur><a
+                                              href=tournament_report.phtml?event16=185124 class=tur>2018-06-17</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=185124 class=tur>2018-06-23</a></td>
+                                        <td><a href=/tournament_details.phtml?event=185124> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=185125><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=185125 class=tur><a href=tournament_report.phtml?event16=185125
+                                              class=tur>Regional Rapidas Individual Cantabria 2018</a></a></td>
+                                        <td>&nbsp;Santander</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-09</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=185125 class=tur><a
+                                              href=tournament_report.phtml?event16=185125 class=tur>2018-06-09</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=185125 class=tur>2018-06-25</a></td>
+                                        <td><a href=/tournament_details.phtml?event=185125> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=185126><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=185126 class=tur><a href=tournament_report.phtml?event16=185126
+                                              class=tur>Regional Activo Cantabria 2018</a></a></td>
+                                        <td>&nbsp;Santander</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-09</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=185126 class=tur><a
+                                              href=tournament_report.phtml?event16=185126 class=tur>2018-06-09</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=185126 class=tur>2018-06-23</a></td>
+                                        <td><a href=/tournament_details.phtml?event=185126> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=185372><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=185372 class=tur><a href=tournament_report.phtml?event16=185372
+                                              class=tur>Copa de Sevilla por Equipos 2018</a></a></td>
+                                        <td>&nbsp;Sevilla</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-02</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=185372 class=tur><a
+                                              href=tournament_report.phtml?event16=185372 class=tur>2018-06-10</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=185372 class=tur>2018-06-16</a></td>
+                                        <td><a href=/tournament_details.phtml?event=185372> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=185437><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=185437 class=tur><a href=tournament_report.phtml?event16=185437
+                                              class=tur>XII Open Club Ajedrez Ciudad los Angeles Memorial Francisco
+                                              Codes</a></a></td>
+                                        <td>&nbsp;Madrid</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-08</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=185437 class=tur><a
+                                              href=tournament_report.phtml?event16=185437 class=tur>2018-06-10</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=185437 class=tur>2018-06-23</a></td>
+                                        <td><a href=/tournament_details.phtml?event=185437> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=185465><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=185465 class=tur><a href=tournament_report.phtml?event16=185465
+                                              class=tur>XXX Torneo 60 30 Pueblo Nuevo</a></a></td>
+                                        <td>&nbsp;Madrid</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-07</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=185465 class=tur><a
+                                              href=tournament_report.phtml?event16=185465 class=tur>2018-06-02</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=185465 class=tur>2018-06-11</a></td>
+                                        <td><a href=/tournament_details.phtml?event=185465> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=185548><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=185548 class=tur><a href=tournament_report.phtml?event16=185548
+                                              class=tur>Memorial Calbet 2018 grup A</a></a></td>
+                                        <td>&nbsp;Camp de Tarragona</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-14</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=185548 class=tur><a
+                                              href=tournament_report.phtml?event16=185548 class=tur>2018-06-09</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=185548 class=tur>2018-06-16</a></td>
+                                        <td><a href=/tournament_details.phtml?event=185548> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=185550><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=185550 class=tur><a href=tournament_report.phtml?event16=185550
+                                              class=tur>Memorial Calbet 2018 grup B</a></a></td>
+                                        <td>&nbsp;Camp de Tarragona</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-14</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=185550 class=tur><a
+                                              href=tournament_report.phtml?event16=185550 class=tur>2018-06-09</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=185550 class=tur>2018-06-16</a></td>
+                                        <td><a href=/tournament_details.phtml?event=185550> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=185551><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=185551 class=tur><a href=tournament_report.phtml?event16=185551
+                                              class=tur>Obert Terres del Sud 2018</a></a></td>
+                                        <td>&nbsp;Terres Ebre</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-05-05</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=185551 class=tur><a
+                                              href=tournament_report.phtml?event16=185551 class=tur>2018-06-16</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=185551 class=tur>2018-06-26</a></td>
+                                        <td><a href=/tournament_details.phtml?event=185551> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=185552><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=185552 class=tur><a href=tournament_report.phtml?event16=185552
+                                              class=tur>Obert Delegacio de Lleida</a></a></td>
+                                        <td>&nbsp;Lleida</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-14</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=185552 class=tur><a
+                                              href=tournament_report.phtml?event16=185552 class=tur>2018-06-02</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=185552 class=tur>2018-06-16</a></td>
+                                        <td><a href=/tournament_details.phtml?event=185552> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=185555><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=185555 class=tur><a href=tournament_report.phtml?event16=185555
+                                              class=tur>II Torneig Obert del Gotic 2018</a></a></td>
+                                        <td>&nbsp;Barcelona</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-24</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=185555 class=tur><a
+                                              href=tournament_report.phtml?event16=185555 class=tur>2018-06-19</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=185555 class=tur>2018-06-26</a></td>
+                                        <td><a href=/tournament_details.phtml?event=185555> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=186466><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=186466 class=tur><a href=tournament_report.phtml?event16=186466
+                                              class=tur>Campeonato de Navarra Absoluto Individual 2018. Fase Final</a></a></td>
+                                        <td>&nbsp;Pamplona</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-14</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=186466 class=tur><a
+                                              href=tournament_report.phtml?event16=186466 class=tur>2018-05-26</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=186466 class=tur>2018-06-07</a></td>
+                                        <td><a href=/tournament_details.phtml?event=186466> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=186586><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=186586 class=tur><a href=tournament_report.phtml?event16=186586
+                                              class=tur>Campeonato Regional por Equipos 2018</a></a></td>
+                                        <td>&nbsp;Ciudad Real</td>
+                                        <td>r</td>
+                                        <td width=70>&nbsp;2018-05-31</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=186586 class=tur><a
+                                              href=tournament_report.phtml?event16=186586 class=tur>2018-06-03</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=186586 class=tur>2018-06-11</a></td>
+                                        <td><a href=/tournament_details.phtml?event=186586> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=186589><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=186589 class=tur><a href=tournament_report.phtml?event16=186589
+                                              class=tur>XI Open Internacional Memorial Ezquiel Martin</a></a></td>
+                                        <td>&nbsp;Mollet (Barcelona)</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-10</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=186589 class=tur><a
+                                              href=tournament_report.phtml?event16=186589 class=tur>2018-06-10</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=186589 class=tur>2018-06-26</a></td>
+                                        <td><a href=/tournament_details.phtml?event=186589> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=187013><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=187013 class=tur><a href=tournament_report.phtml?event16=187013
+                                              class=tur>I Open Ajedrez Rapido 10 5 Alpedrete</a></a></td>
+                                        <td>&nbsp;Alpedrete (Madrid)</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-05-27</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=187013 class=tur><a
+                                              href=tournament_report.phtml?event16=187013 class=tur>2018-05-27</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=187013 class=tur>2018-06-07</a></td>
+                                        <td><a href=/tournament_details.phtml?event=187013> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=187017><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=187017 class=tur><a href=tournament_report.phtml?event16=187017
+                                              class=tur>Veteranos CTL Valladolid 2018</a></a></td>
+                                        <td>&nbsp;Valladolid</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-05-06</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=187017 class=tur><a
+                                              href=tournament_report.phtml?event16=187017 class=tur>2018-06-03</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=187017 class=tur>2018-06-07</a></td>
+                                        <td><a href=/tournament_details.phtml?event=187017> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=187111><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=187111 class=tur><a href=tournament_report.phtml?event16=187111
+                                              class=tur>X Abierto Internacional Carlos I Silgar</a></a></td>
+                                        <td>&nbsp;Sanxenxo (Pontevedra)</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-16</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=187111 class=tur><a
+                                              href=tournament_report.phtml?event16=187111 class=tur>2018-06-24</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=187111 class=tur>2018-06-26</a></td>
+                                        <td><a href=/tournament_details.phtml?event=187111> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=187673><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=187673 class=tur><a href=tournament_report.phtml?event16=187673
+                                              class=tur>I Torneo Clubs Aragon Hotel el Aguila</a></a></td>
+                                        <td>&nbsp;Utebo (Spain)</td>
+                                        <td>r</td>
+                                        <td width=70>&nbsp;2018-06-18</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=187673 class=tur><a
+                                              href=tournament_report.phtml?event16=187673 class=tur>2018-06-22</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=187673 class=tur>2018-06-26</a></td>
+                                        <td><a href=/tournament_details.phtml?event=187673> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=187931><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=187931 class=tur><a href=tournament_report.phtml?event16=187931
+                                              class=tur>IV Festival Infantil Ajedrizate Cda. Lapuerta Cteg. A Y B</a></a></td>
+                                        <td>&nbsp;Canteras, Cartagena, Murcia</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-02</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=187931 class=tur><a
+                                              href=tournament_report.phtml?event16=187931 class=tur>2018-06-03</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=187931 class=tur>2018-06-07</a></td>
+                                        <td><a href=/tournament_details.phtml?event=187931> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=187932><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=187932 class=tur><a href=tournament_report.phtml?event16=187932
+                                              class=tur>IV Festival Infantil Ajedrizate Cda. Lapuerta Categ. C Y D</a></a></td>
+                                        <td>&nbsp;Canteras, Cartagena, Murcia</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-02</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=187932 class=tur><a
+                                              href=tournament_report.phtml?event16=187932 class=tur>2018-06-03</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=187932 class=tur>2018-06-07</a></td>
+                                        <td><a href=/tournament_details.phtml?event=187932> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=187973><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=187973 class=tur><a href=tournament_report.phtml?event16=187973
+                                              class=tur>XVI Obert Vila de Santa Coloma de Queralt</a></a></td>
+                                        <td>&nbsp;Santa Coloma de Queralt</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-03</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=187973 class=tur><a
+                                              href=tournament_report.phtml?event16=187973 class=tur>2018-06-03</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=187973 class=tur>2018-06-07</a></td>
+                                        <td><a href=/tournament_details.phtml?event=187973> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=188335><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=188335 class=tur><a href=tournament_report.phtml?event16=188335
+                                              class=tur>Rapido Absoluto CTL 2018</a></a></td>
+                                        <td>&nbsp;CTL</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-05-27</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=188335 class=tur><a
+                                              href=tournament_report.phtml?event16=188335 class=tur>2018-05-27</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=188335 class=tur>2018-06-07</a></td>
+                                        <td><a href=/tournament_details.phtml?event=188335> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=188336><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=188336 class=tur><a href=tournament_report.phtml?event16=188336
+                                              class=tur>Relampago Absoluto CTL 2018</a></a></td>
+                                        <td>&nbsp;CTL</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-05-26</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=188336 class=tur><a
+                                              href=tournament_report.phtml?event16=188336 class=tur>2018-05-26</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=188336 class=tur>2018-06-07</a></td>
+                                        <td><a href=/tournament_details.phtml?event=188336> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=188337><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=188337 class=tur><a href=tournament_report.phtml?event16=188337
+                                              class=tur>Open Int. Memorial Juan Antonio Garcia Hernandez</a></a></td>
+                                        <td>&nbsp;San Pedro de Alcantara Malaga</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-02</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=188337 class=tur><a
+                                              href=tournament_report.phtml?event16=188337 class=tur>2018-06-02</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=188337 class=tur>2018-06-07</a></td>
+                                        <td><a href=/tournament_details.phtml?event=188337> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=188360><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=188360 class=tur><a href=tournament_report.phtml?event16=188360
+                                              class=tur>Memorial Gallego 2018</a></a></td>
+                                        <td>&nbsp;Gijon</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-05-25</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=188360 class=tur><a
+                                              href=tournament_report.phtml?event16=188360 class=tur>2018-06-01</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=188360 class=tur>2018-06-07</a></td>
+                                        <td><a href=/tournament_details.phtml?event=188360> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=188852><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=188852 class=tur><a href=tournament_report.phtml?event16=188852
+                                              class=tur>V Torneo Sub 2200 2018</a></a></td>
+                                        <td>&nbsp;Lugo</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-05-26</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=188852 class=tur><a
+                                              href=tournament_report.phtml?event16=188852 class=tur>2018-05-27</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=188852 class=tur>2018-06-07</a></td>
+                                        <td><a href=/tournament_details.phtml?event=188852> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=188879><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=188879 class=tur><a href=tournament_report.phtml?event16=188879
+                                              class=tur>Torneo Sub-2200 Homenaje a Veteranos de Cordoba 2018</a></a></td>
+                                        <td>&nbsp;Cordoba</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-01</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=188879 class=tur><a
+                                              href=tournament_report.phtml?event16=188879 class=tur>2018-06-03</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=188879 class=tur>2018-06-11</a></td>
+                                        <td><a href=/tournament_details.phtml?event=188879> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=188880><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=188880 class=tur><a href=tournament_report.phtml?event16=188880
+                                              class=tur>VI Torneo Sub 2200 2018</a></a></td>
+                                        <td>&nbsp;Lugo</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-23</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=188880 class=tur><a
+                                              href=tournament_report.phtml?event16=188880 class=tur>2018-06-24</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=188880 class=tur>2018-06-26</a></td>
+                                        <td><a href=/tournament_details.phtml?event=188880> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=188892><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=188892 class=tur><a href=tournament_report.phtml?event16=188892
+                                              class=tur>Ct de Girona Escacs Llampec Individuals 2018</a></a></td>
+                                        <td>&nbsp;Vilablareix</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-17</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=188892 class=tur><a
+                                              href=tournament_report.phtml?event16=188892 class=tur>2018-06-17</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=188892 class=tur>2018-06-23</a></td>
+                                        <td><a href=/tournament_details.phtml?event=188892> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=189333><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=189333 class=tur><a href=tournament_report.phtml?event16=189333
+                                              class=tur>V IRT Sub-2200 Ciudad de Silla</a></a></td>
+                                        <td>&nbsp;Silla Espana</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-15</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=189333 class=tur><a
+                                              href=tournament_report.phtml?event16=189333 class=tur>2018-06-17</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=189333 class=tur>2018-06-23</a></td>
+                                        <td><a href=/tournament_details.phtml?event=189333> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=189334><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=189334 class=tur><a href=tournament_report.phtml?event16=189334
+                                              class=tur>I Magistral Internacional Ciudad de Silla</a></a></td>
+                                        <td>&nbsp;Silla</td>
+                                        <td>r</td>
+                                        <td width=70>&nbsp;2018-06-11</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=189334 class=tur><a
+                                              href=tournament_report.phtml?event16=189334 class=tur>2018-06-17</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=189334 class=tur>2018-06-27</a></td>
+                                        <td><a href=/tournament_details.phtml?event=189334> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=189335><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=189335 class=tur><a href=tournament_report.phtml?event16=189335
+                                              class=tur>IV IRT Sub-1600 Ciudad de Silla</a></a></td>
+                                        <td>&nbsp;Silla Espana</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-15</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=189335 class=tur><a
+                                              href=tournament_report.phtml?event16=189335 class=tur>2018-06-17</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=189335 class=tur>2018-06-28</a></td>
+                                        <td><a href=/tournament_details.phtml?event=189335> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=189336><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=189336 class=tur><a href=tournament_report.phtml?event16=189336
+                                              class=tur>XVII Cto de Rapidas de Ibiza y Formentera</a></a></td>
+                                        <td>&nbsp;Santa Eulalia del Rio (Ibiza)</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-09</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=189336 class=tur><a
+                                              href=tournament_report.phtml?event16=189336 class=tur>2018-06-10</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=189336 class=tur>2018-06-26</a></td>
+                                        <td><a href=/tournament_details.phtml?event=189336> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nnbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=189337><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=189337 class=tur><a href=tournament_report.phtml?event16=189337
+                                              class=tur>Cat de Catalunya Escacs Llampec Individuals 2018</a></a></td>
+                                        <td>&nbsp;Barcelona</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-16</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=189337 class=tur><a
+                                              href=tournament_report.phtml?event16=189337 class=tur>2018-06-16</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=189337 class=tur>2018-06-23</a></td>
+                                        <td><a href=/tournament_details.phtml?event=189337> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=189357><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=189357 class=tur><a href=tournament_report.phtml?event16=189357
+                                              class=tur>XX OPEN FEDC</a></a></td>
+                                        <td>&nbsp;BENIDORM (ALICANTE)</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-10</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=189357 class=tur><a
+                                              href=tournament_report.phtml?event16=189357 class=tur>2018-06-16</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=189357 class=tur>2018-06-23</a></td>
+                                        <td><a href=/tournament_details.phtml?event=189357> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=189695><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=189695 class=tur><a href=tournament_report.phtml?event16=189695
+                                              class=tur>Torneo Internacional Hotel El Aguila</a></a></td>
+                                        <td>&nbsp;Utebo (Spain)</td>
+                                        <td>r</td>
+                                        <td width=70>&nbsp;2018-06-18</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=189695 class=tur><a
+                                              href=tournament_report.phtml?event16=189695 class=tur>2018-06-22</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=189695 class=tur>2018-06-26</a></td>
+                                        <td><a href=/tournament_details.phtml?event=189695> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=189748><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=189748 class=tur><a href=tournament_report.phtml?event16=189748
+                                              class=tur>VI Torneo Valencia Cuna Del Ajedrez Moderno S-2200 2018</a></a></td>
+                                        <td>&nbsp;Valencia</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-05-26</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=189748 class=tur><a
+                                              href=tournament_report.phtml?event16=189748 class=tur>2018-06-09</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=189748 class=tur>2018-06-16</a></td>
+                                        <td><a href=/tournament_details.phtml?event=189748> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=189834><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=189834 class=tur><a href=tournament_report.phtml?event16=189834
+                                              class=tur>III IRT Sub 2200 de Ajedrez Ciudad de Vila-real</a></a></td>
+                                        <td>&nbsp;Vila-real</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-22</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=189834 class=tur><a
+                                              href=tournament_report.phtml?event16=189834 class=tur>2018-06-24</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=189834 class=tur>2018-06-27</a></td>
+                                        <td><a href=/tournament_details.phtml?event=189834> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=189835><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=189835 class=tur><a href=tournament_report.phtml?event16=189835
+                                              class=tur>Torneo Activo Dragones de Fuerteventura 2018</a></a></td>
+                                        <td>&nbsp;Las Palmas de Gran Canaria</td>
+                                        <td>r</td>
+                                        <td width=70>&nbsp;2018-06-16</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=189835 class=tur><a
+                                              href=tournament_report.phtml?event16=189835 class=tur>2018-06-17</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=189835 class=tur>2018-06-20</a></td>
+                                        <td><a href=/tournament_details.phtml?event=189835> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=190332><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=190332 class=tur><a href=tournament_report.phtml?event16=190332
+                                              class=tur>III Sub-1600 C.A.Mar Menor</a></a></td>
+                                        <td>&nbsp;San Pedro del Pinatar (Murcia)</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-15</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=190332 class=tur><a
+                                              href=tournament_report.phtml?event16=190332 class=tur>2018-06-17</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=190332 class=tur>2018-06-27</a></td>
+                                        <td><a href=/tournament_details.phtml?event=190332> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=190342><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=190342 class=tur><a href=tournament_report.phtml?event16=190342
+                                              class=tur>II SUB 2000 C.A. Mar Menor</a></a></td>
+                                        <td>&nbsp;San Pedro del Pinatar Murcia</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-15</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=190342 class=tur><a
+                                              href=tournament_report.phtml?event16=190342 class=tur>2018-06-17</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=190342 class=tur>2018-06-27</a></td>
+                                        <td><a href=/tournament_details.phtml?event=190342> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=190369><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=190369 class=tur><a href=tournament_report.phtml?event16=190369
+                                              class=tur>Campeonato de Canarias por Equipos 2018</a></a></td>
+                                        <td>&nbsp;Vecindario Gran Canaria - Islas Canarias</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-05-31</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=190369 class=tur><a
+                                              href=tournament_report.phtml?event16=190369 class=tur>2018-06-03</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=190369 class=tur>2018-06-16</a></td>
+                                        <td><a href=/tournament_details.phtml?event=190369> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=190370><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=190370 class=tur><a href=tournament_report.phtml?event16=190370
+                                              class=tur>Copa Galicia, categoria cadete 2018</a></a></td>
+                                        <td>&nbsp;A Coruna</td>
+                                        <td>r</td>
+                                        <td width=70>&nbsp;2018-05-26</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=190370 class=tur><a
+                                              href=tournament_report.phtml?event16=190370 class=tur>2018-05-26</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=190370 class=tur>2018-06-07</a></td>
+                                        <td><a href=/tournament_details.phtml?event=190370> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=190371><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=190371 class=tur><a href=tournament_report.phtml?event16=190371
+                                              class=tur>Copa Galicia, categoria absoluta 2018</a></a></td>
+                                        <td>&nbsp;A Coruna</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-05-27</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=190371 class=tur><a
+                                              href=tournament_report.phtml?event16=190371 class=tur>2018-05-27</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=190371 class=tur>2018-06-07</a></td>
+                                        <td><a href=/tournament_details.phtml?event=190371> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=190676><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=190676 class=tur><a href=tournament_report.phtml?event16=190676
+                                              class=tur>Campionat de Lleida Escacs Llampecs 2018</a></a></td>
+                                        <td>&nbsp;Lleida</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-10</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=190676 class=tur><a
+                                              href=tournament_report.phtml?event16=190676 class=tur>2018-06-10</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=190676 class=tur>2018-06-16</a></td>
+                                        <td><a href=/tournament_details.phtml?event=190676> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=190771><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=190771 class=tur><a href=tournament_report.phtml?event16=190771
+                                              class=tur>III Torneo Blitz Cabildo de Fuerteventura 2018</a></a></td>
+                                        <td>&nbsp;Las Palmas de Gran Canaria</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-09</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=190771 class=tur><a
+                                              href=tournament_report.phtml?event16=190771 class=tur>2018-06-09</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=190771 class=tur>2018-06-11</a></td>
+                                        <td><a href=/tournament_details.phtml?event=190771> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=191164><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=191164 class=tur><a href=tournament_report.phtml?event16=191164
+                                              class=tur>V Torneo de xadrez de Oroso</a></a></td>
+                                        <td>&nbsp;Siguiero-Oroso</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-16</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=191164 class=tur><a
+                                              href=tournament_report.phtml?event16=191164 class=tur>2018-06-16</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=191164 class=tur>2018-06-26</a></td>
+                                        <td><a href=/tournament_details.phtml?event=191164> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=191181><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=191181 class=tur><a href=tournament_report.phtml?event16=191181
+                                              class=tur>I Open de Xadrez Abanca Semana Verde de Galicia</a></a></td>
+                                        <td>&nbsp;Silleda</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-09</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=191181 class=tur><a
+                                              href=tournament_report.phtml?event16=191181 class=tur>2018-06-09</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=191181 class=tur>2018-06-20</a></td>
+                                        <td><a href=/tournament_details.phtml?event=191181> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=191387><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=191387 class=tur><a href=tournament_report.phtml?event16=191387
+                                              class=tur>III Torneo Relampago San Sebastian de los Reyes</a></a></td>
+                                        <td>&nbsp;San Sebastian de los Reyes</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-09</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=191387 class=tur><a
+                                              href=tournament_report.phtml?event16=191387 class=tur>2018-06-09</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=191387 class=tur>2018-06-16</a></td>
+                                        <td><a href=/tournament_details.phtml?event=191387> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=191389><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=191389 class=tur><a href=tournament_report.phtml?event16=191389
+                                              class=tur>XV Torneo Corpus Cristi 2018</a></a></td>
+                                        <td>&nbsp;Villa de Mazo</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-09</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=191389 class=tur><a
+                                              href=tournament_report.phtml?event16=191389 class=tur>2018-06-10</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=191389 class=tur>2018-06-20</a></td>
+                                        <td><a href=/tournament_details.phtml?event=191389> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=191392><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=191392 class=tur><a href=tournament_report.phtml?event16=191392
+                                              class=tur>Jorndas Rapidas Valladolid 2018</a></a></td>
+                                        <td>&nbsp;Valladolid</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-09</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=191392 class=tur><a
+                                              href=tournament_report.phtml?event16=191392 class=tur>2018-06-09</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=191392 class=tur>2018-06-16</a></td>
+                                        <td><a href=/tournament_details.phtml?event=191392> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#d5d5d5>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=191729><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=191729 class=tur><a href=tournament_report.phtml?event16=191729
+                                              class=tur>Torneo de Primavera 2018</a></a></td>
+                                        <td>&nbsp;Pamplona</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-04-13</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=191729 class=tur><a
+                                              href=tournament_report.phtml?event16=191729 class=tur>2018-05-25</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=191729 class=tur>2018-06-07</a></td>
+                                        <td><a href=/tournament_details.phtml?event=191729> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr bgcolor=#ffffff>
+                                        <td>&nbsp;&nbsp;</td>
+                                        <td><a href=view_source.phtml?code=191902><img src=/imga/txt.gif align=absbottom
+                                              border=0></a></td>
+                                        <td><a href=tournament_report.phtml?event16=191902 class=tur><a href=tournament_report.phtml?event16=191902
+                                              class=tur>Cto. Femenino de Euskadi</a></a></td>
+                                        <td>&nbsp;Vitoria</td>
+                                        <td>s</td>
+                                        <td width=70>&nbsp;2018-06-16</td>
+                                        <td width=70>&nbsp;<a href=tournament_details.phtml?event=191902 class=tur><a
+                                              href=tournament_report.phtml?event16=191902 class=tur>2018-06-17</a></a></td>
+                                        <td width=70>&nbsp;<a href=tournament_report.phtml?event16=191902 class=tur>2018-06-20</a></td>
+                                        <td><a href=/tournament_details.phtml?event=191902> <i>Inf.</i></a></td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan=9 bgcolor=#FFFFFF><small>Tournament System: r = Round Robin,d =
+                                            Double RR, s = Swiss, t = Team, m = Match</small></td>
+                                      </tr>
+                                    </table><br>
+                                    <table width=100% border=0 bordercolordark=#DEDDE3 bgcolor=#EACCB2 bordercolorlight=#473F6D
+                                      bordercolor=#DEDDE3 cellpadding=0 cellspacing=0>
+                                      <tr>
+                                        <td height=30 background=/imga/bg_archive.gif>&nbsp; </td> </tr> <tr>
+                                        <td valign=top>
+                                          <form action=tournament_list.phtml method=GET class="inputbox"><br><b>&nbsp;&nbsp;&nbsp;<font
+                                                color=#2C2C2C>FIDE Archive for Spain</font>:</b> View tournaments from
+                                            past periods. Select Period: <input type=hidden name=moder value=ev_code><input
+                                              type=hidden name=country value='ESP'>&nbsp;&nbsp;&nbsp;&nbsp;<SELECT id=codt
+                                              name=rating_period size=1 class="inputbox">
+                                              <OPTION value=2019-01-01>January 2019</OPTION>
+                                              <OPTION value=2018-12-01>December 2018</OPTION>
+                                              <OPTION value=2018-11-01>November 2018</OPTION>
+                                              <OPTION value=2018-10-01>October 2018</OPTION>
+                                              <OPTION value=2018-09-01>September 2018</OPTION>
+                                              <OPTION value=2018-08-01>August 2018</OPTION>
+                                              <OPTION value=2018-07-01>July 2018</OPTION>
+                                              <OPTION value=2018-06-01>June 2018</OPTION>
+                                              <OPTION value=2018-05-01>May 2018</OPTION>
+                                              <OPTION value=2018-04-01>April 2018</OPTION>
+                                              <OPTION value=2018-03-01>March 2018</OPTION>
+                                              <OPTION value=2018-02-01>February 2018</OPTION>
+                                              <OPTION value=2018-01-01>January 2018</OPTION>
+                                              <OPTION value=2017-12-01>December 2017</OPTION>
+                                              <OPTION value=2017-11-01>November 2017</OPTION>
+                                              <OPTION value=2017-10-01>October 2017</OPTION>
+                                              <OPTION value=2017-09-01>September 2017</OPTION>
+                                              <OPTION value=2017-08-01>August 2017</OPTION>
+                                              <OPTION value=2017-07-01>July 2017</OPTION>
+                                              <OPTION value=2017-06-01>June 2017</OPTION>
+                                              <OPTION value=2017-05-01>May 2017</OPTION>
+                                              <OPTION value=2017-04-01>April 2017</OPTION>
+                                              <OPTION value=2017-03-01>March 2017</OPTION>
+                                              <OPTION value=2017-02-01>February 2017</OPTION>
+                                              <OPTION value=2017-01-01>January 2017</OPTION>
+                                              <OPTION value=2016-12-01>December 2016</OPTION>
+                                              <OPTION value=2016-11-01>November 2016</OPTION>
+                                              <OPTION value=2016-10-01>October 2016</OPTION>
+                                              <OPTION value=2016-09-01>September 2016</OPTION>
+                                              <OPTION value=2016-08-01>August 2016</OPTION>
+                                              <OPTION value=2016-07-01>July 2016</OPTION>
+                                              <OPTION value=2016-06-01>June 2016</OPTION>
+                                              <OPTION value=2016-05-01>May 2016</OPTION>
+                                              <OPTION value=2016-04-01>April 2016</OPTION>
+                                              <OPTION value=2016-03-01>March 2016</OPTION>
+                                              <OPTION value=2016-02-01>February 2016</OPTION>
+                                              <OPTION value=2016-01-01>January 2016</OPTION>
+                                              <OPTION value=2015-12-01>December 2015</OPTION>
+                                              <OPTION value=2015-11-01>November 2015</OPTION>
+                                              <OPTION value=2015-10-01>October 2015</OPTION>
+                                              <OPTION value=2015-09-01>September 2015</OPTION>
+                                              <OPTION value=2015-08-01>August 2015</OPTION>
+                                              <OPTION value=2015-07-01>July 2015</OPTION>
+                                              <OPTION value=2015-06-01>June 2015</OPTION>
+                                              <OPTION value=2015-05-01>May 2015</OPTION>
+                                              <OPTION value=2015-04-01>April 2015</OPTION>
+                                              <OPTION value=2015-03-01>March 2015</OPTION>
+                                              <OPTION value=2015-02-01>February 2015</OPTION>
+                                              <OPTION value=2015-01-01>January 2015</OPTION>
+                                              <OPTION value=2014-12-01>December 2014</OPTION>
+                                              <OPTION value=2014-11-01>November 2014</OPTION>
+                                              <OPTION value=2014-10-01>October 2014</OPTION>
+                                              <OPTION value=2014-09-01>September 2014</OPTION>
+                                              <OPTION value=2014-08-01>August 2014</OPTION>
+                                              <OPTION value=2014-07-01>July 2014</OPTION>
+                                              <OPTION value=2014-06-01>June 2014</OPTION>
+                                              <OPTION value=2014-05-01>May 2014</OPTION>
+                                              <OPTION value=2014-04-01>April 2014</OPTION>
+                                              <OPTION value=2014-03-01>March 2014</OPTION>
+                                              <OPTION value=2014-02-01>February 2014</OPTION>
+                                              <OPTION value=2014-01-01>January 2014</OPTION>
+                                              <OPTION value=2013-12-01>December 2013</OPTION>
+                                              <OPTION value=2013-11-01>November 2013</OPTION>
+                                              <OPTION value=2013-10-01>October 2013</OPTION>
+                                              <OPTION value=2013-09-01>September 2013</OPTION>
+                                              <OPTION value=2013-08-01>August 2013</OPTION>
+                                              <OPTION value=2013-07-01>July 2013</OPTION>
+                                              <OPTION value=2013-06-01>June 2013</OPTION>
+                                              <OPTION value=2013-05-01>May 2013</OPTION>
+                                              <OPTION value=2013-04-01>April 2013</OPTION>
+                                              <OPTION value=2013-03-01>March 2013</OPTION>
+                                              <OPTION value=2013-02-01>February 2013</OPTION>
+                                              <OPTION value=2013-01-01>January 2013</OPTION>
+                                              <OPTION value=2012-12-01>December 2012</OPTION>
+                                              <OPTION value=2012-11-01>November 2012</OPTION>
+                                              <OPTION value=2012-10-01>October 2012</OPTION>
+                                              <OPTION value=2012-09-01>September 2012</OPTION>
+                                              <OPTION value=2012-08-01>August 2012</OPTION>
+                                              <OPTION value=2012-07-01>July 2012</OPTION>
+                                              <OPTION value=2012-05-01>May 2012</OPTION>
+                                              <OPTION value=2012-03-01>March 2012</OPTION>
+                                              <OPTION value=2012-01-01>January 2012</OPTION>
+                                              <OPTION value=2011-11-01>November 2011</OPTION>
+                                              <OPTION value=2011-09-01>September 2011</OPTION>
+                                              <OPTION value=2011-07-01>July 2011</OPTION>
+                                              <OPTION value=2011-05-01>May 2011</OPTION>
+                                              <OPTION value=2011-03-01>March 2011</OPTION>
+                                              <OPTION value=2011-01-01>January 2011</OPTION>
+                                              <OPTION value=2010-11-01>November 2010</OPTION>
+                                              <OPTION value=2010-09-01>September 2010</OPTION>
+                                              <OPTION value=2010-07-01>July 2010</OPTION>
+                                              <OPTION value=2010-05-01>May 2010</OPTION>
+                                              <OPTION value=2010-03-01>March 2010</OPTION>
+                                              <OPTION value=2010-01-01>January 2010</OPTION>
+                                              <OPTION value=2009-11-01>November 2009</OPTION>
+                                              <OPTION value=2009-09-01>September 2009</OPTION>
+                                              <OPTION value=2009-07-01>July 2009</OPTION>
+                                              <OPTION value=2009-04-01>April 2009</OPTION>
+                                              <OPTION value=2009-01-01>January 2009</OPTION>
+                                              <OPTION value=2008-10-01>October 2008</OPTION>
+                                              <OPTION value=2008-07-01>July 2008</OPTION>
+                                              <OPTION value=2008-04-01>April 2008</OPTION>
+                                              <OPTION value=2008-01-01>January 2008</OPTION>
+                                              <OPTION value=2007-10-01>October 2007</OPTION>
+                                              <OPTION value=2007-07-01>July 2007</OPTION>
+                                              <OPTION value=2007-04-01>April 2007</OPTION>
+                                              <OPTION value=2007-01-01>January 2007</OPTION>
+                                              <OPTION value=2006-10-01>October 2006</OPTION>
+                                              <OPTION value=2006-07-01>July 2006</OPTION>
+                                              <OPTION value=2006-04-01>April 2006</OPTION>
+                                              <OPTION value=2006-01-01>January 2006</OPTION>
+                                              <OPTION value=2005-10-01>October 2005</OPTION>
+                                              <OPTION value=2005-07-01>July 2005</OPTION>
+                                              <OPTION value=2005-04-01>April 2005</OPTION>
+                                              <OPTION value=2005-01-01>January 2005</OPTION>
+                                              <OPTION value=2004-10-01>October 2004</OPTION>
+                                              <OPTION value=2004-07-01>July 2004</OPTION>
+                                              <OPTION value=2004-04-01>April 2004</OPTION>
+                                              <OPTION value=2004-01-01>January 2004</OPTION>
+                                              <OPTION value=2003-10-01>October 2003</OPTION>
+                                              <OPTION value=2003-07-01>July 2003</OPTION>
+                                              <OPTION value=2003-04-01>April 2003</OPTION>
+                                              <OPTION value=2003-01-01>January 2003</OPTION>
+                                              <OPTION value=2002-10-01>October 2002</OPTION>
+                                              <OPTION value=2002-07-01>July 2002</OPTION>
+                                              <OPTION value=2002-04-01>April 2002</OPTION>
+                                              <OPTION value=2002-01-01>January 2002</OPTION>
+                                              <OPTION value=2001-10-01>October 2001</OPTION>
+                                              <OPTION value=2001-07-01>July 2001</OPTION>
+                                              <OPTION value=0000-00-00></OPTION>
+                                            </SELECT>&nbsp;<input type=Submit title=Submit value=go class="inputbox">
+                                        </td>
+                                      </tr>
+                                      </form>
+                                    </table>
+
+
+                                  </td>
+                                </tr>
+
+                              </table>
+                              <span class="article_separator">&nbsp;</span>
+
+                              <p align=center>
+                                <b><a href="javascript:history.go(-1)">&#171&nbsp;go back</a> </b>
+                              </p>
+
+
+                            </div>
+
+
+
+                          </td>
+                          <td valign="top" align=right>
+                            <img src=/imga/head3.jpg align=absbottom vspace=0 hspace=0 border=0>
+                            <ul class="links">
+                              <li><a href="https://ratings.fide.com/toplist.phtml">Top Players</a></li>
+                              <li><a href="https://ratings.fide.com/topfed.phtml">Top Countries</a></li>
+                              <li><a href="https://ratings.fide.com/topstat.phtml">Top Chart</a></li>
+                              <li><a href="https://ratings.fide.com/index.phtml">Players & Arbiters</a></li>
+                              <li><a href="https://ratings.fide.com/fedchange.phtml">Transfers</a></li>
+                              <li><a href="https://ratings.fide.com/tournament_list.phtml">Tournaments</a></li>
+                              <li><a href="https://ratings.fide.com/archive.phtml">Tournaments Archive</a></li>
+                              <li><a href="https://ratings.fide.com/download.phtml">Download Rating List</a></li>
+                              <li><a href="https://ratings.fide.com/calculators.phtml">Rating Calculators</a></li>
+                            </ul>
+                            </li>
+                            <br>
+                            <a href=https://arena.myfide.net target=_blank><img src=/img/foa_140.gif align=absbottom
+                                vspace=0 hspace=0 border=0><a />
+
+                              <p align=right>
+                                <b>Share this page</b></p>
+                              <div class="addthis_toolbox addthis_default_style ">
+                                <a class="addthis_button_preferred_1"></a>
+                                <a class="addthis_button_preferred_2"></a>
+                                <a class="addthis_button_preferred_3"></a>
+                                <a class="addthis_button_preferred_4"></a>
+                                <a class="addthis_button_compact\"></a>
+                                <a class="addthis_counter addthis_bubble_style"></a>
+                              </div>
+
+                              <script type="text/javascript">var addthis_config = { "data_track_clickback": true };</script>
+                              <script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4ddbad467652661c"></script>
+
+                              </p>
+                              <br />
+
+                              &nbsp;&nbsp;&nbsp;<a target="_blank" href="https://www.facebook.com/pages/FIDE-World-Chess-Federation/198487910190049"><img
+                                  alt="facebook" src="/img/facebook.png" height="32" width="32"></a>
+                              &nbsp;&nbsp;&nbsp;<a target="_blank" href="https://twitter.com/fide_chess"><img alt="twitter"
+                                  src="/img/twitter.png" height="32" width="32"></a>
+                              &nbsp;&nbsp;&nbsp;<a target="_blank" href="https://plus.google.com/101000466239905858098/posts"><img
+                                  alt="gplus" src="/img/gplus.png" height="32" width="32"></a>
+
+
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">
+                            <div style="height:30px;"></div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align:center;border-top:1px solid #f2f2f2;color:#757771;font-size:10px;font-family:arial;letter-spacing:0px;background:#ffffff;line-height:20px;"
+                            colspan="2">
+                            &copy;&nbsp;&nbsp;World Chess Federation
+                            &nbsp;&nbsp;
+                            |&nbsp;&nbsp;Contact us: <a href="mailto:admin@fide.com">admin@fide.com</a>&nbsp;&nbsp;
+                            |&nbsp;&nbsp;Developed and supported by Elista FIDE Office&nbsp;&nbsp;
+                            |&nbsp;&nbsp; Ratings questions: <a href=mailto:ratings@fide.com>Elista FIDE Office</a>&nbsp;&nbsp;
+                          </td>
+                        </tr>
+
+                      </table>
+
+
+                      <!-------------------------------------------------------->
+                    </div> <!-- main page-->
+            </div> <!-- dis cerceve bitis -->
+          </div> <!-- frame -right bitis -->
+        </div> <!-- frame -bottom bitis -->
+
+      </div> <!-- frame bitis -->
+
+  </center>
+  <script src="https://www.google-analytics.com/urchin.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+    _uacct = "UA-4113616-2";
+    urchinTracker();
+  </script>
+
+</body>
+
+</html>

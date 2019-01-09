@@ -12,6 +12,7 @@ python:
 install:
   - pip install -U coveralls
   - pip install -e .
+  - pip install -e .[test]
 
 # Command to run tests, e.g. python setup.py test
 script:

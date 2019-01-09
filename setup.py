@@ -1,7 +1,12 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages
+from setuptools import setup
+
 import os
 
-version = '1.0.2.dev0'
+
+version = "1.0.2.dev0"
+
+TEST_REQUIRES = ["responses"]
 
 setup(
     name="fideparser",
@@ -25,6 +30,7 @@ setup(
         "requests",
         "unicodecsv",
     ],
+    extras_require={"test": TEST_REQUIRES},
     entry_points={
         "console_scripts": [
             "export_fide_tournaments = fideparser.main:main",
