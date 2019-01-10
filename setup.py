@@ -6,7 +6,7 @@ import os
 
 version = "1.0.2.dev0"
 
-TEST_REQUIRES = ["responses"]
+TEST_REQUIRES = ["responses", "mock"]
 
 setup(
     name="fideparser",
