@@ -1,0 +1,7810 @@
+ccopy_reg
+_reconstructor
+p0
+(cfideparser.ratingperiod
+RatingPeriod
+p1
+c__builtin__
+object
+p2
+Ntp3
+Rp4
+(dp5
+S'country'
+p6
+S'ESP'
+p7
+sS'period'
+p8
+S'2018-07-01'
+p9
+sS'fieldnames'
+p10
+c__builtin__
+set
+p11
+((lp12
+VCategory
+p13
+aVCity
+p14
+aVZone
+p15
+aS'rating_type'
+p16
+aVDate received
+p17
+aVCountry
+p18
+aVChief Organizer
+p19
+aVSystem
+p20
+aVCrosstable
+p21
+aVEnd Date
+p22
+aVEvent code
+p23
+aVNumber of players
+p24
+aVDate registered
+p25
+aVType
+p26
+aVStart Date
+p27
+aVView Report
+p28
+aVPGN file
+p29
+aVTime Control
+p30
+aVTournament Name
+p31
+aVOrganizer
+p32
+aVChief Arbiter
+p33
+atp34
+Rp35
+sS'arbiters_data'
+p36
+I00
+sS'report_data'
+p37
+I00
+sS'tournaments'
+p38
+(lp39
+g0
+(cfideparser.tournament
+Tournament
+p40
+g2
+Ntp41
+Rp42
+(dp43
+S'extract_arbiter_data'
+p44
+I00
+sS'extract_report_data'
+p45
+I00
+sS'link'
+p46
+V/tournament_details.phtml?event=170327
+p47
+sS'data'
+p48
+(dp49
+g13
+V0
+p50
+sg14
+VElgoibar
+p51
+sg15
+V
+p52
+sg16
+S'Standard'
+p53
+sg20
+Vs
+p54
+sg25
+V2018-03-27
+p55
+sg26
+g52
+sg29
+g52
+sg31
+VI Open Danobat Elgoibar Sub2200
+p56
+sg22
+V2018-12-13
+p57
+sg17
+V2018-12-15
+p58
+sg18
+VESP
+p59
+sg21
+VSize: 4781 bytes
+p60
+sg23
+V186590
+p61
+sg24
+V28
+p62
+sg27
+V2018-09-27
+p63
+sg28
+VRated for January 2019 as\u000a                                            Standard
+p64
+sg19
+g52
+sg30
+VStandard: 60 minutes with 30 seconds increment from move 1
+p65
+sg32
+g52
+sg33
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p66
+ssbag0
+(g40
+g2
+Ntp67
+Rp68
+(dp69
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=177067
+p70
+sg48
+(dp71
+VCategory
+p72
+g50
+sVCity
+p73
+VElgoibar
+p74
+sVZone
+p75
+g52
+sg16
+g53
+sVSystem
+p76
+g54
+sVDate registered
+p77
+V2018-03-27
+p78
+sVType
+p79
+g52
+sVPGN file
+p80
+g52
+sVTournament Name
+p81
+VI Open Danobat Elgoibar Sub2200
+p82
+sVEnd Date
+p83
+V2018-12-13
+p84
+sVDate received
+p85
+V2018-12-15
+p86
+sVCountry
+p87
+VESP
+p88
+sVCrosstable
+p89
+VSize: 4781 bytes
+p90
+sVEvent code
+p91
+V186590
+p92
+sVNumber of players
+p93
+V28
+p94
+sVStart Date
+p95
+V2018-09-27
+p96
+sVView Report
+p97
+VRated for January 2019 as\u000a                                            Standard
+p98
+sVChief Organizer
+p99
+g52
+sVTime Control
+p100
+VStandard: 60 minutes with 30 seconds increment from move 1
+p101
+sVOrganizer
+p102
+g52
+sVChief Arbiter
+p103
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p104
+ssbag0
+(g40
+g2
+Ntp105
+Rp106
+(dp107
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=177068
+p108
+sg48
+(dp109
+VCategory
+p110
+g50
+sVCity
+p111
+VElgoibar
+p112
+sVZone
+p113
+g52
+sg16
+g53
+sVSystem
+p114
+g54
+sVDate registered
+p115
+V2018-03-27
+p116
+sVType
+p117
+g52
+sVPGN file
+p118
+g52
+sVTournament Name
+p119
+VI Open Danobat Elgoibar Sub2200
+p120
+sVEnd Date
+p121
+V2018-12-13
+p122
+sVDate received
+p123
+V2018-12-15
+p124
+sVCountry
+p125
+VESP
+p126
+sVCrosstable
+p127
+VSize: 4781 bytes
+p128
+sVEvent code
+p129
+V186590
+p130
+sVNumber of players
+p131
+V28
+p132
+sVStart Date
+p133
+V2018-09-27
+p134
+sVView Report
+p135
+VRated for January 2019 as\u000a                                            Standard
+p136
+sVChief Organizer
+p137
+g52
+sVTime Control
+p138
+VStandard: 60 minutes with 30 seconds increment from move 1
+p139
+sVOrganizer
+p140
+g52
+sVChief Arbiter
+p141
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p142
+ssbag0
+(g40
+g2
+Ntp143
+Rp144
+(dp145
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=177958
+p146
+sg48
+(dp147
+VCategory
+p148
+g50
+sVCity
+p149
+VElgoibar
+p150
+sVZone
+p151
+g52
+sg16
+g53
+sVSystem
+p152
+g54
+sVDate registered
+p153
+V2018-03-27
+p154
+sVType
+p155
+g52
+sVPGN file
+p156
+g52
+sVTournament Name
+p157
+VI Open Danobat Elgoibar Sub2200
+p158
+sVEnd Date
+p159
+V2018-12-13
+p160
+sVDate received
+p161
+V2018-12-15
+p162
+sVCountry
+p163
+VESP
+p164
+sVCrosstable
+p165
+VSize: 4781 bytes
+p166
+sVEvent code
+p167
+V186590
+p168
+sVNumber of players
+p169
+V28
+p170
+sVStart Date
+p171
+V2018-09-27
+p172
+sVView Report
+p173
+VRated for January 2019 as\u000a                                            Standard
+p174
+sVChief Organizer
+p175
+g52
+sVTime Control
+p176
+VStandard: 60 minutes with 30 seconds increment from move 1
+p177
+sVOrganizer
+p178
+g52
+sVChief Arbiter
+p179
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p180
+ssbag0
+(g40
+g2
+Ntp181
+Rp182
+(dp183
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=180235
+p184
+sg48
+(dp185
+VCategory
+p186
+g50
+sVCity
+p187
+VElgoibar
+p188
+sVZone
+p189
+g52
+sg16
+g53
+sVSystem
+p190
+g54
+sVDate registered
+p191
+V2018-03-27
+p192
+sVType
+p193
+g52
+sVPGN file
+p194
+g52
+sVTournament Name
+p195
+VI Open Danobat Elgoibar Sub2200
+p196
+sVEnd Date
+p197
+V2018-12-13
+p198
+sVDate received
+p199
+V2018-12-15
+p200
+sVCountry
+p201
+VESP
+p202
+sVCrosstable
+p203
+VSize: 4781 bytes
+p204
+sVEvent code
+p205
+V186590
+p206
+sVNumber of players
+p207
+V28
+p208
+sVStart Date
+p209
+V2018-09-27
+p210
+sVView Report
+p211
+VRated for January 2019 as\u000a                                            Standard
+p212
+sVChief Organizer
+p213
+g52
+sVTime Control
+p214
+VStandard: 60 minutes with 30 seconds increment from move 1
+p215
+sVOrganizer
+p216
+g52
+sVChief Arbiter
+p217
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p218
+ssbag0
+(g40
+g2
+Ntp219
+Rp220
+(dp221
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=180369
+p222
+sg48
+(dp223
+VCategory
+p224
+g50
+sVCity
+p225
+VElgoibar
+p226
+sVZone
+p227
+g52
+sg16
+g53
+sVSystem
+p228
+g54
+sVDate registered
+p229
+V2018-03-27
+p230
+sVType
+p231
+g52
+sVPGN file
+p232
+g52
+sVTournament Name
+p233
+VI Open Danobat Elgoibar Sub2200
+p234
+sVEnd Date
+p235
+V2018-12-13
+p236
+sVDate received
+p237
+V2018-12-15
+p238
+sVCountry
+p239
+VESP
+p240
+sVCrosstable
+p241
+VSize: 4781 bytes
+p242
+sVEvent code
+p243
+V186590
+p244
+sVNumber of players
+p245
+V28
+p246
+sVStart Date
+p247
+V2018-09-27
+p248
+sVView Report
+p249
+VRated for January 2019 as\u000a                                            Standard
+p250
+sVChief Organizer
+p251
+g52
+sVTime Control
+p252
+VStandard: 60 minutes with 30 seconds increment from move 1
+p253
+sVOrganizer
+p254
+g52
+sVChief Arbiter
+p255
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p256
+ssbag0
+(g40
+g2
+Ntp257
+Rp258
+(dp259
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=180370
+p260
+sg48
+(dp261
+VCategory
+p262
+g50
+sVCity
+p263
+VElgoibar
+p264
+sVZone
+p265
+g52
+sg16
+g53
+sVSystem
+p266
+g54
+sVDate registered
+p267
+V2018-03-27
+p268
+sVType
+p269
+g52
+sVPGN file
+p270
+g52
+sVTournament Name
+p271
+VI Open Danobat Elgoibar Sub2200
+p272
+sVEnd Date
+p273
+V2018-12-13
+p274
+sVDate received
+p275
+V2018-12-15
+p276
+sVCountry
+p277
+VESP
+p278
+sVCrosstable
+p279
+VSize: 4781 bytes
+p280
+sVEvent code
+p281
+V186590
+p282
+sVNumber of players
+p283
+V28
+p284
+sVStart Date
+p285
+V2018-09-27
+p286
+sVView Report
+p287
+VRated for January 2019 as\u000a                                            Standard
+p288
+sVChief Organizer
+p289
+g52
+sVTime Control
+p290
+VStandard: 60 minutes with 30 seconds increment from move 1
+p291
+sVOrganizer
+p292
+g52
+sVChief Arbiter
+p293
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p294
+ssbag0
+(g40
+g2
+Ntp295
+Rp296
+(dp297
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=180387
+p298
+sg48
+(dp299
+VCategory
+p300
+g50
+sVCity
+p301
+VElgoibar
+p302
+sVZone
+p303
+g52
+sg16
+g53
+sVSystem
+p304
+g54
+sVDate registered
+p305
+V2018-03-27
+p306
+sVType
+p307
+g52
+sVPGN file
+p308
+g52
+sVTournament Name
+p309
+VI Open Danobat Elgoibar Sub2200
+p310
+sVEnd Date
+p311
+V2018-12-13
+p312
+sVDate received
+p313
+V2018-12-15
+p314
+sVCountry
+p315
+VESP
+p316
+sVCrosstable
+p317
+VSize: 4781 bytes
+p318
+sVEvent code
+p319
+V186590
+p320
+sVNumber of players
+p321
+V28
+p322
+sVStart Date
+p323
+V2018-09-27
+p324
+sVView Report
+p325
+VRated for January 2019 as\u000a                                            Standard
+p326
+sVChief Organizer
+p327
+g52
+sVTime Control
+p328
+VStandard: 60 minutes with 30 seconds increment from move 1
+p329
+sVOrganizer
+p330
+g52
+sVChief Arbiter
+p331
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p332
+ssbag0
+(g40
+g2
+Ntp333
+Rp334
+(dp335
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=180394
+p336
+sg48
+(dp337
+VCategory
+p338
+g50
+sVCity
+p339
+VElgoibar
+p340
+sVZone
+p341
+g52
+sg16
+g53
+sVSystem
+p342
+g54
+sVDate registered
+p343
+V2018-03-27
+p344
+sVType
+p345
+g52
+sVPGN file
+p346
+g52
+sVTournament Name
+p347
+VI Open Danobat Elgoibar Sub2200
+p348
+sVEnd Date
+p349
+V2018-12-13
+p350
+sVDate received
+p351
+V2018-12-15
+p352
+sVCountry
+p353
+VESP
+p354
+sVCrosstable
+p355
+VSize: 4781 bytes
+p356
+sVEvent code
+p357
+V186590
+p358
+sVNumber of players
+p359
+V28
+p360
+sVStart Date
+p361
+V2018-09-27
+p362
+sVView Report
+p363
+VRated for January 2019 as\u000a                                            Standard
+p364
+sVChief Organizer
+p365
+g52
+sVTime Control
+p366
+VStandard: 60 minutes with 30 seconds increment from move 1
+p367
+sVOrganizer
+p368
+g52
+sVChief Arbiter
+p369
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p370
+ssbag0
+(g40
+g2
+Ntp371
+Rp372
+(dp373
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=180395
+p374
+sg48
+(dp375
+VCategory
+p376
+g50
+sVCity
+p377
+VElgoibar
+p378
+sVZone
+p379
+g52
+sg16
+g53
+sVSystem
+p380
+g54
+sVDate registered
+p381
+V2018-03-27
+p382
+sVType
+p383
+g52
+sVPGN file
+p384
+g52
+sVTournament Name
+p385
+VI Open Danobat Elgoibar Sub2200
+p386
+sVEnd Date
+p387
+V2018-12-13
+p388
+sVDate received
+p389
+V2018-12-15
+p390
+sVCountry
+p391
+VESP
+p392
+sVCrosstable
+p393
+VSize: 4781 bytes
+p394
+sVEvent code
+p395
+V186590
+p396
+sVNumber of players
+p397
+V28
+p398
+sVStart Date
+p399
+V2018-09-27
+p400
+sVView Report
+p401
+VRated for January 2019 as\u000a                                            Standard
+p402
+sVChief Organizer
+p403
+g52
+sVTime Control
+p404
+VStandard: 60 minutes with 30 seconds increment from move 1
+p405
+sVOrganizer
+p406
+g52
+sVChief Arbiter
+p407
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p408
+ssbag0
+(g40
+g2
+Ntp409
+Rp410
+(dp411
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=181187
+p412
+sg48
+(dp413
+VCategory
+p414
+g50
+sVCity
+p415
+VElgoibar
+p416
+sVZone
+p417
+g52
+sg16
+g53
+sVSystem
+p418
+g54
+sVDate registered
+p419
+V2018-03-27
+p420
+sVType
+p421
+g52
+sVPGN file
+p422
+g52
+sVTournament Name
+p423
+VI Open Danobat Elgoibar Sub2200
+p424
+sVEnd Date
+p425
+V2018-12-13
+p426
+sVDate received
+p427
+V2018-12-15
+p428
+sVCountry
+p429
+VESP
+p430
+sVCrosstable
+p431
+VSize: 4781 bytes
+p432
+sVEvent code
+p433
+V186590
+p434
+sVNumber of players
+p435
+V28
+p436
+sVStart Date
+p437
+V2018-09-27
+p438
+sVView Report
+p439
+VRated for January 2019 as\u000a                                            Standard
+p440
+sVChief Organizer
+p441
+g52
+sVTime Control
+p442
+VStandard: 60 minutes with 30 seconds increment from move 1
+p443
+sVOrganizer
+p444
+g52
+sVChief Arbiter
+p445
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p446
+ssbag0
+(g40
+g2
+Ntp447
+Rp448
+(dp449
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=182190
+p450
+sg48
+(dp451
+VCategory
+p452
+g50
+sVCity
+p453
+VElgoibar
+p454
+sVZone
+p455
+g52
+sg16
+g53
+sVSystem
+p456
+g54
+sVDate registered
+p457
+V2018-03-27
+p458
+sVType
+p459
+g52
+sVPGN file
+p460
+g52
+sVTournament Name
+p461
+VI Open Danobat Elgoibar Sub2200
+p462
+sVEnd Date
+p463
+V2018-12-13
+p464
+sVDate received
+p465
+V2018-12-15
+p466
+sVCountry
+p467
+VESP
+p468
+sVCrosstable
+p469
+VSize: 4781 bytes
+p470
+sVEvent code
+p471
+V186590
+p472
+sVNumber of players
+p473
+V28
+p474
+sVStart Date
+p475
+V2018-09-27
+p476
+sVView Report
+p477
+VRated for January 2019 as\u000a                                            Standard
+p478
+sVChief Organizer
+p479
+g52
+sVTime Control
+p480
+VStandard: 60 minutes with 30 seconds increment from move 1
+p481
+sVOrganizer
+p482
+g52
+sVChief Arbiter
+p483
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p484
+ssbag0
+(g40
+g2
+Ntp485
+Rp486
+(dp487
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=182191
+p488
+sg48
+(dp489
+VCategory
+p490
+g50
+sVCity
+p491
+VElgoibar
+p492
+sVZone
+p493
+g52
+sg16
+g53
+sVSystem
+p494
+g54
+sVDate registered
+p495
+V2018-03-27
+p496
+sVType
+p497
+g52
+sVPGN file
+p498
+g52
+sVTournament Name
+p499
+VI Open Danobat Elgoibar Sub2200
+p500
+sVEnd Date
+p501
+V2018-12-13
+p502
+sVDate received
+p503
+V2018-12-15
+p504
+sVCountry
+p505
+VESP
+p506
+sVCrosstable
+p507
+VSize: 4781 bytes
+p508
+sVEvent code
+p509
+V186590
+p510
+sVNumber of players
+p511
+V28
+p512
+sVStart Date
+p513
+V2018-09-27
+p514
+sVView Report
+p515
+VRated for January 2019 as\u000a                                            Standard
+p516
+sVChief Organizer
+p517
+g52
+sVTime Control
+p518
+VStandard: 60 minutes with 30 seconds increment from move 1
+p519
+sVOrganizer
+p520
+g52
+sVChief Arbiter
+p521
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p522
+ssbag0
+(g40
+g2
+Ntp523
+Rp524
+(dp525
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=182507
+p526
+sg48
+(dp527
+VCategory
+p528
+g50
+sVCity
+p529
+VElgoibar
+p530
+sVZone
+p531
+g52
+sg16
+g53
+sVSystem
+p532
+g54
+sVDate registered
+p533
+V2018-03-27
+p534
+sVType
+p535
+g52
+sVPGN file
+p536
+g52
+sVTournament Name
+p537
+VI Open Danobat Elgoibar Sub2200
+p538
+sVEnd Date
+p539
+V2018-12-13
+p540
+sVDate received
+p541
+V2018-12-15
+p542
+sVCountry
+p543
+VESP
+p544
+sVCrosstable
+p545
+VSize: 4781 bytes
+p546
+sVEvent code
+p547
+V186590
+p548
+sVNumber of players
+p549
+V28
+p550
+sVStart Date
+p551
+V2018-09-27
+p552
+sVView Report
+p553
+VRated for January 2019 as\u000a                                            Standard
+p554
+sVChief Organizer
+p555
+g52
+sVTime Control
+p556
+VStandard: 60 minutes with 30 seconds increment from move 1
+p557
+sVOrganizer
+p558
+g52
+sVChief Arbiter
+p559
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p560
+ssbag0
+(g40
+g2
+Ntp561
+Rp562
+(dp563
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=182710
+p564
+sg48
+(dp565
+VCategory
+p566
+g50
+sVCity
+p567
+VElgoibar
+p568
+sVZone
+p569
+g52
+sg16
+g53
+sVSystem
+p570
+g54
+sVDate registered
+p571
+V2018-03-27
+p572
+sVType
+p573
+g52
+sVPGN file
+p574
+g52
+sVTournament Name
+p575
+VI Open Danobat Elgoibar Sub2200
+p576
+sVEnd Date
+p577
+V2018-12-13
+p578
+sVDate received
+p579
+V2018-12-15
+p580
+sVCountry
+p581
+VESP
+p582
+sVCrosstable
+p583
+VSize: 4781 bytes
+p584
+sVEvent code
+p585
+V186590
+p586
+sVNumber of players
+p587
+V28
+p588
+sVStart Date
+p589
+V2018-09-27
+p590
+sVView Report
+p591
+VRated for January 2019 as\u000a                                            Standard
+p592
+sVChief Organizer
+p593
+g52
+sVTime Control
+p594
+VStandard: 60 minutes with 30 seconds increment from move 1
+p595
+sVOrganizer
+p596
+g52
+sVChief Arbiter
+p597
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p598
+ssbag0
+(g40
+g2
+Ntp599
+Rp600
+(dp601
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=182749
+p602
+sg48
+(dp603
+VCategory
+p604
+g50
+sVCity
+p605
+VElgoibar
+p606
+sVZone
+p607
+g52
+sg16
+g53
+sVSystem
+p608
+g54
+sVDate registered
+p609
+V2018-03-27
+p610
+sVType
+p611
+g52
+sVPGN file
+p612
+g52
+sVTournament Name
+p613
+VI Open Danobat Elgoibar Sub2200
+p614
+sVEnd Date
+p615
+V2018-12-13
+p616
+sVDate received
+p617
+V2018-12-15
+p618
+sVCountry
+p619
+VESP
+p620
+sVCrosstable
+p621
+VSize: 4781 bytes
+p622
+sVEvent code
+p623
+V186590
+p624
+sVNumber of players
+p625
+V28
+p626
+sVStart Date
+p627
+V2018-09-27
+p628
+sVView Report
+p629
+VRated for January 2019 as\u000a                                            Standard
+p630
+sVChief Organizer
+p631
+g52
+sVTime Control
+p632
+VStandard: 60 minutes with 30 seconds increment from move 1
+p633
+sVOrganizer
+p634
+g52
+sVChief Arbiter
+p635
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p636
+ssbag0
+(g40
+g2
+Ntp637
+Rp638
+(dp639
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=182759
+p640
+sg48
+(dp641
+VCategory
+p642
+g50
+sVCity
+p643
+VElgoibar
+p644
+sVZone
+p645
+g52
+sg16
+g53
+sVSystem
+p646
+g54
+sVDate registered
+p647
+V2018-03-27
+p648
+sVType
+p649
+g52
+sVPGN file
+p650
+g52
+sVTournament Name
+p651
+VI Open Danobat Elgoibar Sub2200
+p652
+sVEnd Date
+p653
+V2018-12-13
+p654
+sVDate received
+p655
+V2018-12-15
+p656
+sVCountry
+p657
+VESP
+p658
+sVCrosstable
+p659
+VSize: 4781 bytes
+p660
+sVEvent code
+p661
+V186590
+p662
+sVNumber of players
+p663
+V28
+p664
+sVStart Date
+p665
+V2018-09-27
+p666
+sVView Report
+p667
+VRated for January 2019 as\u000a                                            Standard
+p668
+sVChief Organizer
+p669
+g52
+sVTime Control
+p670
+VStandard: 60 minutes with 30 seconds increment from move 1
+p671
+sVOrganizer
+p672
+g52
+sVChief Arbiter
+p673
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p674
+ssbag0
+(g40
+g2
+Ntp675
+Rp676
+(dp677
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=182760
+p678
+sg48
+(dp679
+VCategory
+p680
+g50
+sVCity
+p681
+VElgoibar
+p682
+sVZone
+p683
+g52
+sg16
+g53
+sVSystem
+p684
+g54
+sVDate registered
+p685
+V2018-03-27
+p686
+sVType
+p687
+g52
+sVPGN file
+p688
+g52
+sVTournament Name
+p689
+VI Open Danobat Elgoibar Sub2200
+p690
+sVEnd Date
+p691
+V2018-12-13
+p692
+sVDate received
+p693
+V2018-12-15
+p694
+sVCountry
+p695
+VESP
+p696
+sVCrosstable
+p697
+VSize: 4781 bytes
+p698
+sVEvent code
+p699
+V186590
+p700
+sVNumber of players
+p701
+V28
+p702
+sVStart Date
+p703
+V2018-09-27
+p704
+sVView Report
+p705
+VRated for January 2019 as\u000a                                            Standard
+p706
+sVChief Organizer
+p707
+g52
+sVTime Control
+p708
+VStandard: 60 minutes with 30 seconds increment from move 1
+p709
+sVOrganizer
+p710
+g52
+sVChief Arbiter
+p711
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p712
+ssbag0
+(g40
+g2
+Ntp713
+Rp714
+(dp715
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=183167
+p716
+sg48
+(dp717
+VCategory
+p718
+g50
+sVCity
+p719
+VElgoibar
+p720
+sVZone
+p721
+g52
+sg16
+g53
+sVSystem
+p722
+g54
+sVDate registered
+p723
+V2018-03-27
+p724
+sVType
+p725
+g52
+sVPGN file
+p726
+g52
+sVTournament Name
+p727
+VI Open Danobat Elgoibar Sub2200
+p728
+sVEnd Date
+p729
+V2018-12-13
+p730
+sVDate received
+p731
+V2018-12-15
+p732
+sVCountry
+p733
+VESP
+p734
+sVCrosstable
+p735
+VSize: 4781 bytes
+p736
+sVEvent code
+p737
+V186590
+p738
+sVNumber of players
+p739
+V28
+p740
+sVStart Date
+p741
+V2018-09-27
+p742
+sVView Report
+p743
+VRated for January 2019 as\u000a                                            Standard
+p744
+sVChief Organizer
+p745
+g52
+sVTime Control
+p746
+VStandard: 60 minutes with 30 seconds increment from move 1
+p747
+sVOrganizer
+p748
+g52
+sVChief Arbiter
+p749
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p750
+ssbag0
+(g40
+g2
+Ntp751
+Rp752
+(dp753
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=183169
+p754
+sg48
+(dp755
+VCategory
+p756
+g50
+sVCity
+p757
+VElgoibar
+p758
+sVZone
+p759
+g52
+sg16
+g53
+sVSystem
+p760
+g54
+sVDate registered
+p761
+V2018-03-27
+p762
+sVType
+p763
+g52
+sVPGN file
+p764
+g52
+sVTournament Name
+p765
+VI Open Danobat Elgoibar Sub2200
+p766
+sVEnd Date
+p767
+V2018-12-13
+p768
+sVDate received
+p769
+V2018-12-15
+p770
+sVCountry
+p771
+VESP
+p772
+sVCrosstable
+p773
+VSize: 4781 bytes
+p774
+sVEvent code
+p775
+V186590
+p776
+sVNumber of players
+p777
+V28
+p778
+sVStart Date
+p779
+V2018-09-27
+p780
+sVView Report
+p781
+VRated for January 2019 as\u000a                                            Standard
+p782
+sVChief Organizer
+p783
+g52
+sVTime Control
+p784
+VStandard: 60 minutes with 30 seconds increment from move 1
+p785
+sVOrganizer
+p786
+g52
+sVChief Arbiter
+p787
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p788
+ssbag0
+(g40
+g2
+Ntp789
+Rp790
+(dp791
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=184621
+p792
+sg48
+(dp793
+VCategory
+p794
+g50
+sVCity
+p795
+VElgoibar
+p796
+sVZone
+p797
+g52
+sg16
+g53
+sVSystem
+p798
+g54
+sVDate registered
+p799
+V2018-03-27
+p800
+sVType
+p801
+g52
+sVPGN file
+p802
+g52
+sVTournament Name
+p803
+VI Open Danobat Elgoibar Sub2200
+p804
+sVEnd Date
+p805
+V2018-12-13
+p806
+sVDate received
+p807
+V2018-12-15
+p808
+sVCountry
+p809
+VESP
+p810
+sVCrosstable
+p811
+VSize: 4781 bytes
+p812
+sVEvent code
+p813
+V186590
+p814
+sVNumber of players
+p815
+V28
+p816
+sVStart Date
+p817
+V2018-09-27
+p818
+sVView Report
+p819
+VRated for January 2019 as\u000a                                            Standard
+p820
+sVChief Organizer
+p821
+g52
+sVTime Control
+p822
+VStandard: 60 minutes with 30 seconds increment from move 1
+p823
+sVOrganizer
+p824
+g52
+sVChief Arbiter
+p825
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p826
+ssbag0
+(g40
+g2
+Ntp827
+Rp828
+(dp829
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=184622
+p830
+sg48
+(dp831
+VCategory
+p832
+g50
+sVCity
+p833
+VElgoibar
+p834
+sVZone
+p835
+g52
+sg16
+g53
+sVSystem
+p836
+g54
+sVDate registered
+p837
+V2018-03-27
+p838
+sVType
+p839
+g52
+sVPGN file
+p840
+g52
+sVTournament Name
+p841
+VI Open Danobat Elgoibar Sub2200
+p842
+sVEnd Date
+p843
+V2018-12-13
+p844
+sVDate received
+p845
+V2018-12-15
+p846
+sVCountry
+p847
+VESP
+p848
+sVCrosstable
+p849
+VSize: 4781 bytes
+p850
+sVEvent code
+p851
+V186590
+p852
+sVNumber of players
+p853
+V28
+p854
+sVStart Date
+p855
+V2018-09-27
+p856
+sVView Report
+p857
+VRated for January 2019 as\u000a                                            Standard
+p858
+sVChief Organizer
+p859
+g52
+sVTime Control
+p860
+VStandard: 60 minutes with 30 seconds increment from move 1
+p861
+sVOrganizer
+p862
+g52
+sVChief Arbiter
+p863
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p864
+ssbag0
+(g40
+g2
+Ntp865
+Rp866
+(dp867
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=184627
+p868
+sg48
+(dp869
+VCategory
+p870
+g50
+sVCity
+p871
+VElgoibar
+p872
+sVZone
+p873
+g52
+sg16
+g53
+sVSystem
+p874
+g54
+sVDate registered
+p875
+V2018-03-27
+p876
+sVType
+p877
+g52
+sVPGN file
+p878
+g52
+sVTournament Name
+p879
+VI Open Danobat Elgoibar Sub2200
+p880
+sVEnd Date
+p881
+V2018-12-13
+p882
+sVDate received
+p883
+V2018-12-15
+p884
+sVCountry
+p885
+VESP
+p886
+sVCrosstable
+p887
+VSize: 4781 bytes
+p888
+sVEvent code
+p889
+V186590
+p890
+sVNumber of players
+p891
+V28
+p892
+sVStart Date
+p893
+V2018-09-27
+p894
+sVView Report
+p895
+VRated for January 2019 as\u000a                                            Standard
+p896
+sVChief Organizer
+p897
+g52
+sVTime Control
+p898
+VStandard: 60 minutes with 30 seconds increment from move 1
+p899
+sVOrganizer
+p900
+g52
+sVChief Arbiter
+p901
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p902
+ssbag0
+(g40
+g2
+Ntp903
+Rp904
+(dp905
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=184635
+p906
+sg48
+(dp907
+VCategory
+p908
+g50
+sVCity
+p909
+VElgoibar
+p910
+sVZone
+p911
+g52
+sg16
+g53
+sVSystem
+p912
+g54
+sVDate registered
+p913
+V2018-03-27
+p914
+sVType
+p915
+g52
+sVPGN file
+p916
+g52
+sVTournament Name
+p917
+VI Open Danobat Elgoibar Sub2200
+p918
+sVEnd Date
+p919
+V2018-12-13
+p920
+sVDate received
+p921
+V2018-12-15
+p922
+sVCountry
+p923
+VESP
+p924
+sVCrosstable
+p925
+VSize: 4781 bytes
+p926
+sVEvent code
+p927
+V186590
+p928
+sVNumber of players
+p929
+V28
+p930
+sVStart Date
+p931
+V2018-09-27
+p932
+sVView Report
+p933
+VRated for January 2019 as\u000a                                            Standard
+p934
+sVChief Organizer
+p935
+g52
+sVTime Control
+p936
+VStandard: 60 minutes with 30 seconds increment from move 1
+p937
+sVOrganizer
+p938
+g52
+sVChief Arbiter
+p939
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p940
+ssbag0
+(g40
+g2
+Ntp941
+Rp942
+(dp943
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=184663
+p944
+sg48
+(dp945
+VCategory
+p946
+g50
+sVCity
+p947
+VElgoibar
+p948
+sVZone
+p949
+g52
+sg16
+g53
+sVSystem
+p950
+g54
+sVDate registered
+p951
+V2018-03-27
+p952
+sVType
+p953
+g52
+sVPGN file
+p954
+g52
+sVTournament Name
+p955
+VI Open Danobat Elgoibar Sub2200
+p956
+sVEnd Date
+p957
+V2018-12-13
+p958
+sVDate received
+p959
+V2018-12-15
+p960
+sVCountry
+p961
+VESP
+p962
+sVCrosstable
+p963
+VSize: 4781 bytes
+p964
+sVEvent code
+p965
+V186590
+p966
+sVNumber of players
+p967
+V28
+p968
+sVStart Date
+p969
+V2018-09-27
+p970
+sVView Report
+p971
+VRated for January 2019 as\u000a                                            Standard
+p972
+sVChief Organizer
+p973
+g52
+sVTime Control
+p974
+VStandard: 60 minutes with 30 seconds increment from move 1
+p975
+sVOrganizer
+p976
+g52
+sVChief Arbiter
+p977
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p978
+ssbag0
+(g40
+g2
+Ntp979
+Rp980
+(dp981
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=184667
+p982
+sg48
+(dp983
+VCategory
+p984
+g50
+sVCity
+p985
+VElgoibar
+p986
+sVZone
+p987
+g52
+sg16
+g53
+sVSystem
+p988
+g54
+sVDate registered
+p989
+V2018-03-27
+p990
+sVType
+p991
+g52
+sVPGN file
+p992
+g52
+sVTournament Name
+p993
+VI Open Danobat Elgoibar Sub2200
+p994
+sVEnd Date
+p995
+V2018-12-13
+p996
+sVDate received
+p997
+V2018-12-15
+p998
+sVCountry
+p999
+VESP
+p1000
+sVCrosstable
+p1001
+VSize: 4781 bytes
+p1002
+sVEvent code
+p1003
+V186590
+p1004
+sVNumber of players
+p1005
+V28
+p1006
+sVStart Date
+p1007
+V2018-09-27
+p1008
+sVView Report
+p1009
+VRated for January 2019 as\u000a                                            Standard
+p1010
+sVChief Organizer
+p1011
+g52
+sVTime Control
+p1012
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1013
+sVOrganizer
+p1014
+g52
+sVChief Arbiter
+p1015
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1016
+ssbag0
+(g40
+g2
+Ntp1017
+Rp1018
+(dp1019
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=184668
+p1020
+sg48
+(dp1021
+VCategory
+p1022
+g50
+sVCity
+p1023
+VElgoibar
+p1024
+sVZone
+p1025
+g52
+sg16
+g53
+sVSystem
+p1026
+g54
+sVDate registered
+p1027
+V2018-03-27
+p1028
+sVType
+p1029
+g52
+sVPGN file
+p1030
+g52
+sVTournament Name
+p1031
+VI Open Danobat Elgoibar Sub2200
+p1032
+sVEnd Date
+p1033
+V2018-12-13
+p1034
+sVDate received
+p1035
+V2018-12-15
+p1036
+sVCountry
+p1037
+VESP
+p1038
+sVCrosstable
+p1039
+VSize: 4781 bytes
+p1040
+sVEvent code
+p1041
+V186590
+p1042
+sVNumber of players
+p1043
+V28
+p1044
+sVStart Date
+p1045
+V2018-09-27
+p1046
+sVView Report
+p1047
+VRated for January 2019 as\u000a                                            Standard
+p1048
+sVChief Organizer
+p1049
+g52
+sVTime Control
+p1050
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1051
+sVOrganizer
+p1052
+g52
+sVChief Arbiter
+p1053
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1054
+ssbag0
+(g40
+g2
+Ntp1055
+Rp1056
+(dp1057
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=184890
+p1058
+sg48
+(dp1059
+VCategory
+p1060
+g50
+sVCity
+p1061
+VElgoibar
+p1062
+sVZone
+p1063
+g52
+sg16
+g53
+sVSystem
+p1064
+g54
+sVDate registered
+p1065
+V2018-03-27
+p1066
+sVType
+p1067
+g52
+sVPGN file
+p1068
+g52
+sVTournament Name
+p1069
+VI Open Danobat Elgoibar Sub2200
+p1070
+sVEnd Date
+p1071
+V2018-12-13
+p1072
+sVDate received
+p1073
+V2018-12-15
+p1074
+sVCountry
+p1075
+VESP
+p1076
+sVCrosstable
+p1077
+VSize: 4781 bytes
+p1078
+sVEvent code
+p1079
+V186590
+p1080
+sVNumber of players
+p1081
+V28
+p1082
+sVStart Date
+p1083
+V2018-09-27
+p1084
+sVView Report
+p1085
+VRated for January 2019 as\u000a                                            Standard
+p1086
+sVChief Organizer
+p1087
+g52
+sVTime Control
+p1088
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1089
+sVOrganizer
+p1090
+g52
+sVChief Arbiter
+p1091
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1092
+ssbag0
+(g40
+g2
+Ntp1093
+Rp1094
+(dp1095
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=184968
+p1096
+sg48
+(dp1097
+VCategory
+p1098
+g50
+sVCity
+p1099
+VElgoibar
+p1100
+sVZone
+p1101
+g52
+sg16
+g53
+sVSystem
+p1102
+g54
+sVDate registered
+p1103
+V2018-03-27
+p1104
+sVType
+p1105
+g52
+sVPGN file
+p1106
+g52
+sVTournament Name
+p1107
+VI Open Danobat Elgoibar Sub2200
+p1108
+sVEnd Date
+p1109
+V2018-12-13
+p1110
+sVDate received
+p1111
+V2018-12-15
+p1112
+sVCountry
+p1113
+VESP
+p1114
+sVCrosstable
+p1115
+VSize: 4781 bytes
+p1116
+sVEvent code
+p1117
+V186590
+p1118
+sVNumber of players
+p1119
+V28
+p1120
+sVStart Date
+p1121
+V2018-09-27
+p1122
+sVView Report
+p1123
+VRated for January 2019 as\u000a                                            Standard
+p1124
+sVChief Organizer
+p1125
+g52
+sVTime Control
+p1126
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1127
+sVOrganizer
+p1128
+g52
+sVChief Arbiter
+p1129
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1130
+ssbag0
+(g40
+g2
+Ntp1131
+Rp1132
+(dp1133
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=184969
+p1134
+sg48
+(dp1135
+VCategory
+p1136
+g50
+sVCity
+p1137
+VElgoibar
+p1138
+sVZone
+p1139
+g52
+sg16
+g53
+sVSystem
+p1140
+g54
+sVDate registered
+p1141
+V2018-03-27
+p1142
+sVType
+p1143
+g52
+sVPGN file
+p1144
+g52
+sVTournament Name
+p1145
+VI Open Danobat Elgoibar Sub2200
+p1146
+sVEnd Date
+p1147
+V2018-12-13
+p1148
+sVDate received
+p1149
+V2018-12-15
+p1150
+sVCountry
+p1151
+VESP
+p1152
+sVCrosstable
+p1153
+VSize: 4781 bytes
+p1154
+sVEvent code
+p1155
+V186590
+p1156
+sVNumber of players
+p1157
+V28
+p1158
+sVStart Date
+p1159
+V2018-09-27
+p1160
+sVView Report
+p1161
+VRated for January 2019 as\u000a                                            Standard
+p1162
+sVChief Organizer
+p1163
+g52
+sVTime Control
+p1164
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1165
+sVOrganizer
+p1166
+g52
+sVChief Arbiter
+p1167
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1168
+ssbag0
+(g40
+g2
+Ntp1169
+Rp1170
+(dp1171
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=184970
+p1172
+sg48
+(dp1173
+VCategory
+p1174
+g50
+sVCity
+p1175
+VElgoibar
+p1176
+sVZone
+p1177
+g52
+sg16
+g53
+sVSystem
+p1178
+g54
+sVDate registered
+p1179
+V2018-03-27
+p1180
+sVType
+p1181
+g52
+sVPGN file
+p1182
+g52
+sVTournament Name
+p1183
+VI Open Danobat Elgoibar Sub2200
+p1184
+sVEnd Date
+p1185
+V2018-12-13
+p1186
+sVDate received
+p1187
+V2018-12-15
+p1188
+sVCountry
+p1189
+VESP
+p1190
+sVCrosstable
+p1191
+VSize: 4781 bytes
+p1192
+sVEvent code
+p1193
+V186590
+p1194
+sVNumber of players
+p1195
+V28
+p1196
+sVStart Date
+p1197
+V2018-09-27
+p1198
+sVView Report
+p1199
+VRated for January 2019 as\u000a                                            Standard
+p1200
+sVChief Organizer
+p1201
+g52
+sVTime Control
+p1202
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1203
+sVOrganizer
+p1204
+g52
+sVChief Arbiter
+p1205
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1206
+ssbag0
+(g40
+g2
+Ntp1207
+Rp1208
+(dp1209
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=185113
+p1210
+sg48
+(dp1211
+VCategory
+p1212
+g50
+sVCity
+p1213
+VElgoibar
+p1214
+sVZone
+p1215
+g52
+sg16
+g53
+sVSystem
+p1216
+g54
+sVDate registered
+p1217
+V2018-03-27
+p1218
+sVType
+p1219
+g52
+sVPGN file
+p1220
+g52
+sVTournament Name
+p1221
+VI Open Danobat Elgoibar Sub2200
+p1222
+sVEnd Date
+p1223
+V2018-12-13
+p1224
+sVDate received
+p1225
+V2018-12-15
+p1226
+sVCountry
+p1227
+VESP
+p1228
+sVCrosstable
+p1229
+VSize: 4781 bytes
+p1230
+sVEvent code
+p1231
+V186590
+p1232
+sVNumber of players
+p1233
+V28
+p1234
+sVStart Date
+p1235
+V2018-09-27
+p1236
+sVView Report
+p1237
+VRated for January 2019 as\u000a                                            Standard
+p1238
+sVChief Organizer
+p1239
+g52
+sVTime Control
+p1240
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1241
+sVOrganizer
+p1242
+g52
+sVChief Arbiter
+p1243
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1244
+ssbag0
+(g40
+g2
+Ntp1245
+Rp1246
+(dp1247
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=185119
+p1248
+sg48
+(dp1249
+VCategory
+p1250
+g50
+sVCity
+p1251
+VElgoibar
+p1252
+sVZone
+p1253
+g52
+sg16
+g53
+sVSystem
+p1254
+g54
+sVDate registered
+p1255
+V2018-03-27
+p1256
+sVType
+p1257
+g52
+sVPGN file
+p1258
+g52
+sVTournament Name
+p1259
+VI Open Danobat Elgoibar Sub2200
+p1260
+sVEnd Date
+p1261
+V2018-12-13
+p1262
+sVDate received
+p1263
+V2018-12-15
+p1264
+sVCountry
+p1265
+VESP
+p1266
+sVCrosstable
+p1267
+VSize: 4781 bytes
+p1268
+sVEvent code
+p1269
+V186590
+p1270
+sVNumber of players
+p1271
+V28
+p1272
+sVStart Date
+p1273
+V2018-09-27
+p1274
+sVView Report
+p1275
+VRated for January 2019 as\u000a                                            Standard
+p1276
+sVChief Organizer
+p1277
+g52
+sVTime Control
+p1278
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1279
+sVOrganizer
+p1280
+g52
+sVChief Arbiter
+p1281
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1282
+ssbag0
+(g40
+g2
+Ntp1283
+Rp1284
+(dp1285
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=185124
+p1286
+sg48
+(dp1287
+VCategory
+p1288
+g50
+sVCity
+p1289
+VElgoibar
+p1290
+sVZone
+p1291
+g52
+sg16
+g53
+sVSystem
+p1292
+g54
+sVDate registered
+p1293
+V2018-03-27
+p1294
+sVType
+p1295
+g52
+sVPGN file
+p1296
+g52
+sVTournament Name
+p1297
+VI Open Danobat Elgoibar Sub2200
+p1298
+sVEnd Date
+p1299
+V2018-12-13
+p1300
+sVDate received
+p1301
+V2018-12-15
+p1302
+sVCountry
+p1303
+VESP
+p1304
+sVCrosstable
+p1305
+VSize: 4781 bytes
+p1306
+sVEvent code
+p1307
+V186590
+p1308
+sVNumber of players
+p1309
+V28
+p1310
+sVStart Date
+p1311
+V2018-09-27
+p1312
+sVView Report
+p1313
+VRated for January 2019 as\u000a                                            Standard
+p1314
+sVChief Organizer
+p1315
+g52
+sVTime Control
+p1316
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1317
+sVOrganizer
+p1318
+g52
+sVChief Arbiter
+p1319
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1320
+ssbag0
+(g40
+g2
+Ntp1321
+Rp1322
+(dp1323
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=185125
+p1324
+sg48
+(dp1325
+VCategory
+p1326
+g50
+sVCity
+p1327
+VElgoibar
+p1328
+sVZone
+p1329
+g52
+sg16
+g53
+sVSystem
+p1330
+g54
+sVDate registered
+p1331
+V2018-03-27
+p1332
+sVType
+p1333
+g52
+sVPGN file
+p1334
+g52
+sVTournament Name
+p1335
+VI Open Danobat Elgoibar Sub2200
+p1336
+sVEnd Date
+p1337
+V2018-12-13
+p1338
+sVDate received
+p1339
+V2018-12-15
+p1340
+sVCountry
+p1341
+VESP
+p1342
+sVCrosstable
+p1343
+VSize: 4781 bytes
+p1344
+sVEvent code
+p1345
+V186590
+p1346
+sVNumber of players
+p1347
+V28
+p1348
+sVStart Date
+p1349
+V2018-09-27
+p1350
+sVView Report
+p1351
+VRated for January 2019 as\u000a                                            Standard
+p1352
+sVChief Organizer
+p1353
+g52
+sVTime Control
+p1354
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1355
+sVOrganizer
+p1356
+g52
+sVChief Arbiter
+p1357
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1358
+ssbag0
+(g40
+g2
+Ntp1359
+Rp1360
+(dp1361
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=185126
+p1362
+sg48
+(dp1363
+VCategory
+p1364
+g50
+sVCity
+p1365
+VElgoibar
+p1366
+sVZone
+p1367
+g52
+sg16
+g53
+sVSystem
+p1368
+g54
+sVDate registered
+p1369
+V2018-03-27
+p1370
+sVType
+p1371
+g52
+sVPGN file
+p1372
+g52
+sVTournament Name
+p1373
+VI Open Danobat Elgoibar Sub2200
+p1374
+sVEnd Date
+p1375
+V2018-12-13
+p1376
+sVDate received
+p1377
+V2018-12-15
+p1378
+sVCountry
+p1379
+VESP
+p1380
+sVCrosstable
+p1381
+VSize: 4781 bytes
+p1382
+sVEvent code
+p1383
+V186590
+p1384
+sVNumber of players
+p1385
+V28
+p1386
+sVStart Date
+p1387
+V2018-09-27
+p1388
+sVView Report
+p1389
+VRated for January 2019 as\u000a                                            Standard
+p1390
+sVChief Organizer
+p1391
+g52
+sVTime Control
+p1392
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1393
+sVOrganizer
+p1394
+g52
+sVChief Arbiter
+p1395
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1396
+ssbag0
+(g40
+g2
+Ntp1397
+Rp1398
+(dp1399
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=185372
+p1400
+sg48
+(dp1401
+VCategory
+p1402
+g50
+sVCity
+p1403
+VElgoibar
+p1404
+sVZone
+p1405
+g52
+sg16
+g53
+sVSystem
+p1406
+g54
+sVDate registered
+p1407
+V2018-03-27
+p1408
+sVType
+p1409
+g52
+sVPGN file
+p1410
+g52
+sVTournament Name
+p1411
+VI Open Danobat Elgoibar Sub2200
+p1412
+sVEnd Date
+p1413
+V2018-12-13
+p1414
+sVDate received
+p1415
+V2018-12-15
+p1416
+sVCountry
+p1417
+VESP
+p1418
+sVCrosstable
+p1419
+VSize: 4781 bytes
+p1420
+sVEvent code
+p1421
+V186590
+p1422
+sVNumber of players
+p1423
+V28
+p1424
+sVStart Date
+p1425
+V2018-09-27
+p1426
+sVView Report
+p1427
+VRated for January 2019 as\u000a                                            Standard
+p1428
+sVChief Organizer
+p1429
+g52
+sVTime Control
+p1430
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1431
+sVOrganizer
+p1432
+g52
+sVChief Arbiter
+p1433
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1434
+ssbag0
+(g40
+g2
+Ntp1435
+Rp1436
+(dp1437
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=185437
+p1438
+sg48
+(dp1439
+VCategory
+p1440
+g50
+sVCity
+p1441
+VElgoibar
+p1442
+sVZone
+p1443
+g52
+sg16
+g53
+sVSystem
+p1444
+g54
+sVDate registered
+p1445
+V2018-03-27
+p1446
+sVType
+p1447
+g52
+sVPGN file
+p1448
+g52
+sVTournament Name
+p1449
+VI Open Danobat Elgoibar Sub2200
+p1450
+sVEnd Date
+p1451
+V2018-12-13
+p1452
+sVDate received
+p1453
+V2018-12-15
+p1454
+sVCountry
+p1455
+VESP
+p1456
+sVCrosstable
+p1457
+VSize: 4781 bytes
+p1458
+sVEvent code
+p1459
+V186590
+p1460
+sVNumber of players
+p1461
+V28
+p1462
+sVStart Date
+p1463
+V2018-09-27
+p1464
+sVView Report
+p1465
+VRated for January 2019 as\u000a                                            Standard
+p1466
+sVChief Organizer
+p1467
+g52
+sVTime Control
+p1468
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1469
+sVOrganizer
+p1470
+g52
+sVChief Arbiter
+p1471
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1472
+ssbag0
+(g40
+g2
+Ntp1473
+Rp1474
+(dp1475
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=185465
+p1476
+sg48
+(dp1477
+VCategory
+p1478
+g50
+sVCity
+p1479
+VElgoibar
+p1480
+sVZone
+p1481
+g52
+sg16
+g53
+sVSystem
+p1482
+g54
+sVDate registered
+p1483
+V2018-03-27
+p1484
+sVType
+p1485
+g52
+sVPGN file
+p1486
+g52
+sVTournament Name
+p1487
+VI Open Danobat Elgoibar Sub2200
+p1488
+sVEnd Date
+p1489
+V2018-12-13
+p1490
+sVDate received
+p1491
+V2018-12-15
+p1492
+sVCountry
+p1493
+VESP
+p1494
+sVCrosstable
+p1495
+VSize: 4781 bytes
+p1496
+sVEvent code
+p1497
+V186590
+p1498
+sVNumber of players
+p1499
+V28
+p1500
+sVStart Date
+p1501
+V2018-09-27
+p1502
+sVView Report
+p1503
+VRated for January 2019 as\u000a                                            Standard
+p1504
+sVChief Organizer
+p1505
+g52
+sVTime Control
+p1506
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1507
+sVOrganizer
+p1508
+g52
+sVChief Arbiter
+p1509
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1510
+ssbag0
+(g40
+g2
+Ntp1511
+Rp1512
+(dp1513
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=185548
+p1514
+sg48
+(dp1515
+VCategory
+p1516
+g50
+sVCity
+p1517
+VElgoibar
+p1518
+sVZone
+p1519
+g52
+sg16
+g53
+sVSystem
+p1520
+g54
+sVDate registered
+p1521
+V2018-03-27
+p1522
+sVType
+p1523
+g52
+sVPGN file
+p1524
+g52
+sVTournament Name
+p1525
+VI Open Danobat Elgoibar Sub2200
+p1526
+sVEnd Date
+p1527
+V2018-12-13
+p1528
+sVDate received
+p1529
+V2018-12-15
+p1530
+sVCountry
+p1531
+VESP
+p1532
+sVCrosstable
+p1533
+VSize: 4781 bytes
+p1534
+sVEvent code
+p1535
+V186590
+p1536
+sVNumber of players
+p1537
+V28
+p1538
+sVStart Date
+p1539
+V2018-09-27
+p1540
+sVView Report
+p1541
+VRated for January 2019 as\u000a                                            Standard
+p1542
+sVChief Organizer
+p1543
+g52
+sVTime Control
+p1544
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1545
+sVOrganizer
+p1546
+g52
+sVChief Arbiter
+p1547
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1548
+ssbag0
+(g40
+g2
+Ntp1549
+Rp1550
+(dp1551
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=185550
+p1552
+sg48
+(dp1553
+VCategory
+p1554
+g50
+sVCity
+p1555
+VElgoibar
+p1556
+sVZone
+p1557
+g52
+sg16
+g53
+sVSystem
+p1558
+g54
+sVDate registered
+p1559
+V2018-03-27
+p1560
+sVType
+p1561
+g52
+sVPGN file
+p1562
+g52
+sVTournament Name
+p1563
+VI Open Danobat Elgoibar Sub2200
+p1564
+sVEnd Date
+p1565
+V2018-12-13
+p1566
+sVDate received
+p1567
+V2018-12-15
+p1568
+sVCountry
+p1569
+VESP
+p1570
+sVCrosstable
+p1571
+VSize: 4781 bytes
+p1572
+sVEvent code
+p1573
+V186590
+p1574
+sVNumber of players
+p1575
+V28
+p1576
+sVStart Date
+p1577
+V2018-09-27
+p1578
+sVView Report
+p1579
+VRated for January 2019 as\u000a                                            Standard
+p1580
+sVChief Organizer
+p1581
+g52
+sVTime Control
+p1582
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1583
+sVOrganizer
+p1584
+g52
+sVChief Arbiter
+p1585
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1586
+ssbag0
+(g40
+g2
+Ntp1587
+Rp1588
+(dp1589
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=185551
+p1590
+sg48
+(dp1591
+VCategory
+p1592
+g50
+sVCity
+p1593
+VElgoibar
+p1594
+sVZone
+p1595
+g52
+sg16
+g53
+sVSystem
+p1596
+g54
+sVDate registered
+p1597
+V2018-03-27
+p1598
+sVType
+p1599
+g52
+sVPGN file
+p1600
+g52
+sVTournament Name
+p1601
+VI Open Danobat Elgoibar Sub2200
+p1602
+sVEnd Date
+p1603
+V2018-12-13
+p1604
+sVDate received
+p1605
+V2018-12-15
+p1606
+sVCountry
+p1607
+VESP
+p1608
+sVCrosstable
+p1609
+VSize: 4781 bytes
+p1610
+sVEvent code
+p1611
+V186590
+p1612
+sVNumber of players
+p1613
+V28
+p1614
+sVStart Date
+p1615
+V2018-09-27
+p1616
+sVView Report
+p1617
+VRated for January 2019 as\u000a                                            Standard
+p1618
+sVChief Organizer
+p1619
+g52
+sVTime Control
+p1620
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1621
+sVOrganizer
+p1622
+g52
+sVChief Arbiter
+p1623
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1624
+ssbag0
+(g40
+g2
+Ntp1625
+Rp1626
+(dp1627
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=185552
+p1628
+sg48
+(dp1629
+VCategory
+p1630
+g50
+sVCity
+p1631
+VElgoibar
+p1632
+sVZone
+p1633
+g52
+sg16
+g53
+sVSystem
+p1634
+g54
+sVDate registered
+p1635
+V2018-03-27
+p1636
+sVType
+p1637
+g52
+sVPGN file
+p1638
+g52
+sVTournament Name
+p1639
+VI Open Danobat Elgoibar Sub2200
+p1640
+sVEnd Date
+p1641
+V2018-12-13
+p1642
+sVDate received
+p1643
+V2018-12-15
+p1644
+sVCountry
+p1645
+VESP
+p1646
+sVCrosstable
+p1647
+VSize: 4781 bytes
+p1648
+sVEvent code
+p1649
+V186590
+p1650
+sVNumber of players
+p1651
+V28
+p1652
+sVStart Date
+p1653
+V2018-09-27
+p1654
+sVView Report
+p1655
+VRated for January 2019 as\u000a                                            Standard
+p1656
+sVChief Organizer
+p1657
+g52
+sVTime Control
+p1658
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1659
+sVOrganizer
+p1660
+g52
+sVChief Arbiter
+p1661
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1662
+ssbag0
+(g40
+g2
+Ntp1663
+Rp1664
+(dp1665
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=185555
+p1666
+sg48
+(dp1667
+VCategory
+p1668
+g50
+sVCity
+p1669
+VElgoibar
+p1670
+sVZone
+p1671
+g52
+sg16
+g53
+sVSystem
+p1672
+g54
+sVDate registered
+p1673
+V2018-03-27
+p1674
+sVType
+p1675
+g52
+sVPGN file
+p1676
+g52
+sVTournament Name
+p1677
+VI Open Danobat Elgoibar Sub2200
+p1678
+sVEnd Date
+p1679
+V2018-12-13
+p1680
+sVDate received
+p1681
+V2018-12-15
+p1682
+sVCountry
+p1683
+VESP
+p1684
+sVCrosstable
+p1685
+VSize: 4781 bytes
+p1686
+sVEvent code
+p1687
+V186590
+p1688
+sVNumber of players
+p1689
+V28
+p1690
+sVStart Date
+p1691
+V2018-09-27
+p1692
+sVView Report
+p1693
+VRated for January 2019 as\u000a                                            Standard
+p1694
+sVChief Organizer
+p1695
+g52
+sVTime Control
+p1696
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1697
+sVOrganizer
+p1698
+g52
+sVChief Arbiter
+p1699
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1700
+ssbag0
+(g40
+g2
+Ntp1701
+Rp1702
+(dp1703
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=186466
+p1704
+sg48
+(dp1705
+VCategory
+p1706
+g50
+sVCity
+p1707
+VElgoibar
+p1708
+sVZone
+p1709
+g52
+sg16
+g53
+sVSystem
+p1710
+g54
+sVDate registered
+p1711
+V2018-03-27
+p1712
+sVType
+p1713
+g52
+sVPGN file
+p1714
+g52
+sVTournament Name
+p1715
+VI Open Danobat Elgoibar Sub2200
+p1716
+sVEnd Date
+p1717
+V2018-12-13
+p1718
+sVDate received
+p1719
+V2018-12-15
+p1720
+sVCountry
+p1721
+VESP
+p1722
+sVCrosstable
+p1723
+VSize: 4781 bytes
+p1724
+sVEvent code
+p1725
+V186590
+p1726
+sVNumber of players
+p1727
+V28
+p1728
+sVStart Date
+p1729
+V2018-09-27
+p1730
+sVView Report
+p1731
+VRated for January 2019 as\u000a                                            Standard
+p1732
+sVChief Organizer
+p1733
+g52
+sVTime Control
+p1734
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1735
+sVOrganizer
+p1736
+g52
+sVChief Arbiter
+p1737
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1738
+ssbag0
+(g40
+g2
+Ntp1739
+Rp1740
+(dp1741
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=186586
+p1742
+sg48
+(dp1743
+VCategory
+p1744
+g50
+sVCity
+p1745
+VElgoibar
+p1746
+sVZone
+p1747
+g52
+sg16
+g53
+sVSystem
+p1748
+g54
+sVDate registered
+p1749
+V2018-03-27
+p1750
+sVType
+p1751
+g52
+sVPGN file
+p1752
+g52
+sVTournament Name
+p1753
+VI Open Danobat Elgoibar Sub2200
+p1754
+sVEnd Date
+p1755
+V2018-12-13
+p1756
+sVDate received
+p1757
+V2018-12-15
+p1758
+sVCountry
+p1759
+VESP
+p1760
+sVCrosstable
+p1761
+VSize: 4781 bytes
+p1762
+sVEvent code
+p1763
+V186590
+p1764
+sVNumber of players
+p1765
+V28
+p1766
+sVStart Date
+p1767
+V2018-09-27
+p1768
+sVView Report
+p1769
+VRated for January 2019 as\u000a                                            Standard
+p1770
+sVChief Organizer
+p1771
+g52
+sVTime Control
+p1772
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1773
+sVOrganizer
+p1774
+g52
+sVChief Arbiter
+p1775
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1776
+ssbag0
+(g40
+g2
+Ntp1777
+Rp1778
+(dp1779
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=186589
+p1780
+sg48
+(dp1781
+VCategory
+p1782
+g50
+sVCity
+p1783
+VElgoibar
+p1784
+sVZone
+p1785
+g52
+sg16
+g53
+sVSystem
+p1786
+g54
+sVDate registered
+p1787
+V2018-03-27
+p1788
+sVType
+p1789
+g52
+sVPGN file
+p1790
+g52
+sVTournament Name
+p1791
+VI Open Danobat Elgoibar Sub2200
+p1792
+sVEnd Date
+p1793
+V2018-12-13
+p1794
+sVDate received
+p1795
+V2018-12-15
+p1796
+sVCountry
+p1797
+VESP
+p1798
+sVCrosstable
+p1799
+VSize: 4781 bytes
+p1800
+sVEvent code
+p1801
+V186590
+p1802
+sVNumber of players
+p1803
+V28
+p1804
+sVStart Date
+p1805
+V2018-09-27
+p1806
+sVView Report
+p1807
+VRated for January 2019 as\u000a                                            Standard
+p1808
+sVChief Organizer
+p1809
+g52
+sVTime Control
+p1810
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1811
+sVOrganizer
+p1812
+g52
+sVChief Arbiter
+p1813
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1814
+ssbag0
+(g40
+g2
+Ntp1815
+Rp1816
+(dp1817
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=187013
+p1818
+sg48
+(dp1819
+VCategory
+p1820
+g50
+sVCity
+p1821
+VElgoibar
+p1822
+sVZone
+p1823
+g52
+sg16
+g53
+sVSystem
+p1824
+g54
+sVDate registered
+p1825
+V2018-03-27
+p1826
+sVType
+p1827
+g52
+sVPGN file
+p1828
+g52
+sVTournament Name
+p1829
+VI Open Danobat Elgoibar Sub2200
+p1830
+sVEnd Date
+p1831
+V2018-12-13
+p1832
+sVDate received
+p1833
+V2018-12-15
+p1834
+sVCountry
+p1835
+VESP
+p1836
+sVCrosstable
+p1837
+VSize: 4781 bytes
+p1838
+sVEvent code
+p1839
+V186590
+p1840
+sVNumber of players
+p1841
+V28
+p1842
+sVStart Date
+p1843
+V2018-09-27
+p1844
+sVView Report
+p1845
+VRated for January 2019 as\u000a                                            Standard
+p1846
+sVChief Organizer
+p1847
+g52
+sVTime Control
+p1848
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1849
+sVOrganizer
+p1850
+g52
+sVChief Arbiter
+p1851
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1852
+ssbag0
+(g40
+g2
+Ntp1853
+Rp1854
+(dp1855
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=187017
+p1856
+sg48
+(dp1857
+VCategory
+p1858
+g50
+sVCity
+p1859
+VElgoibar
+p1860
+sVZone
+p1861
+g52
+sg16
+g53
+sVSystem
+p1862
+g54
+sVDate registered
+p1863
+V2018-03-27
+p1864
+sVType
+p1865
+g52
+sVPGN file
+p1866
+g52
+sVTournament Name
+p1867
+VI Open Danobat Elgoibar Sub2200
+p1868
+sVEnd Date
+p1869
+V2018-12-13
+p1870
+sVDate received
+p1871
+V2018-12-15
+p1872
+sVCountry
+p1873
+VESP
+p1874
+sVCrosstable
+p1875
+VSize: 4781 bytes
+p1876
+sVEvent code
+p1877
+V186590
+p1878
+sVNumber of players
+p1879
+V28
+p1880
+sVStart Date
+p1881
+V2018-09-27
+p1882
+sVView Report
+p1883
+VRated for January 2019 as\u000a                                            Standard
+p1884
+sVChief Organizer
+p1885
+g52
+sVTime Control
+p1886
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1887
+sVOrganizer
+p1888
+g52
+sVChief Arbiter
+p1889
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1890
+ssbag0
+(g40
+g2
+Ntp1891
+Rp1892
+(dp1893
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=187111
+p1894
+sg48
+(dp1895
+VCategory
+p1896
+g50
+sVCity
+p1897
+VElgoibar
+p1898
+sVZone
+p1899
+g52
+sg16
+g53
+sVSystem
+p1900
+g54
+sVDate registered
+p1901
+V2018-03-27
+p1902
+sVType
+p1903
+g52
+sVPGN file
+p1904
+g52
+sVTournament Name
+p1905
+VI Open Danobat Elgoibar Sub2200
+p1906
+sVEnd Date
+p1907
+V2018-12-13
+p1908
+sVDate received
+p1909
+V2018-12-15
+p1910
+sVCountry
+p1911
+VESP
+p1912
+sVCrosstable
+p1913
+VSize: 4781 bytes
+p1914
+sVEvent code
+p1915
+V186590
+p1916
+sVNumber of players
+p1917
+V28
+p1918
+sVStart Date
+p1919
+V2018-09-27
+p1920
+sVView Report
+p1921
+VRated for January 2019 as\u000a                                            Standard
+p1922
+sVChief Organizer
+p1923
+g52
+sVTime Control
+p1924
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1925
+sVOrganizer
+p1926
+g52
+sVChief Arbiter
+p1927
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1928
+ssbag0
+(g40
+g2
+Ntp1929
+Rp1930
+(dp1931
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=187673
+p1932
+sg48
+(dp1933
+VCategory
+p1934
+g50
+sVCity
+p1935
+VElgoibar
+p1936
+sVZone
+p1937
+g52
+sg16
+g53
+sVSystem
+p1938
+g54
+sVDate registered
+p1939
+V2018-03-27
+p1940
+sVType
+p1941
+g52
+sVPGN file
+p1942
+g52
+sVTournament Name
+p1943
+VI Open Danobat Elgoibar Sub2200
+p1944
+sVEnd Date
+p1945
+V2018-12-13
+p1946
+sVDate received
+p1947
+V2018-12-15
+p1948
+sVCountry
+p1949
+VESP
+p1950
+sVCrosstable
+p1951
+VSize: 4781 bytes
+p1952
+sVEvent code
+p1953
+V186590
+p1954
+sVNumber of players
+p1955
+V28
+p1956
+sVStart Date
+p1957
+V2018-09-27
+p1958
+sVView Report
+p1959
+VRated for January 2019 as\u000a                                            Standard
+p1960
+sVChief Organizer
+p1961
+g52
+sVTime Control
+p1962
+VStandard: 60 minutes with 30 seconds increment from move 1
+p1963
+sVOrganizer
+p1964
+g52
+sVChief Arbiter
+p1965
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p1966
+ssbag0
+(g40
+g2
+Ntp1967
+Rp1968
+(dp1969
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=187931
+p1970
+sg48
+(dp1971
+VCategory
+p1972
+g50
+sVCity
+p1973
+VElgoibar
+p1974
+sVZone
+p1975
+g52
+sg16
+g53
+sVSystem
+p1976
+g54
+sVDate registered
+p1977
+V2018-03-27
+p1978
+sVType
+p1979
+g52
+sVPGN file
+p1980
+g52
+sVTournament Name
+p1981
+VI Open Danobat Elgoibar Sub2200
+p1982
+sVEnd Date
+p1983
+V2018-12-13
+p1984
+sVDate received
+p1985
+V2018-12-15
+p1986
+sVCountry
+p1987
+VESP
+p1988
+sVCrosstable
+p1989
+VSize: 4781 bytes
+p1990
+sVEvent code
+p1991
+V186590
+p1992
+sVNumber of players
+p1993
+V28
+p1994
+sVStart Date
+p1995
+V2018-09-27
+p1996
+sVView Report
+p1997
+VRated for January 2019 as\u000a                                            Standard
+p1998
+sVChief Organizer
+p1999
+g52
+sVTime Control
+p2000
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2001
+sVOrganizer
+p2002
+g52
+sVChief Arbiter
+p2003
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2004
+ssbag0
+(g40
+g2
+Ntp2005
+Rp2006
+(dp2007
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=187932
+p2008
+sg48
+(dp2009
+VCategory
+p2010
+g50
+sVCity
+p2011
+VElgoibar
+p2012
+sVZone
+p2013
+g52
+sg16
+g53
+sVSystem
+p2014
+g54
+sVDate registered
+p2015
+V2018-03-27
+p2016
+sVType
+p2017
+g52
+sVPGN file
+p2018
+g52
+sVTournament Name
+p2019
+VI Open Danobat Elgoibar Sub2200
+p2020
+sVEnd Date
+p2021
+V2018-12-13
+p2022
+sVDate received
+p2023
+V2018-12-15
+p2024
+sVCountry
+p2025
+VESP
+p2026
+sVCrosstable
+p2027
+VSize: 4781 bytes
+p2028
+sVEvent code
+p2029
+V186590
+p2030
+sVNumber of players
+p2031
+V28
+p2032
+sVStart Date
+p2033
+V2018-09-27
+p2034
+sVView Report
+p2035
+VRated for January 2019 as\u000a                                            Standard
+p2036
+sVChief Organizer
+p2037
+g52
+sVTime Control
+p2038
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2039
+sVOrganizer
+p2040
+g52
+sVChief Arbiter
+p2041
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2042
+ssbag0
+(g40
+g2
+Ntp2043
+Rp2044
+(dp2045
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=187973
+p2046
+sg48
+(dp2047
+VCategory
+p2048
+g50
+sVCity
+p2049
+VElgoibar
+p2050
+sVZone
+p2051
+g52
+sg16
+g53
+sVSystem
+p2052
+g54
+sVDate registered
+p2053
+V2018-03-27
+p2054
+sVType
+p2055
+g52
+sVPGN file
+p2056
+g52
+sVTournament Name
+p2057
+VI Open Danobat Elgoibar Sub2200
+p2058
+sVEnd Date
+p2059
+V2018-12-13
+p2060
+sVDate received
+p2061
+V2018-12-15
+p2062
+sVCountry
+p2063
+VESP
+p2064
+sVCrosstable
+p2065
+VSize: 4781 bytes
+p2066
+sVEvent code
+p2067
+V186590
+p2068
+sVNumber of players
+p2069
+V28
+p2070
+sVStart Date
+p2071
+V2018-09-27
+p2072
+sVView Report
+p2073
+VRated for January 2019 as\u000a                                            Standard
+p2074
+sVChief Organizer
+p2075
+g52
+sVTime Control
+p2076
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2077
+sVOrganizer
+p2078
+g52
+sVChief Arbiter
+p2079
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2080
+ssbag0
+(g40
+g2
+Ntp2081
+Rp2082
+(dp2083
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=188335
+p2084
+sg48
+(dp2085
+VCategory
+p2086
+g50
+sVCity
+p2087
+VElgoibar
+p2088
+sVZone
+p2089
+g52
+sg16
+g53
+sVSystem
+p2090
+g54
+sVDate registered
+p2091
+V2018-03-27
+p2092
+sVType
+p2093
+g52
+sVPGN file
+p2094
+g52
+sVTournament Name
+p2095
+VI Open Danobat Elgoibar Sub2200
+p2096
+sVEnd Date
+p2097
+V2018-12-13
+p2098
+sVDate received
+p2099
+V2018-12-15
+p2100
+sVCountry
+p2101
+VESP
+p2102
+sVCrosstable
+p2103
+VSize: 4781 bytes
+p2104
+sVEvent code
+p2105
+V186590
+p2106
+sVNumber of players
+p2107
+V28
+p2108
+sVStart Date
+p2109
+V2018-09-27
+p2110
+sVView Report
+p2111
+VRated for January 2019 as\u000a                                            Standard
+p2112
+sVChief Organizer
+p2113
+g52
+sVTime Control
+p2114
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2115
+sVOrganizer
+p2116
+g52
+sVChief Arbiter
+p2117
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2118
+ssbag0
+(g40
+g2
+Ntp2119
+Rp2120
+(dp2121
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=188336
+p2122
+sg48
+(dp2123
+VCategory
+p2124
+g50
+sVCity
+p2125
+VElgoibar
+p2126
+sVZone
+p2127
+g52
+sg16
+g53
+sVSystem
+p2128
+g54
+sVDate registered
+p2129
+V2018-03-27
+p2130
+sVType
+p2131
+g52
+sVPGN file
+p2132
+g52
+sVTournament Name
+p2133
+VI Open Danobat Elgoibar Sub2200
+p2134
+sVEnd Date
+p2135
+V2018-12-13
+p2136
+sVDate received
+p2137
+V2018-12-15
+p2138
+sVCountry
+p2139
+VESP
+p2140
+sVCrosstable
+p2141
+VSize: 4781 bytes
+p2142
+sVEvent code
+p2143
+V186590
+p2144
+sVNumber of players
+p2145
+V28
+p2146
+sVStart Date
+p2147
+V2018-09-27
+p2148
+sVView Report
+p2149
+VRated for January 2019 as\u000a                                            Standard
+p2150
+sVChief Organizer
+p2151
+g52
+sVTime Control
+p2152
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2153
+sVOrganizer
+p2154
+g52
+sVChief Arbiter
+p2155
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2156
+ssbag0
+(g40
+g2
+Ntp2157
+Rp2158
+(dp2159
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=188337
+p2160
+sg48
+(dp2161
+VCategory
+p2162
+g50
+sVCity
+p2163
+VElgoibar
+p2164
+sVZone
+p2165
+g52
+sg16
+g53
+sVSystem
+p2166
+g54
+sVDate registered
+p2167
+V2018-03-27
+p2168
+sVType
+p2169
+g52
+sVPGN file
+p2170
+g52
+sVTournament Name
+p2171
+VI Open Danobat Elgoibar Sub2200
+p2172
+sVEnd Date
+p2173
+V2018-12-13
+p2174
+sVDate received
+p2175
+V2018-12-15
+p2176
+sVCountry
+p2177
+VESP
+p2178
+sVCrosstable
+p2179
+VSize: 4781 bytes
+p2180
+sVEvent code
+p2181
+V186590
+p2182
+sVNumber of players
+p2183
+V28
+p2184
+sVStart Date
+p2185
+V2018-09-27
+p2186
+sVView Report
+p2187
+VRated for January 2019 as\u000a                                            Standard
+p2188
+sVChief Organizer
+p2189
+g52
+sVTime Control
+p2190
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2191
+sVOrganizer
+p2192
+g52
+sVChief Arbiter
+p2193
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2194
+ssbag0
+(g40
+g2
+Ntp2195
+Rp2196
+(dp2197
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=188360
+p2198
+sg48
+(dp2199
+VCategory
+p2200
+g50
+sVCity
+p2201
+VElgoibar
+p2202
+sVZone
+p2203
+g52
+sg16
+g53
+sVSystem
+p2204
+g54
+sVDate registered
+p2205
+V2018-03-27
+p2206
+sVType
+p2207
+g52
+sVPGN file
+p2208
+g52
+sVTournament Name
+p2209
+VI Open Danobat Elgoibar Sub2200
+p2210
+sVEnd Date
+p2211
+V2018-12-13
+p2212
+sVDate received
+p2213
+V2018-12-15
+p2214
+sVCountry
+p2215
+VESP
+p2216
+sVCrosstable
+p2217
+VSize: 4781 bytes
+p2218
+sVEvent code
+p2219
+V186590
+p2220
+sVNumber of players
+p2221
+V28
+p2222
+sVStart Date
+p2223
+V2018-09-27
+p2224
+sVView Report
+p2225
+VRated for January 2019 as\u000a                                            Standard
+p2226
+sVChief Organizer
+p2227
+g52
+sVTime Control
+p2228
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2229
+sVOrganizer
+p2230
+g52
+sVChief Arbiter
+p2231
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2232
+ssbag0
+(g40
+g2
+Ntp2233
+Rp2234
+(dp2235
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=188852
+p2236
+sg48
+(dp2237
+VCategory
+p2238
+g50
+sVCity
+p2239
+VElgoibar
+p2240
+sVZone
+p2241
+g52
+sg16
+g53
+sVSystem
+p2242
+g54
+sVDate registered
+p2243
+V2018-03-27
+p2244
+sVType
+p2245
+g52
+sVPGN file
+p2246
+g52
+sVTournament Name
+p2247
+VI Open Danobat Elgoibar Sub2200
+p2248
+sVEnd Date
+p2249
+V2018-12-13
+p2250
+sVDate received
+p2251
+V2018-12-15
+p2252
+sVCountry
+p2253
+VESP
+p2254
+sVCrosstable
+p2255
+VSize: 4781 bytes
+p2256
+sVEvent code
+p2257
+V186590
+p2258
+sVNumber of players
+p2259
+V28
+p2260
+sVStart Date
+p2261
+V2018-09-27
+p2262
+sVView Report
+p2263
+VRated for January 2019 as\u000a                                            Standard
+p2264
+sVChief Organizer
+p2265
+g52
+sVTime Control
+p2266
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2267
+sVOrganizer
+p2268
+g52
+sVChief Arbiter
+p2269
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2270
+ssbag0
+(g40
+g2
+Ntp2271
+Rp2272
+(dp2273
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=188879
+p2274
+sg48
+(dp2275
+VCategory
+p2276
+g50
+sVCity
+p2277
+VElgoibar
+p2278
+sVZone
+p2279
+g52
+sg16
+g53
+sVSystem
+p2280
+g54
+sVDate registered
+p2281
+V2018-03-27
+p2282
+sVType
+p2283
+g52
+sVPGN file
+p2284
+g52
+sVTournament Name
+p2285
+VI Open Danobat Elgoibar Sub2200
+p2286
+sVEnd Date
+p2287
+V2018-12-13
+p2288
+sVDate received
+p2289
+V2018-12-15
+p2290
+sVCountry
+p2291
+VESP
+p2292
+sVCrosstable
+p2293
+VSize: 4781 bytes
+p2294
+sVEvent code
+p2295
+V186590
+p2296
+sVNumber of players
+p2297
+V28
+p2298
+sVStart Date
+p2299
+V2018-09-27
+p2300
+sVView Report
+p2301
+VRated for January 2019 as\u000a                                            Standard
+p2302
+sVChief Organizer
+p2303
+g52
+sVTime Control
+p2304
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2305
+sVOrganizer
+p2306
+g52
+sVChief Arbiter
+p2307
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2308
+ssbag0
+(g40
+g2
+Ntp2309
+Rp2310
+(dp2311
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=188880
+p2312
+sg48
+(dp2313
+VCategory
+p2314
+g50
+sVCity
+p2315
+VElgoibar
+p2316
+sVZone
+p2317
+g52
+sg16
+g53
+sVSystem
+p2318
+g54
+sVDate registered
+p2319
+V2018-03-27
+p2320
+sVType
+p2321
+g52
+sVPGN file
+p2322
+g52
+sVTournament Name
+p2323
+VI Open Danobat Elgoibar Sub2200
+p2324
+sVEnd Date
+p2325
+V2018-12-13
+p2326
+sVDate received
+p2327
+V2018-12-15
+p2328
+sVCountry
+p2329
+VESP
+p2330
+sVCrosstable
+p2331
+VSize: 4781 bytes
+p2332
+sVEvent code
+p2333
+V186590
+p2334
+sVNumber of players
+p2335
+V28
+p2336
+sVStart Date
+p2337
+V2018-09-27
+p2338
+sVView Report
+p2339
+VRated for January 2019 as\u000a                                            Standard
+p2340
+sVChief Organizer
+p2341
+g52
+sVTime Control
+p2342
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2343
+sVOrganizer
+p2344
+g52
+sVChief Arbiter
+p2345
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2346
+ssbag0
+(g40
+g2
+Ntp2347
+Rp2348
+(dp2349
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=188892
+p2350
+sg48
+(dp2351
+VCategory
+p2352
+g50
+sVCity
+p2353
+VElgoibar
+p2354
+sVZone
+p2355
+g52
+sg16
+g53
+sVSystem
+p2356
+g54
+sVDate registered
+p2357
+V2018-03-27
+p2358
+sVType
+p2359
+g52
+sVPGN file
+p2360
+g52
+sVTournament Name
+p2361
+VI Open Danobat Elgoibar Sub2200
+p2362
+sVEnd Date
+p2363
+V2018-12-13
+p2364
+sVDate received
+p2365
+V2018-12-15
+p2366
+sVCountry
+p2367
+VESP
+p2368
+sVCrosstable
+p2369
+VSize: 4781 bytes
+p2370
+sVEvent code
+p2371
+V186590
+p2372
+sVNumber of players
+p2373
+V28
+p2374
+sVStart Date
+p2375
+V2018-09-27
+p2376
+sVView Report
+p2377
+VRated for January 2019 as\u000a                                            Standard
+p2378
+sVChief Organizer
+p2379
+g52
+sVTime Control
+p2380
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2381
+sVOrganizer
+p2382
+g52
+sVChief Arbiter
+p2383
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2384
+ssbag0
+(g40
+g2
+Ntp2385
+Rp2386
+(dp2387
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=189333
+p2388
+sg48
+(dp2389
+VCategory
+p2390
+g50
+sVCity
+p2391
+VElgoibar
+p2392
+sVZone
+p2393
+g52
+sg16
+g53
+sVSystem
+p2394
+g54
+sVDate registered
+p2395
+V2018-03-27
+p2396
+sVType
+p2397
+g52
+sVPGN file
+p2398
+g52
+sVTournament Name
+p2399
+VI Open Danobat Elgoibar Sub2200
+p2400
+sVEnd Date
+p2401
+V2018-12-13
+p2402
+sVDate received
+p2403
+V2018-12-15
+p2404
+sVCountry
+p2405
+VESP
+p2406
+sVCrosstable
+p2407
+VSize: 4781 bytes
+p2408
+sVEvent code
+p2409
+V186590
+p2410
+sVNumber of players
+p2411
+V28
+p2412
+sVStart Date
+p2413
+V2018-09-27
+p2414
+sVView Report
+p2415
+VRated for January 2019 as\u000a                                            Standard
+p2416
+sVChief Organizer
+p2417
+g52
+sVTime Control
+p2418
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2419
+sVOrganizer
+p2420
+g52
+sVChief Arbiter
+p2421
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2422
+ssbag0
+(g40
+g2
+Ntp2423
+Rp2424
+(dp2425
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=189334
+p2426
+sg48
+(dp2427
+VCategory
+p2428
+g50
+sVCity
+p2429
+VElgoibar
+p2430
+sVZone
+p2431
+g52
+sg16
+g53
+sVSystem
+p2432
+g54
+sVDate registered
+p2433
+V2018-03-27
+p2434
+sVType
+p2435
+g52
+sVPGN file
+p2436
+g52
+sVTournament Name
+p2437
+VI Open Danobat Elgoibar Sub2200
+p2438
+sVEnd Date
+p2439
+V2018-12-13
+p2440
+sVDate received
+p2441
+V2018-12-15
+p2442
+sVCountry
+p2443
+VESP
+p2444
+sVCrosstable
+p2445
+VSize: 4781 bytes
+p2446
+sVEvent code
+p2447
+V186590
+p2448
+sVNumber of players
+p2449
+V28
+p2450
+sVStart Date
+p2451
+V2018-09-27
+p2452
+sVView Report
+p2453
+VRated for January 2019 as\u000a                                            Standard
+p2454
+sVChief Organizer
+p2455
+g52
+sVTime Control
+p2456
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2457
+sVOrganizer
+p2458
+g52
+sVChief Arbiter
+p2459
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2460
+ssbag0
+(g40
+g2
+Ntp2461
+Rp2462
+(dp2463
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=189335
+p2464
+sg48
+(dp2465
+VCategory
+p2466
+g50
+sVCity
+p2467
+VElgoibar
+p2468
+sVZone
+p2469
+g52
+sg16
+g53
+sVSystem
+p2470
+g54
+sVDate registered
+p2471
+V2018-03-27
+p2472
+sVType
+p2473
+g52
+sVPGN file
+p2474
+g52
+sVTournament Name
+p2475
+VI Open Danobat Elgoibar Sub2200
+p2476
+sVEnd Date
+p2477
+V2018-12-13
+p2478
+sVDate received
+p2479
+V2018-12-15
+p2480
+sVCountry
+p2481
+VESP
+p2482
+sVCrosstable
+p2483
+VSize: 4781 bytes
+p2484
+sVEvent code
+p2485
+V186590
+p2486
+sVNumber of players
+p2487
+V28
+p2488
+sVStart Date
+p2489
+V2018-09-27
+p2490
+sVView Report
+p2491
+VRated for January 2019 as\u000a                                            Standard
+p2492
+sVChief Organizer
+p2493
+g52
+sVTime Control
+p2494
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2495
+sVOrganizer
+p2496
+g52
+sVChief Arbiter
+p2497
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2498
+ssbag0
+(g40
+g2
+Ntp2499
+Rp2500
+(dp2501
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=189336
+p2502
+sg48
+(dp2503
+VCategory
+p2504
+g50
+sVCity
+p2505
+VElgoibar
+p2506
+sVZone
+p2507
+g52
+sg16
+g53
+sVSystem
+p2508
+g54
+sVDate registered
+p2509
+V2018-03-27
+p2510
+sVType
+p2511
+g52
+sVPGN file
+p2512
+g52
+sVTournament Name
+p2513
+VI Open Danobat Elgoibar Sub2200
+p2514
+sVEnd Date
+p2515
+V2018-12-13
+p2516
+sVDate received
+p2517
+V2018-12-15
+p2518
+sVCountry
+p2519
+VESP
+p2520
+sVCrosstable
+p2521
+VSize: 4781 bytes
+p2522
+sVEvent code
+p2523
+V186590
+p2524
+sVNumber of players
+p2525
+V28
+p2526
+sVStart Date
+p2527
+V2018-09-27
+p2528
+sVView Report
+p2529
+VRated for January 2019 as\u000a                                            Standard
+p2530
+sVChief Organizer
+p2531
+g52
+sVTime Control
+p2532
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2533
+sVOrganizer
+p2534
+g52
+sVChief Arbiter
+p2535
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2536
+ssbag0
+(g40
+g2
+Ntp2537
+Rp2538
+(dp2539
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=189337
+p2540
+sg48
+(dp2541
+VCategory
+p2542
+g50
+sVCity
+p2543
+VElgoibar
+p2544
+sVZone
+p2545
+g52
+sg16
+g53
+sVSystem
+p2546
+g54
+sVDate registered
+p2547
+V2018-03-27
+p2548
+sVType
+p2549
+g52
+sVPGN file
+p2550
+g52
+sVTournament Name
+p2551
+VI Open Danobat Elgoibar Sub2200
+p2552
+sVEnd Date
+p2553
+V2018-12-13
+p2554
+sVDate received
+p2555
+V2018-12-15
+p2556
+sVCountry
+p2557
+VESP
+p2558
+sVCrosstable
+p2559
+VSize: 4781 bytes
+p2560
+sVEvent code
+p2561
+V186590
+p2562
+sVNumber of players
+p2563
+V28
+p2564
+sVStart Date
+p2565
+V2018-09-27
+p2566
+sVView Report
+p2567
+VRated for January 2019 as\u000a                                            Standard
+p2568
+sVChief Organizer
+p2569
+g52
+sVTime Control
+p2570
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2571
+sVOrganizer
+p2572
+g52
+sVChief Arbiter
+p2573
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2574
+ssbag0
+(g40
+g2
+Ntp2575
+Rp2576
+(dp2577
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=189357
+p2578
+sg48
+(dp2579
+VCategory
+p2580
+g50
+sVCity
+p2581
+VElgoibar
+p2582
+sVZone
+p2583
+g52
+sg16
+g53
+sVSystem
+p2584
+g54
+sVDate registered
+p2585
+V2018-03-27
+p2586
+sVType
+p2587
+g52
+sVPGN file
+p2588
+g52
+sVTournament Name
+p2589
+VI Open Danobat Elgoibar Sub2200
+p2590
+sVEnd Date
+p2591
+V2018-12-13
+p2592
+sVDate received
+p2593
+V2018-12-15
+p2594
+sVCountry
+p2595
+VESP
+p2596
+sVCrosstable
+p2597
+VSize: 4781 bytes
+p2598
+sVEvent code
+p2599
+V186590
+p2600
+sVNumber of players
+p2601
+V28
+p2602
+sVStart Date
+p2603
+V2018-09-27
+p2604
+sVView Report
+p2605
+VRated for January 2019 as\u000a                                            Standard
+p2606
+sVChief Organizer
+p2607
+g52
+sVTime Control
+p2608
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2609
+sVOrganizer
+p2610
+g52
+sVChief Arbiter
+p2611
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2612
+ssbag0
+(g40
+g2
+Ntp2613
+Rp2614
+(dp2615
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=189695
+p2616
+sg48
+(dp2617
+VCategory
+p2618
+g50
+sVCity
+p2619
+VElgoibar
+p2620
+sVZone
+p2621
+g52
+sg16
+g53
+sVSystem
+p2622
+g54
+sVDate registered
+p2623
+V2018-03-27
+p2624
+sVType
+p2625
+g52
+sVPGN file
+p2626
+g52
+sVTournament Name
+p2627
+VI Open Danobat Elgoibar Sub2200
+p2628
+sVEnd Date
+p2629
+V2018-12-13
+p2630
+sVDate received
+p2631
+V2018-12-15
+p2632
+sVCountry
+p2633
+VESP
+p2634
+sVCrosstable
+p2635
+VSize: 4781 bytes
+p2636
+sVEvent code
+p2637
+V186590
+p2638
+sVNumber of players
+p2639
+V28
+p2640
+sVStart Date
+p2641
+V2018-09-27
+p2642
+sVView Report
+p2643
+VRated for January 2019 as\u000a                                            Standard
+p2644
+sVChief Organizer
+p2645
+g52
+sVTime Control
+p2646
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2647
+sVOrganizer
+p2648
+g52
+sVChief Arbiter
+p2649
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2650
+ssbag0
+(g40
+g2
+Ntp2651
+Rp2652
+(dp2653
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=189748
+p2654
+sg48
+(dp2655
+VCategory
+p2656
+g50
+sVCity
+p2657
+VElgoibar
+p2658
+sVZone
+p2659
+g52
+sg16
+g53
+sVSystem
+p2660
+g54
+sVDate registered
+p2661
+V2018-03-27
+p2662
+sVType
+p2663
+g52
+sVPGN file
+p2664
+g52
+sVTournament Name
+p2665
+VI Open Danobat Elgoibar Sub2200
+p2666
+sVEnd Date
+p2667
+V2018-12-13
+p2668
+sVDate received
+p2669
+V2018-12-15
+p2670
+sVCountry
+p2671
+VESP
+p2672
+sVCrosstable
+p2673
+VSize: 4781 bytes
+p2674
+sVEvent code
+p2675
+V186590
+p2676
+sVNumber of players
+p2677
+V28
+p2678
+sVStart Date
+p2679
+V2018-09-27
+p2680
+sVView Report
+p2681
+VRated for January 2019 as\u000a                                            Standard
+p2682
+sVChief Organizer
+p2683
+g52
+sVTime Control
+p2684
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2685
+sVOrganizer
+p2686
+g52
+sVChief Arbiter
+p2687
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2688
+ssbag0
+(g40
+g2
+Ntp2689
+Rp2690
+(dp2691
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=189834
+p2692
+sg48
+(dp2693
+VCategory
+p2694
+g50
+sVCity
+p2695
+VElgoibar
+p2696
+sVZone
+p2697
+g52
+sg16
+g53
+sVSystem
+p2698
+g54
+sVDate registered
+p2699
+V2018-03-27
+p2700
+sVType
+p2701
+g52
+sVPGN file
+p2702
+g52
+sVTournament Name
+p2703
+VI Open Danobat Elgoibar Sub2200
+p2704
+sVEnd Date
+p2705
+V2018-12-13
+p2706
+sVDate received
+p2707
+V2018-12-15
+p2708
+sVCountry
+p2709
+VESP
+p2710
+sVCrosstable
+p2711
+VSize: 4781 bytes
+p2712
+sVEvent code
+p2713
+V186590
+p2714
+sVNumber of players
+p2715
+V28
+p2716
+sVStart Date
+p2717
+V2018-09-27
+p2718
+sVView Report
+p2719
+VRated for January 2019 as\u000a                                            Standard
+p2720
+sVChief Organizer
+p2721
+g52
+sVTime Control
+p2722
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2723
+sVOrganizer
+p2724
+g52
+sVChief Arbiter
+p2725
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2726
+ssbag0
+(g40
+g2
+Ntp2727
+Rp2728
+(dp2729
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=189835
+p2730
+sg48
+(dp2731
+VCategory
+p2732
+g50
+sVCity
+p2733
+VElgoibar
+p2734
+sVZone
+p2735
+g52
+sg16
+g53
+sVSystem
+p2736
+g54
+sVDate registered
+p2737
+V2018-03-27
+p2738
+sVType
+p2739
+g52
+sVPGN file
+p2740
+g52
+sVTournament Name
+p2741
+VI Open Danobat Elgoibar Sub2200
+p2742
+sVEnd Date
+p2743
+V2018-12-13
+p2744
+sVDate received
+p2745
+V2018-12-15
+p2746
+sVCountry
+p2747
+VESP
+p2748
+sVCrosstable
+p2749
+VSize: 4781 bytes
+p2750
+sVEvent code
+p2751
+V186590
+p2752
+sVNumber of players
+p2753
+V28
+p2754
+sVStart Date
+p2755
+V2018-09-27
+p2756
+sVView Report
+p2757
+VRated for January 2019 as\u000a                                            Standard
+p2758
+sVChief Organizer
+p2759
+g52
+sVTime Control
+p2760
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2761
+sVOrganizer
+p2762
+g52
+sVChief Arbiter
+p2763
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2764
+ssbag0
+(g40
+g2
+Ntp2765
+Rp2766
+(dp2767
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=190332
+p2768
+sg48
+(dp2769
+VCategory
+p2770
+g50
+sVCity
+p2771
+VElgoibar
+p2772
+sVZone
+p2773
+g52
+sg16
+g53
+sVSystem
+p2774
+g54
+sVDate registered
+p2775
+V2018-03-27
+p2776
+sVType
+p2777
+g52
+sVPGN file
+p2778
+g52
+sVTournament Name
+p2779
+VI Open Danobat Elgoibar Sub2200
+p2780
+sVEnd Date
+p2781
+V2018-12-13
+p2782
+sVDate received
+p2783
+V2018-12-15
+p2784
+sVCountry
+p2785
+VESP
+p2786
+sVCrosstable
+p2787
+VSize: 4781 bytes
+p2788
+sVEvent code
+p2789
+V186590
+p2790
+sVNumber of players
+p2791
+V28
+p2792
+sVStart Date
+p2793
+V2018-09-27
+p2794
+sVView Report
+p2795
+VRated for January 2019 as\u000a                                            Standard
+p2796
+sVChief Organizer
+p2797
+g52
+sVTime Control
+p2798
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2799
+sVOrganizer
+p2800
+g52
+sVChief Arbiter
+p2801
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2802
+ssbag0
+(g40
+g2
+Ntp2803
+Rp2804
+(dp2805
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=190342
+p2806
+sg48
+(dp2807
+VCategory
+p2808
+g50
+sVCity
+p2809
+VElgoibar
+p2810
+sVZone
+p2811
+g52
+sg16
+g53
+sVSystem
+p2812
+g54
+sVDate registered
+p2813
+V2018-03-27
+p2814
+sVType
+p2815
+g52
+sVPGN file
+p2816
+g52
+sVTournament Name
+p2817
+VI Open Danobat Elgoibar Sub2200
+p2818
+sVEnd Date
+p2819
+V2018-12-13
+p2820
+sVDate received
+p2821
+V2018-12-15
+p2822
+sVCountry
+p2823
+VESP
+p2824
+sVCrosstable
+p2825
+VSize: 4781 bytes
+p2826
+sVEvent code
+p2827
+V186590
+p2828
+sVNumber of players
+p2829
+V28
+p2830
+sVStart Date
+p2831
+V2018-09-27
+p2832
+sVView Report
+p2833
+VRated for January 2019 as\u000a                                            Standard
+p2834
+sVChief Organizer
+p2835
+g52
+sVTime Control
+p2836
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2837
+sVOrganizer
+p2838
+g52
+sVChief Arbiter
+p2839
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2840
+ssbag0
+(g40
+g2
+Ntp2841
+Rp2842
+(dp2843
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=190369
+p2844
+sg48
+(dp2845
+VCategory
+p2846
+g50
+sVCity
+p2847
+VElgoibar
+p2848
+sVZone
+p2849
+g52
+sg16
+g53
+sVSystem
+p2850
+g54
+sVDate registered
+p2851
+V2018-03-27
+p2852
+sVType
+p2853
+g52
+sVPGN file
+p2854
+g52
+sVTournament Name
+p2855
+VI Open Danobat Elgoibar Sub2200
+p2856
+sVEnd Date
+p2857
+V2018-12-13
+p2858
+sVDate received
+p2859
+V2018-12-15
+p2860
+sVCountry
+p2861
+VESP
+p2862
+sVCrosstable
+p2863
+VSize: 4781 bytes
+p2864
+sVEvent code
+p2865
+V186590
+p2866
+sVNumber of players
+p2867
+V28
+p2868
+sVStart Date
+p2869
+V2018-09-27
+p2870
+sVView Report
+p2871
+VRated for January 2019 as\u000a                                            Standard
+p2872
+sVChief Organizer
+p2873
+g52
+sVTime Control
+p2874
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2875
+sVOrganizer
+p2876
+g52
+sVChief Arbiter
+p2877
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2878
+ssbag0
+(g40
+g2
+Ntp2879
+Rp2880
+(dp2881
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=190370
+p2882
+sg48
+(dp2883
+VCategory
+p2884
+g50
+sVCity
+p2885
+VElgoibar
+p2886
+sVZone
+p2887
+g52
+sg16
+g53
+sVSystem
+p2888
+g54
+sVDate registered
+p2889
+V2018-03-27
+p2890
+sVType
+p2891
+g52
+sVPGN file
+p2892
+g52
+sVTournament Name
+p2893
+VI Open Danobat Elgoibar Sub2200
+p2894
+sVEnd Date
+p2895
+V2018-12-13
+p2896
+sVDate received
+p2897
+V2018-12-15
+p2898
+sVCountry
+p2899
+VESP
+p2900
+sVCrosstable
+p2901
+VSize: 4781 bytes
+p2902
+sVEvent code
+p2903
+V186590
+p2904
+sVNumber of players
+p2905
+V28
+p2906
+sVStart Date
+p2907
+V2018-09-27
+p2908
+sVView Report
+p2909
+VRated for January 2019 as\u000a                                            Standard
+p2910
+sVChief Organizer
+p2911
+g52
+sVTime Control
+p2912
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2913
+sVOrganizer
+p2914
+g52
+sVChief Arbiter
+p2915
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2916
+ssbag0
+(g40
+g2
+Ntp2917
+Rp2918
+(dp2919
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=190371
+p2920
+sg48
+(dp2921
+VCategory
+p2922
+g50
+sVCity
+p2923
+VElgoibar
+p2924
+sVZone
+p2925
+g52
+sg16
+g53
+sVSystem
+p2926
+g54
+sVDate registered
+p2927
+V2018-03-27
+p2928
+sVType
+p2929
+g52
+sVPGN file
+p2930
+g52
+sVTournament Name
+p2931
+VI Open Danobat Elgoibar Sub2200
+p2932
+sVEnd Date
+p2933
+V2018-12-13
+p2934
+sVDate received
+p2935
+V2018-12-15
+p2936
+sVCountry
+p2937
+VESP
+p2938
+sVCrosstable
+p2939
+VSize: 4781 bytes
+p2940
+sVEvent code
+p2941
+V186590
+p2942
+sVNumber of players
+p2943
+V28
+p2944
+sVStart Date
+p2945
+V2018-09-27
+p2946
+sVView Report
+p2947
+VRated for January 2019 as\u000a                                            Standard
+p2948
+sVChief Organizer
+p2949
+g52
+sVTime Control
+p2950
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2951
+sVOrganizer
+p2952
+g52
+sVChief Arbiter
+p2953
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2954
+ssbag0
+(g40
+g2
+Ntp2955
+Rp2956
+(dp2957
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=190676
+p2958
+sg48
+(dp2959
+VCategory
+p2960
+g50
+sVCity
+p2961
+VElgoibar
+p2962
+sVZone
+p2963
+g52
+sg16
+g53
+sVSystem
+p2964
+g54
+sVDate registered
+p2965
+V2018-03-27
+p2966
+sVType
+p2967
+g52
+sVPGN file
+p2968
+g52
+sVTournament Name
+p2969
+VI Open Danobat Elgoibar Sub2200
+p2970
+sVEnd Date
+p2971
+V2018-12-13
+p2972
+sVDate received
+p2973
+V2018-12-15
+p2974
+sVCountry
+p2975
+VESP
+p2976
+sVCrosstable
+p2977
+VSize: 4781 bytes
+p2978
+sVEvent code
+p2979
+V186590
+p2980
+sVNumber of players
+p2981
+V28
+p2982
+sVStart Date
+p2983
+V2018-09-27
+p2984
+sVView Report
+p2985
+VRated for January 2019 as\u000a                                            Standard
+p2986
+sVChief Organizer
+p2987
+g52
+sVTime Control
+p2988
+VStandard: 60 minutes with 30 seconds increment from move 1
+p2989
+sVOrganizer
+p2990
+g52
+sVChief Arbiter
+p2991
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p2992
+ssbag0
+(g40
+g2
+Ntp2993
+Rp2994
+(dp2995
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=190771
+p2996
+sg48
+(dp2997
+VCategory
+p2998
+g50
+sVCity
+p2999
+VElgoibar
+p3000
+sVZone
+p3001
+g52
+sg16
+g53
+sVSystem
+p3002
+g54
+sVDate registered
+p3003
+V2018-03-27
+p3004
+sVType
+p3005
+g52
+sVPGN file
+p3006
+g52
+sVTournament Name
+p3007
+VI Open Danobat Elgoibar Sub2200
+p3008
+sVEnd Date
+p3009
+V2018-12-13
+p3010
+sVDate received
+p3011
+V2018-12-15
+p3012
+sVCountry
+p3013
+VESP
+p3014
+sVCrosstable
+p3015
+VSize: 4781 bytes
+p3016
+sVEvent code
+p3017
+V186590
+p3018
+sVNumber of players
+p3019
+V28
+p3020
+sVStart Date
+p3021
+V2018-09-27
+p3022
+sVView Report
+p3023
+VRated for January 2019 as\u000a                                            Standard
+p3024
+sVChief Organizer
+p3025
+g52
+sVTime Control
+p3026
+VStandard: 60 minutes with 30 seconds increment from move 1
+p3027
+sVOrganizer
+p3028
+g52
+sVChief Arbiter
+p3029
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p3030
+ssbag0
+(g40
+g2
+Ntp3031
+Rp3032
+(dp3033
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=191164
+p3034
+sg48
+(dp3035
+VCategory
+p3036
+g50
+sVCity
+p3037
+VElgoibar
+p3038
+sVZone
+p3039
+g52
+sg16
+g53
+sVSystem
+p3040
+g54
+sVDate registered
+p3041
+V2018-03-27
+p3042
+sVType
+p3043
+g52
+sVPGN file
+p3044
+g52
+sVTournament Name
+p3045
+VI Open Danobat Elgoibar Sub2200
+p3046
+sVEnd Date
+p3047
+V2018-12-13
+p3048
+sVDate received
+p3049
+V2018-12-15
+p3050
+sVCountry
+p3051
+VESP
+p3052
+sVCrosstable
+p3053
+VSize: 4781 bytes
+p3054
+sVEvent code
+p3055
+V186590
+p3056
+sVNumber of players
+p3057
+V28
+p3058
+sVStart Date
+p3059
+V2018-09-27
+p3060
+sVView Report
+p3061
+VRated for January 2019 as\u000a                                            Standard
+p3062
+sVChief Organizer
+p3063
+g52
+sVTime Control
+p3064
+VStandard: 60 minutes with 30 seconds increment from move 1
+p3065
+sVOrganizer
+p3066
+g52
+sVChief Arbiter
+p3067
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p3068
+ssbag0
+(g40
+g2
+Ntp3069
+Rp3070
+(dp3071
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=191181
+p3072
+sg48
+(dp3073
+VCategory
+p3074
+g50
+sVCity
+p3075
+VElgoibar
+p3076
+sVZone
+p3077
+g52
+sg16
+g53
+sVSystem
+p3078
+g54
+sVDate registered
+p3079
+V2018-03-27
+p3080
+sVType
+p3081
+g52
+sVPGN file
+p3082
+g52
+sVTournament Name
+p3083
+VI Open Danobat Elgoibar Sub2200
+p3084
+sVEnd Date
+p3085
+V2018-12-13
+p3086
+sVDate received
+p3087
+V2018-12-15
+p3088
+sVCountry
+p3089
+VESP
+p3090
+sVCrosstable
+p3091
+VSize: 4781 bytes
+p3092
+sVEvent code
+p3093
+V186590
+p3094
+sVNumber of players
+p3095
+V28
+p3096
+sVStart Date
+p3097
+V2018-09-27
+p3098
+sVView Report
+p3099
+VRated for January 2019 as\u000a                                            Standard
+p3100
+sVChief Organizer
+p3101
+g52
+sVTime Control
+p3102
+VStandard: 60 minutes with 30 seconds increment from move 1
+p3103
+sVOrganizer
+p3104
+g52
+sVChief Arbiter
+p3105
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p3106
+ssbag0
+(g40
+g2
+Ntp3107
+Rp3108
+(dp3109
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=191387
+p3110
+sg48
+(dp3111
+VCategory
+p3112
+g50
+sVCity
+p3113
+VElgoibar
+p3114
+sVZone
+p3115
+g52
+sg16
+g53
+sVSystem
+p3116
+g54
+sVDate registered
+p3117
+V2018-03-27
+p3118
+sVType
+p3119
+g52
+sVPGN file
+p3120
+g52
+sVTournament Name
+p3121
+VI Open Danobat Elgoibar Sub2200
+p3122
+sVEnd Date
+p3123
+V2018-12-13
+p3124
+sVDate received
+p3125
+V2018-12-15
+p3126
+sVCountry
+p3127
+VESP
+p3128
+sVCrosstable
+p3129
+VSize: 4781 bytes
+p3130
+sVEvent code
+p3131
+V186590
+p3132
+sVNumber of players
+p3133
+V28
+p3134
+sVStart Date
+p3135
+V2018-09-27
+p3136
+sVView Report
+p3137
+VRated for January 2019 as\u000a                                            Standard
+p3138
+sVChief Organizer
+p3139
+g52
+sVTime Control
+p3140
+VStandard: 60 minutes with 30 seconds increment from move 1
+p3141
+sVOrganizer
+p3142
+g52
+sVChief Arbiter
+p3143
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p3144
+ssbag0
+(g40
+g2
+Ntp3145
+Rp3146
+(dp3147
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=191389
+p3148
+sg48
+(dp3149
+VCategory
+p3150
+g50
+sVCity
+p3151
+VElgoibar
+p3152
+sVZone
+p3153
+g52
+sg16
+g53
+sVSystem
+p3154
+g54
+sVDate registered
+p3155
+V2018-03-27
+p3156
+sVType
+p3157
+g52
+sVPGN file
+p3158
+g52
+sVTournament Name
+p3159
+VI Open Danobat Elgoibar Sub2200
+p3160
+sVEnd Date
+p3161
+V2018-12-13
+p3162
+sVDate received
+p3163
+V2018-12-15
+p3164
+sVCountry
+p3165
+VESP
+p3166
+sVCrosstable
+p3167
+VSize: 4781 bytes
+p3168
+sVEvent code
+p3169
+V186590
+p3170
+sVNumber of players
+p3171
+V28
+p3172
+sVStart Date
+p3173
+V2018-09-27
+p3174
+sVView Report
+p3175
+VRated for January 2019 as\u000a                                            Standard
+p3176
+sVChief Organizer
+p3177
+g52
+sVTime Control
+p3178
+VStandard: 60 minutes with 30 seconds increment from move 1
+p3179
+sVOrganizer
+p3180
+g52
+sVChief Arbiter
+p3181
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p3182
+ssbag0
+(g40
+g2
+Ntp3183
+Rp3184
+(dp3185
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=191392
+p3186
+sg48
+(dp3187
+VCategory
+p3188
+g50
+sVCity
+p3189
+VElgoibar
+p3190
+sVZone
+p3191
+g52
+sg16
+g53
+sVSystem
+p3192
+g54
+sVDate registered
+p3193
+V2018-03-27
+p3194
+sVType
+p3195
+g52
+sVPGN file
+p3196
+g52
+sVTournament Name
+p3197
+VI Open Danobat Elgoibar Sub2200
+p3198
+sVEnd Date
+p3199
+V2018-12-13
+p3200
+sVDate received
+p3201
+V2018-12-15
+p3202
+sVCountry
+p3203
+VESP
+p3204
+sVCrosstable
+p3205
+VSize: 4781 bytes
+p3206
+sVEvent code
+p3207
+V186590
+p3208
+sVNumber of players
+p3209
+V28
+p3210
+sVStart Date
+p3211
+V2018-09-27
+p3212
+sVView Report
+p3213
+VRated for January 2019 as\u000a                                            Standard
+p3214
+sVChief Organizer
+p3215
+g52
+sVTime Control
+p3216
+VStandard: 60 minutes with 30 seconds increment from move 1
+p3217
+sVOrganizer
+p3218
+g52
+sVChief Arbiter
+p3219
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p3220
+ssbag0
+(g40
+g2
+Ntp3221
+Rp3222
+(dp3223
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=191729
+p3224
+sg48
+(dp3225
+VCategory
+p3226
+g50
+sVCity
+p3227
+VElgoibar
+p3228
+sVZone
+p3229
+g52
+sg16
+g53
+sVSystem
+p3230
+g54
+sVDate registered
+p3231
+V2018-03-27
+p3232
+sVType
+p3233
+g52
+sVPGN file
+p3234
+g52
+sVTournament Name
+p3235
+VI Open Danobat Elgoibar Sub2200
+p3236
+sVEnd Date
+p3237
+V2018-12-13
+p3238
+sVDate received
+p3239
+V2018-12-15
+p3240
+sVCountry
+p3241
+VESP
+p3242
+sVCrosstable
+p3243
+VSize: 4781 bytes
+p3244
+sVEvent code
+p3245
+V186590
+p3246
+sVNumber of players
+p3247
+V28
+p3248
+sVStart Date
+p3249
+V2018-09-27
+p3250
+sVView Report
+p3251
+VRated for January 2019 as\u000a                                            Standard
+p3252
+sVChief Organizer
+p3253
+g52
+sVTime Control
+p3254
+VStandard: 60 minutes with 30 seconds increment from move 1
+p3255
+sVOrganizer
+p3256
+g52
+sVChief Arbiter
+p3257
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p3258
+ssbag0
+(g40
+g2
+Ntp3259
+Rp3260
+(dp3261
+g44
+I00
+sg45
+I00
+sg46
+V/tournament_details.phtml?event=191902
+p3262
+sg48
+(dp3263
+VCategory
+p3264
+g50
+sVCity
+p3265
+VElgoibar
+p3266
+sVZone
+p3267
+g52
+sg16
+g53
+sVSystem
+p3268
+g54
+sVDate registered
+p3269
+V2018-03-27
+p3270
+sVType
+p3271
+g52
+sVPGN file
+p3272
+g52
+sVTournament Name
+p3273
+VI Open Danobat Elgoibar Sub2200
+p3274
+sVEnd Date
+p3275
+V2018-12-13
+p3276
+sVDate received
+p3277
+V2018-12-15
+p3278
+sVCountry
+p3279
+VESP
+p3280
+sVCrosstable
+p3281
+VSize: 4781 bytes
+p3282
+sVEvent code
+p3283
+V186590
+p3284
+sVNumber of players
+p3285
+V28
+p3286
+sVStart Date
+p3287
+V2018-09-27
+p3288
+sVView Report
+p3289
+VRated for January 2019 as\u000a                                            Standard
+p3290
+sVChief Organizer
+p3291
+g52
+sVTime Control
+p3292
+VStandard: 60 minutes with 30 seconds increment from move 1
+p3293
+sVOrganizer
+p3294
+g52
+sVChief Arbiter
+p3295
+VLarreategi\u000a                                            Arana, Mikel (ESP) IA
+p3296
+ssbasb.
