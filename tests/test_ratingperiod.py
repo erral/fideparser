@@ -13,7 +13,7 @@ class TestArbiter(unittest.TestCase):
         contents = get_test_file_contents("ratingperiod.html")
         responses.add(responses.GET, ratingperiod_url, body=contents)
         tournament_url = re.compile("https:\/\/ratings\.fide\.com\/tournament_details\.phtml\?event=[\d]+")
-        tournament_contents = get_test_file_contents("tournament.html")
+        tournament_contents = get_test_file_contents("report.html")
         responses.add(responses.GET, tournament_url, body=tournament_contents)
         r = RatingPeriod("ESP", "2018-07-01", arbiters_data=False, report_data=False)
         r.save()
