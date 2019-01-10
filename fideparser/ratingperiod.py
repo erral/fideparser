@@ -24,6 +24,22 @@ class RatingPeriod(object):
         self.tournaments = []
         self.fieldnames = set([])
 
+    def __eq__(self, other):
+        fields_equal = self.fieldnames == other.fieldnames
+        tournaments_equal = False
+
+        for tournament in self.tournaments:
+            tournaments_equal = tournament in other.tournaments
+            if not tournaments_equal:
+                return False
+
+        for tournament in other.tournaments:
+            tournaments_equal = tournament in self.tournaments
+            if not tournaments_equal:
+                return False
+
+        return fields_equal and tournaments_equal
+
     def save(self):
         """ import the data from FIDE site """
         url = BASE_URL % {"country": self.country, "period": self.period}
@@ -42,16 +58,16 @@ class RatingPeriod(object):
             print("Tournament done")
 
     def load_from_file(self, filepath):
-        fp = open(filepath, "r")
-        data = pickle.load(fp)
-        if not isinstance(data, RatingPeriod):
-            raise InvalideFileFormat
+        with open(filepath, "rb") as fp:
+            data = pickle.load(fp)
+            if not isinstance(data, RatingPeriod):
+                raise InvalideFileFormat
 
-        self.country = data.country
-        self.period = data.period
-        self.tournaments = data.tournaments
-        for tournament in self.tournaments:
-            self.fieldnames = self.fieldnames.union(tournament.data.keys())
+            self.country = data.country
+            self.period = data.period
+            self.tournaments = data.tournaments
+            for tournament in self.tournaments:
+                self.fieldnames = self.fieldnames.union(tournament.data.keys())
 
     def export(self, filename, format="binary"):
         """ return the saved data in a structured way """
@@ -63,14 +79,13 @@ class RatingPeriod(object):
             self.export_csv(filename)
 
     def export_binary(self, filename):
-        fp = open(filename, "w")
-        pickle.dump(self, fp)
-        fp.close()
+        with open(filename, "wb") as fp:
+            pickle.dump(self, fp)
 
     def export_json(self, filename):
-        fp = open(filename, "w")
-        json.dump(self.tournaments, fp, cls=FIDEJSONEncoder)
-        fp.close()
+        data = json.dumps(self.tournaments, cls=FIDEJSONEncoder)
+        with open(filename, "wb") as fp:
+            fp.write(data.encode("utf-8"))
 
     def export_csv(self, filename):
         # If we export data to JSON and reimport without the
@@ -90,8 +105,7 @@ class RatingPeriod(object):
             keys.remove("arbiter_objects")
         keys = list(keys)
         keys.sort()
-        fp = open(filename, "wb")
-        writer = csv.DictWriter(fp, keys, encoding="utf-8")
-        writer.writeheader()
-        writer.writerows(data)
-        fp.close()
+        with open(filename, "wb") as fp:
+            writer = csv.DictWriter(fp, keys, encoding="utf-8")
+            writer.writeheader()
+            writer.writerows(data)
