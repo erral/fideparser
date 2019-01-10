@@ -58,16 +58,16 @@ class RatingPeriod(object):
             print("Tournament done")
 
     def load_from_file(self, filepath):
-        fp = open(filepath, "r")
-        data = pickle.load(fp)
-        if not isinstance(data, RatingPeriod):
-            raise InvalideFileFormat
+        with open(filepath, "rb") as fp:
+            data = pickle.load(fp)
+            if not isinstance(data, RatingPeriod):
+                raise InvalideFileFormat
 
-        self.country = data.country
-        self.period = data.period
-        self.tournaments = data.tournaments
-        for tournament in self.tournaments:
-            self.fieldnames = self.fieldnames.union(tournament.data.keys())
+            self.country = data.country
+            self.period = data.period
+            self.tournaments = data.tournaments
+            for tournament in self.tournaments:
+                self.fieldnames = self.fieldnames.union(tournament.data.keys())
 
     def export(self, filename, format="binary"):
         """ return the saved data in a structured way """
@@ -79,14 +79,12 @@ class RatingPeriod(object):
             self.export_csv(filename)
 
     def export_binary(self, filename):
-        fp = open(filename, "wb")
-        pickle.dump(self, fp)
-        fp.close()
+        with open(filename, "wb") as fp:
+            pickle.dump(self, fp)
 
     def export_json(self, filename):
-        fp = open(filename, "wb")
-        json.dump(self.tournaments, fp, cls=FIDEJSONEncoder)
-        fp.close()
+        with open(filename, "w", encoding="utf-8") as fp:
+            json.dump(self.tournaments, fp, cls=FIDEJSONEncoder)
 
     def export_csv(self, filename):
         # If we export data to JSON and reimport without the
@@ -106,8 +104,7 @@ class RatingPeriod(object):
             keys.remove("arbiter_objects")
         keys = list(keys)
         keys.sort()
-        fp = open(filename, "wb")
-        writer = csv.DictWriter(fp, keys, encoding="utf-8")
-        writer.writeheader()
-        writer.writerows(data)
-        fp.close()
+        with open(filename, "wb") as fp:
+            writer = csv.DictWriter(fp, keys, encoding="utf-8")
+            writer.writeheader()
+            writer.writerows(data)
