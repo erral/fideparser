@@ -49,4 +49,4 @@ class TestTournament(unittest.TestCase):
 
         r = Tournament(tournament_url_value, extract_report_data=True)
         self.assertIn("player_count_in_report", r.data)
-        self.assertGreater(r.data["player_count_in_report"], 0)
+        self.assertGreater(int(r.data["player_count_in_report"]), 0)
