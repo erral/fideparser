@@ -83,8 +83,9 @@ class RatingPeriod(object):
             pickle.dump(self, fp)
 
     def export_json(self, filename):
-        with open(filename, "w", encoding="utf-8") as fp:
-            json.dump(self.tournaments, fp, cls=FIDEJSONEncoder)
+        data = json.dumps(self.tournaments, cls=FIDEJSONEncoder)
+        with open(filename, "wb") as fp:
+            fp.write(data.encode("utf-8"))
 
     def export_csv(self, filename):
         # If we export data to JSON and reimport without the
