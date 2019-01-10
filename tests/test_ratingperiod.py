@@ -8,7 +8,7 @@ import responses
 import unittest
 
 
-class TestArbiter(unittest.TestCase):
+class TestRatingPeriod(unittest.TestCase):
     def setUp(self):
         ratingperiod_url = re.compile(
             "https:\/\/ratings\.fide\.com\/tournament_list\.phtml\?moder=ev_code&country=[A-Z]+&rating_period=[0-9][0-9][0-9][0-9]\-[0-9][0-9]\-01"
@@ -21,6 +21,13 @@ class TestArbiter(unittest.TestCase):
         )
         tournament_contents = get_test_file_contents("tournament.html")
         responses.add(responses.GET, tournament_url, body=tournament_contents)
+
+    def tearDown(self):
+        filenames = ["myjson.csv", "myjson.json", "myjson.binary"]
+        for filename in filenames:
+            file_path = get_path_to_store_export_files(filename)
+            if os.path.exists(file_path):
+                os.remove(file_path)
 
     @responses.activate
     def test_ratingperiod_data(self):
@@ -78,4 +85,4 @@ class TestArbiter(unittest.TestCase):
         r_imported = RatingPeriod("ESP", "2018-07-01")
         r_imported.load_from_file(export_path)
 
-        self.assertEquals(r, r_imported)
+        self.assertEqual(r, r_imported)
