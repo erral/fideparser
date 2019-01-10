@@ -79,12 +79,12 @@ class RatingPeriod(object):
             self.export_csv(filename)
 
     def export_binary(self, filename):
-        fp = open(filename, "w")
+        fp = open(filename, "wb")
         pickle.dump(self, fp)
         fp.close()
 
     def export_json(self, filename):
-        fp = open(filename, "w")
+        fp = open(filename, "wb")
         json.dump(self.tournaments, fp, cls=FIDEJSONEncoder)
         fp.close()
 
