@@ -24,6 +24,22 @@ class RatingPeriod(object):
         self.tournaments = []
         self.fieldnames = set([])
 
+    def __eq__(self, other):
+        fields_equal = self.fieldnames == other.fieldnames
+        tournaments_equal = False
+
+        for tournament in self.tournaments:
+            tournaments_equal = tournament in other.tournaments
+            if not tournaments_equal:
+                return False
+
+        for tournament in other.tournaments:
+            tournaments_equal = tournament in self.tournaments
+            if not tournaments_equal:
+                return False
+
+        return fields_equal and tournaments_equal
+
     def save(self):
         """ import the data from FIDE site """
         url = BASE_URL % {"country": self.country, "period": self.period}

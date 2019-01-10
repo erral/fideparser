@@ -19,6 +19,9 @@ class Tournament(object):
         self.extract_report_data = extract_report_data
         self._extract_data()
 
+    def __eq__(self, other):
+        return self.data == other.data
+
     def _extract_data(self):
         sock = requests.get(BASE_URL + self.link)
         soup = BeautifulSoup(sock.content, "html.parser")
