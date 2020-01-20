@@ -4,8 +4,8 @@ fideparser
 .. image:: https://img.shields.io/pypi/v/fideparser.svg
         :target: https://pypi.python.org/pypi/fideparser
 
-.. image:: https://travis-ci.org/erral/fideparser.svg?branch=master
-        :target: https://travis-ci.org/erral/fideparser
+.. image:: https://travis-ci.com/erral/fideparser.svg?branch=master
+        :target: https://travis-ci.com/erral/fideparser
 
 .. image:: https://coveralls.io/repos/github/erral/fideparser/badge.svg?branch=master
         :target: https://coveralls.io/github/erral/fideparser?branch=master
