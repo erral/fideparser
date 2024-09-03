@@ -5,8 +5,8 @@ import requests
 
 
 class InvalidArbiterException(Exception):
-    """ When the given arbiter data is not valid
-        this exception is raised
+    """When the given arbiter data is not valid
+    this exception is raised
     """
 
 
@@ -16,32 +16,23 @@ class Arbiter(object):
         self._extract_data()
 
     def _extract_data(self):
+        arbiter_data = {}
         sock = requests.get(self.link)
         soup = BeautifulSoup(sock.content, "html.parser")
-        table = soup.find("table", class_="contentpaneopen")
-        inner_table = table.find("table")
-        if not inner_table:
-            raise InvalidArbiterException
+        table = soup.find("div", class_="profile-top-info")
+        if table is not None:
 
-        data_table = inner_table.find("table")
-        arbiter_data = {}
-        for tr in data_table.find_all("tr"):
-            items = []
-            for td in tr.find_all("td"):
-                items.append(td.text)
-            if len(items) > 2:
-                # The first row contains a td for the photo
-                # so we have to ignore it
-                items = items[1:]
-            elif len(items) < 2:
-                # Rows with just one celd are not interesting
-                continue
+            headers = table.find_all(
+                "div", class_="profile-top-info__block__row__header"
+            )
+            values = table.find_all("div", class_="profile-top-info__block__row__data")
 
-            arbiter_data[self._clean(items[0])] = self._clean(items[1])
+            for header, value in zip(headers, values):
+                arbiter_data[self._clean(header.text)] = self._clean(value.text)
 
         self.data = arbiter_data
 
     def _clean(self, text):
-        text = text.replace(u"\xa0", " ")
+        text = text.replace("\xa0", " ")
         text = text.strip()
         return text
