@@ -9,7 +9,7 @@ import re
 import requests
 
 
-BASE_URL = u"https://ratings.fide.com"
+BASE_URL = "https://ratings.fide.com"
 
 
 class Tournament(object):

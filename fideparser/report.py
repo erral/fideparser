@@ -9,7 +9,7 @@ class InvalidReportException(Exception):
 
 
 class Report(object):
-    """ Extract data from the tournament report"""
+    """Extract data from the tournament report"""
 
     def __init__(self, link):
         self.link = link
