@@ -21,4 +21,4 @@ class TestArbiter(unittest.TestCase):
         responses.add(responses.GET, arbiter_url, body=contents)
 
         r = Arbiter(arbiter_url)
-        self.assertIn("FIDE title", r.data)
+        self.assertIn("FIDE title:", r.data)

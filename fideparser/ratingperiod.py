@@ -41,7 +41,7 @@ class RatingPeriod(object):
         return fields_equal and tournaments_equal
 
     def save(self):
-        """ import the data from FIDE site """
+        """import the data from FIDE site"""
         url = BASE_URL % {"country": self.country, "period": self.period}
         print("Getting period data...")
         sock = requests.get(url)
@@ -70,7 +70,7 @@ class RatingPeriod(object):
                 self.fieldnames = self.fieldnames.union(tournament.data.keys())
 
     def export(self, filename, format="binary"):
-        """ return the saved data in a structured way """
+        """return the saved data in a structured way"""
         if format == "binary":
             self.export_binary(filename)
         elif format == "json":
