@@ -41,7 +41,7 @@ class TestTournament(unittest.TestCase):
     def test_tournament_with_arbiter_data(self):
         tournament_url_value = "/tournament_details.phtml?event=186590"
         r = Tournament(tournament_url_value, extract_arbiter_data=True)
-        self.assertIn("arbiter1_name", r.data)
+        self.assertIn("Chief Arbiter", r.data)
 
     @responses.activate
     def test_tournament_with_report_data(self):
